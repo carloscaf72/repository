@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link shortcut icon - noctua7 - Interno -->
+    <link rel="shortcut icon" href="/img/isotipo-64.png" type="image/png">
+
+    <!-- Link CSS - Bootstrap - Interno -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Link CSS - noctua7 - Interno -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- link Icons - Bootstrap - via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- link JS - Bootstrap - Interno -->
+    <script src="/js/bootstrap.min.js" defer></script>
+
+    <title>Formulários</title>
+</head>
+
+<body>
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                <img height="48" src="/img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+
+            <h1 class="col d-flex align-items-center justify-content-center">
+                Formulários
+            </h1>
+
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                <a href="/">
+                    <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                </a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container">
+
+        <ul class="list-group my-3">
+            <li class="list-group-item">O Bootstrap contém diversas classes para <b>formatar formulários</b>, melhorando seu <b>visual</b> em relação aos formulários HTML padrão.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center"><b>form-label</b> & <b>form-control</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Na <b>documentação</b> é sugerido que cada grupo de componentes <b>label + input</b> sejam colocados agrupados em um <b>único elemento de bloco</b> (<span>div</span>) com margem inferior de 3 (<span>mb-3</span>).</li>
+            <li class="list-group-item">A classe <b>form-label</b> estiliza os elementos <b>&lt;lable&gt;</b> e a classe
+            <b>form-control</b> estiliza <span>alguns</span> elementos <b>&lt;input&gt;</b>.</li>
+            <li class="list-group-item">Por <span>padrão</span>, a classe <b>form-control</b> transforma os <span>inputs</span> em <b>elementos de bloco</b>, começando na <b>próxima linha</b> e ocupando <b>100%</b> da largura do elemento <span>pai</span>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;inputs&gt;</b> formatados por <b>form-control</b></h3>
+    </div>
+
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+
+                    <h4 class="text-center my-1">type: "text"</h4>
+                    <div class="my-1">
+                        <label for="id-nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control mb-1" id="id-nome">
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">type: "email"</h4>
+                    <div class="my-1">
+                        <label for="id-email" class="form-label">Email</label>
+                        <input type="email" class="form-control mb-1" id="id-email">
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">type: "password"</h4>
+                    <div class="my-1">
+                        <label for="id-password" class="form-label">Senha</label>
+                        <input type="password" class="form-control mb-1" id="id-password">
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">type: "tel"</h4>
+                    <div class="my-1">
+                        <label for="id-tel" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control mb-1" id="id-tel">
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">type: "search"</h4>
+                    <div class="my-1">
+                        <label for="id-search" class="form-label">Localizar</label>
+                        <input type="search" class="form-control mb-1" id="id-search">
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">type: "file"</h4>
+                    <div class="my-1">
+                        <label for="id-file" class="form-label">Anexar arquivo</label>
+                        <input type="file" class="form-control mb-1" id="id-file">
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">type: "url"</h4>
+                    <div class="my-1">
+                        <label for="id-url" class="form-label">Site</label>
+                        <input type="url" class="form-control mb-1" id="id-url">
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">type: "number"</h4>
+                    <div class="my-1">
+                        <label for="id-number" class="form-label">Idade</label>
+                        <input type="number" class="form-control mb-1" id="id-number">
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">type: "date"</h4>
+                    <div class="my-1">
+                        <label for="id-date" class="form-label">Data</label>
+                        <input type="date" class="form-control mb-1" id="id-date">
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">type: "datetime"</h4>
+                    <div class="my-1">
+                        <label for="id-datetime" class="form-label">Data & Hora</label>
+                        <input type="datetime" class="form-control mb-1" id="id-datetime">
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">type: "time"</h4>
+                    <div class="my-1">
+                        <label for="id-time" class="form-label">Hora</label>
+                        <input type="time" class="form-control mb-1" id="id-time">
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">type: "week"</h4>
+                    <div class="my-1">
+                        <label for="id-week" class="form-label">Dia da semana</label>
+                        <input type="week" class="form-control mb-1" id="id-week">
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">type: "month"</h4>
+                    <div class="my-1">
+                        <label for="id-month" class="form-label">Mês</label>
+                        <input type="month" class="form-control mb-1" id="id-month">
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">type: "color"</h4>
+                    <div class="my-1">
+                        <label for="id-color" class="form-label">Cor</label>
+                        <input type="color" class="form-control mb-1" id="id-color" value="#4D819F"
+                            title="escolha uma cor...">
+                    </div>
+                    <hr>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim dos inputs (form-control) -->
+
+    <div class="container">
+        <h3 class="text-center"><b>form-text</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para colocar uma <span>descrição do campo</span> ou <span>alguma
+            orientação</span> ao usuário, coloca-se a classe <b>form-text</b> dentro de um <span>elemento de 
+            bloco</span> e sua aparência será de um <span>texto menor com cor suave</span>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div&gt;</b> formatada por <b>form-text</b></h3>
+    </div>
+
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+
+                    <div class="my-1">
+                        <label for="id-nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control mb-1" id="id-nome">
+                    </div>
+                    <div class="form-text">nome completo do usuário</div>
+                    <hr>
+
+                    <div class="my-1">
+                        <label for="id-email" class="form-label">Email</label>
+                        <input type="email" class="form-control mb-1" id="id-email">
+                    </div>
+                    <div class="form-text">não compartilhamos seu e-mail com terceiros</div>
+                    <hr>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- fim do form-text -->
+
+    <div class="container">
+        <h3 class="text-center"><b>Atributos</b> do elemento <b>&lt;input&gt;</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Alguns <b>atributos</b> HTML dos elementos têm <b>sua própria renderização</b>
+            no Bootstrap.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><span>value=""</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O atributo <b>value</b> é opcional no <b>&lt;input&gt;</b> e coloca um <b>valor
+            inicial</b> no controle <span>permitindo ser alterado</span> pelo usuário.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-1">
+                        <label for="id-email-value" class="form-label">Email</label>
+                        <input type="text" class="form-control mb-1" id="id-email-value" value="fulano@email.com">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do atributo - value -->
+
+    <div class="container">
+        <h3 class="text-center"><span>disabled</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O atributo <b>disabled</b> torna o controle <b>desabilitado</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-1">
+                        <label for="id-email-disabled" class="form-label">Email</label>
+                        <input type="text" class="form-control mb-1" id="id-email-disabled" value="fulano@email.com"
+                            disabled>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do atributo - disabled -->
+
+    <div class="container">
+        <h3 class="text-center"><span>readonly</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O atributo <b>readonly</b> torna o controle <b>somente leitura</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-1">
+                        <label for="id-email-readonly" class="form-label">Email</label>
+                        <input type="text" class="form-control mb-1" id="id-email-readonly" value="fulano@email.com"
+                            readonly>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do atributo - readonly -->
+
+    <div class="container">
+        <h3 class="text-center"><span>placeholder=""</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O atributo <b>placeholder</b> permite colocar um <b>texto de exemplo</b> ou
+            <b>orientação de escrita</b> no controle que não servirá como <span>valor</span>.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-1">
+                        <label for="id-email-placeholder" class="form-label">Email</label>
+                        <input type="text" class="form-control mb-1" id="id-email-placeholder"
+                            placeholder="fulano@email.com" readonly>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do atributo - placeholder -->
+
+    <div class="container">
+        <h3 class="text-center"><span>readonly + form-control-plaintext</span></h3>
+        <ul class="list-group my-3">
+            <ul class="list-group my-3">
+                <li class="list-group-item">O atributo <b>readonly</b> torna o controle <b>somente leitura</b> e a classe <b>form-control-plaintext</b> retira a aparência do controle, tornando-o um texto comum. Utilizado nos casos onde os dados não devam ser alterados.</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-1">
+                        <label for="id-email-readonly-pl" class="form-label">Email</label>
+                        <input type="text" class="form-control form-control-plaintext mb-1" id="id-email-readonly-pl"
+                            value="fulano@email.com" readonly>
+                    </div>
+                    <div class="my-1">
+                        <label for="id-senha-readonly-pl" class="form-label">Senha</label>
+                        <input type="password" class="form-control mb-1" id="id-senha-readonly-pl"
+                            placeholder="confirme a sua senha">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do atributo - readonly (plain-text) -->
+    <!-- fim dos atributos -->
+
+    <div class="container">
+        <h3 class="text-center"><b>form-control-sm</b> & <b>form-control-lg</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Os <b>tamanhos</b> dos elementos <b>&lt;input&gt;</b> podem ser <b>alterados</b> com com a classe form-control, acrescentada dos sufixos <b>sm</b> e <b>lg</b> (<span>form-control-sm</span>, <span>form-control-lg</span>).</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;input&gt;</b> (form-control-sm e form-control-lg)</h3>
+    </div>
+
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <h4 class="text-center my-1">form-control-sm</h4>
+                    <div class="my-1">
+                        <label for="id-exemplo3" class="form-label">Nome</label>
+                        <input type="text" class="form-control form-control-sm mb-1" id="id-exemplo3">
+                    </div>
+
+                    <h4 class="text-center my-1">form-control (normal)</h4>
+                    <div class="my-1">
+                        <label for="id-exemplo2" class="form-label">Nome</label>
+                        <input type="text" class="form-control mb-1" id="id-exemplo2">
+                    </div>
+
+                    <h4 class="text-center my-1">form-control-lg</h4>
+                    <div class="my-1">
+                        <label for="id-exemplo1" class="form-label">Nome</label>
+                        <input type="text" class="form-control form-control-lg mb-1" id="id-exemplo1">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- fim do tamanho dos elementos -->
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;datalist&gt;</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O elemento <b>&lt;datalist&gt;</b> é utlizado para criar uma <b>lista de
+                opções</b> que pode alimentar o controle <b>&lt;input&gt;</b> <span>type="text"</span>. Ela é
+                montada com os elementos <b>&lt;option&gt;</b> e associada ao controle através do atributo
+                <span>list</span> que terá o mesmo valor do <b>id</b> do <span>datalist</span>, criando a lista de
+                opções no controle input.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>datalist</b></h3>
+    </div>
+
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+
+                    <div class="my-1">
+                        <label for="id-dl" class="form-label">Carros</label>
+                        <input type="text" list="id-carros" class="form-control" id="id-dl">
+                        <datalist id="id-carros">
+                            <option value="Monza">Monza</option>
+                            <option value="S-10">S-10</option>
+                            <option value="Gol">Gol</option>
+                            <option value="Fusca">Fusca</option>
+                            <option value="Opala">Opala</option>
+                        </datalist>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- fim do datalist -->
+
+</body>
+
+</html>

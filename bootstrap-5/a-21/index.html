@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- link shortcut icon - noctua7 - Interno -->
+     <link rel="shortcut icon" href="/img/isotipo-64.png" type="image/png">
+
+     <!-- Link CSS - Bootstrap - Interno -->
+     <link rel="stylesheet" href="/css/bootstrap.min.css">
+     
+     <!-- Link CSS - noctua7 - Interno -->
+     <link rel="stylesheet" href="/css/style.css">
+ 
+     <!-- link Icons - Bootstrap - via CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+ 
+     <!-- link JS - Bootstrap - Interno -->
+     <script src="/js/bootstrap.min.js" defer></script>
+
+    <title>Títulos Flutuantes</title>
+</head>
+
+<body>
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <img height="48" src="/img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+            
+            <h1 class="col d-flex align-items-center justify-content-center">
+                Títulos Flutuantes
+            </h1>
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <a href="/">
+                        <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                    </a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">O Bootstrap contém diversas classes para <b>formatar formulários</b>, melhorando seu <b>visual</b> em relação aos formulários HTML padrão.</li>
+        </ul>
+    </section>
+    <hr>
+    
+    <div class="container">
+        <h3 class="text-center"><b>form-floating</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Na <b>documentação</b> é sugerido que cada grupo de componentes <b>label + input</b> sejam colocados agrupados em um <b>único elemento de bloco</b> (<span>div</span>) com margem inferior de 3 (<span>mb-3</span>).</li>
+            <li class="list-group-item">A classe <b>form-floating</b> pode ser usada nos controles <b>&lt;input&gt;</b> (textuais), <b>&lt;texarea&gt;</b> e <b>&lt;select&gt;</b> e deve ser colocada dentro do <b>elemento de bloco</b> (<span>div</span>) que contém os <b>controles</b>, com a <b>&lt;label&gt;</b> sendo colocada <b>depois</b> dos respectivos controles. Com isso a renderização do elemento <b>&lt;label&gt;</b> será na parte <span>interna/superior</span>, com espaço para inserção dos dados.</li>
+            <li class="list-group-item">Por <span>padrão</span>, a classe <b>form-control</b> e <b>form-select</b> transformam os <span>controles</span> em <b>elementos de bloco</b>, começando na <b>próxima linha</b> e ocupando <b>100%</b> da largura do elemento <span>pai</span>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;input&gt;</b> & <b>&lt;label&gt;</b></h3>
+        <h4 class="text-center">(<span>form-floating</span>)</span></h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-3 mb-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+            
+                    <div class="form-floating my-2">
+                        <input type="text" class="form-control mb-1" id="id-nome">
+                        <label for="id-nome" class="form-label">Nome:</label>
+                    </div>
+
+                    <div class="form-floating my-2">
+                        <input type="password" class="form-control mb-1" id="id-senha">
+                        <label for="id-senha" class="form-label">Senha:</label>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do form-floating (input) -->
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;textarea&gt;</b> & <b>&lt;label&gt;</b></h3>
+        <h4 class="text-center">(<span>form-floating</span>)</span></h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-3 mb-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+            
+                    <div class="form-floating my-2">
+                        <textarea name="" id="id-msg" class="form-control" cols="30" rows="10" style="height: 150px;"></textarea>
+                        <label for="id-msg" class="form-label">Mensagem:</label>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do form-floating (textarea)-->
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;select&gt;</b> & <b>&lt;label&gt;</b></h3>
+        <h4 class="text-center">(<span>form-floating</span>)</span></h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-3 mb-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+            
+                    <div class="form-floating my-2">
+                        <select class="form-select" id="id-select">
+                            <option selected>Escolha o Estado...</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espírito Santo</option>
+                        </select>
+                        <label for="id-select" class="form-label">Estados</label>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do form-floating (select)-->
+
+    <div class="container">
+        <h3 class="text-center"><b>form-floating</b> & <b>placeholder=" "</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Colocando o atributo <b>placeholder=""</b> nas TAGs <b>&lt;input&gt;</b> e <b>&lt;textarea&gt;</b> a renderização do elemento <b>&lt;label&gt;</b> será na parte <span>interna</span> mas sem o espaço para inserção de dados e assim que os <b>controles</b> forem <span>acessado</span>, a renderização retorna para <span>interna/superior</span>. Esta técnica com o atributo <b>placeholder=""</b> não é aceita pelo controle <b>&lt;select&gt;</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;input&gt;</b> & <b>&lt;label&gt;</b></h3>
+        <h4 class="text-center">(<span>form-floating</span> & <span>placeholder=" "</span>)</span></h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+            
+                    <div class="form-floating my-2">
+                        <input type="text" class="form-control mb-1" id="id-nome1" placeholder="">
+                        <label for="id-nome1" class="form-label">Nome:</label>
+                    </div>
+
+                    <div class="form-floating my-2">
+                        <input type="password" class="form-control mb-1" id="id-senha1" placeholder="">
+                        <label for="id-senha1" class="form-label">Senha:</label>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do form-floating & placeholder (input)-->
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;textarea&gt;</b> & <b>&lt;label&gt;</b></h3>
+        <h4 class="text-center">(<span>form-floating</span>)</span></h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-3 mb-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+            
+                    <div class="form-floating my-2">
+                        <textarea name="" id="msg" class="form-control" cols="30" rows="10" style="height: 150px;" placeholder=""></textarea>
+                        <label for="id-msg" class="form-label">Mensagem:</label>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do form-floating & placeholder (textarea)-->
+    
+</body>
+</html>

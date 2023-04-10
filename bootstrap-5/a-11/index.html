@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- link shortcut icon - noctua7 - Interno -->
+     <link rel="shortcut icon" href="/img/isotipo-64.png" type="image/png">
+
+     <!-- Link CSS - Bootstrap - Interno -->
+     <link rel="stylesheet" href="/css/bootstrap.min.css">
+     
+     <!-- Link CSS - noctua7 - Interno -->
+     <link rel="stylesheet" href="/css/style.css">
+ 
+     <!-- link Icons - Bootstrap - via CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+ 
+     <!-- link JS - Bootstrap - Interno -->
+     <script src="/js/bootstrap.min.js" defer></script>
+
+    <title>Cores & Opacidade</title>
+</head>
+
+<body>
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <img height="48" src="../img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+            
+            <h1 class="col d-flex align-items-center justify-content-center">
+                Cores & Opacidade
+            </h1>
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <a href="/">
+                        <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                    </a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">O Booptstrap tem cores contextuais pré-programadas que poderão ser usadas para a formatação de <em>plano de fundo</em> <b>(bg)</b>, <em>textos</em> <b>(text)</b>, <em>botões</em> <b>(btn)</b>, <em>bordas</em> <b>()</b>, <em>outline</em> <b>()</b>, <b>etc</b>. Essas cores são utilizadas como <b>sufixos</b> em diversas classes, após acrescentar um <b>traço</b> ao final do nome da classe a que se quer formatar.</li>
+            <li class="list-group-item">Seguem alguns dos sufixos utilizados pelo Bootstrap: <em><span>primary, secondary, success, danger, warning, info, light, dark, white, muted, transparent, etc</span></em>.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">Formatação de Plano de Fundo <b>(bg)</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">a classe <b>bg</b> é para formatação do plano de fundo <b>(background)</b> e será aplicada com um <span>traço</span> e o <span>sufixo</span> da cor temática escolhida.</li>
+        </ul>
+        <div class="container text-center">
+            <div class="col rounded bg-primary p-2">bg-primary</div>
+            <div class="col rounded bg-secondary p-2">bg-secondary</div>
+            <div class="col rounded bg-success p-2">bg-success</div>
+            <div class="col rounded bg-danger p-2">bg-danger</div>
+            <div class="col rounded bg-warning p-2">bg-warning</div>
+            <div class="col rounded bg-info p-2">bg-info</div>
+            <div class="col rounded bg-light p-2">bg-light</div>
+            <div class="col rounded bg-dark p-2">bg-dark</div>
+            <div class="col rounded bg-white p-2">bg-white</div>
+            <div class="col rounded bg-tranparent p-2">bg-transparent</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">a classe <b>bg-gradient</b> <em>altera levemente</em> a <b>tonalidade</b> do plano de fundo de qualquer cor, de cima para baixo.</li>
+        </ul>
+        <div class="container text-center">
+            <div class="col rounded bg-primary bg-gradient p-2">bg-primary bg-gradient</div>
+            <div class="col rounded bg-secondary bg-gradient p-2">bg-secondary bg-gradient</div>
+            <div class="col rounded bg-success bg-gradient p-2">bg-success bg-gradient</div>
+            <div class="col rounded bg-danger bg-gradient p-2">bg-danger bg-gradient</div>
+            <div class="col rounded bg-warning bg-gradient p-2">bg-warning bg-gradient</div>
+            <div class="col rounded bg-info bg-gradient p-2">bg-info bg-gradient</div>
+            <div class="col rounded bg-light bg-gradient p-2">bg-light bg-gradient</div>
+            <div class="col rounded bg-dark bg-gradient p-2">bg-dark bg-gradient</div>
+            <div class="col rounded bg-white bg-gradient p-2">bg-white bg-gradient</div>
+            <div class="col rounded bg-tranparent bg-gradient p-2">bg-transparent bg-gradient</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">a classe <b>bg-opacity</b> diminui a opacidade da cor de fundo e será aplicada com um <span>traço</span> e a <span>porcentagem</span> da opacidade desejada, limitado aos valores <b>10</b>, <b>25</b>, <b>50</b>, <b>75</b> e <b>100</b>. </li>
+            <li class="list-group-item">a classe <b>bg-opacity-100</b> proporciona a mesma opacidade se omitida já que a opacidade default é de <b>100%</b>, porém, sua utilização se dará importante <span>nos caso de herança de um elemento pai</span>. </li>
+        </ul>
+        <div class="container text-center">
+            <div class="col rounded bg-primary bg-opacity-50 p-2">bg-primary bg-opacity-50</div>
+            <div class="col rounded bg-secondary bg-opacity-50 p-2">bg-secondary bg-opacity-50</div>
+            <div class="col rounded bg-success bg-opacity-50 p-2">bg-success bg-opacity-50</div>
+            <div class="col rounded bg-danger bg-opacity-50 p-2">bg-danger bg-opacity-50</div>
+            <div class="col rounded bg-warning bg-opacity-50 p-2">bg-warning bg-opacity-50</div>
+            <div class="col rounded bg-info bg-opacity-50 p-2">bg-info bg-opacity-50</div>
+            <div class="col rounded bg-light bg-opacity-50 p-2">bg-light bg-opacity-50</div>
+            <div class="col rounded bg-dark bg-opacity-50 p-2">bg-dark bg-opacity-50</div>
+            <div class="col rounded bg-white bg-opacity-50 p-2">bg-white bg-opacity-50</div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">Formatação de Texto <b>(text)</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">a classe <b>text</b> é para formatação do texto <b>(text)</b> e será aplicada com um <span>traço</span> e o <span>sufixo</span> da cor temática escolhida.</li>
+        </ul>
+        <div class="container text-center">
+            <div class="col rounded text-primary p-2">text-primary</div>
+            <div class="col rounded text-secondary p-2">text-secondary</div>
+            <div class="col rounded text-success p-2">text-success</div>
+            <div class="col rounded text-danger p-2">text-danger</div>
+            <div class="col rounded text-warning p-2">text-warning</div>
+            <div class="col rounded text-info p-2">text-info</div>
+            <div class="col rounded text-light bg-dark p-2">text-light</div>
+            <div class="col rounded text-dark p-2">text-dark</div>
+            <div class="col rounded text-white bg-dark p-2">text-white</div>
+            <div class="col rounded text-muted bg-dark p-2">text-muted</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">a classe <b>text-opacity</b> diminui a opacidade da cor do texto e será aplicada com um <span>traço</span> e a <span>porcentagem</span> da opacidade desejada, limitado aos valores <b>25</b>, <b>50</b>, <b>75</b> e <b>100</b>. </li>
+            <li class="list-group-item">a classe <b>text-opacity-100</b> proporciona a mesma opacidade se omitida já que a opacidade default é de <b>100%</b>, porém, sua utilização se dará importante <span>nos caso de herança de um elemento pai</span>. </li>
+        </ul>
+        <div class="container text-center">
+            <div class="col rounded text-primary text-opacity-50 p-2">text-primary text-opacity-50</div>
+            <div class="col rounded text-secondary text-opacity-50 p-2">text-secondary text-opacity-50</div>
+            <div class="col rounded text-success text-opacity-50 p-2">text-success text-opacity-50</div>
+            <div class="col rounded text-danger text-opacity-50 p-2">text-danger text-opacity-50</div>
+            <div class="col rounded text-warning text-opacity-50 p-2">text-warning text-opacity-50</div>
+            <div class="col rounded text-info text-opacity-50 p-2">text-info text-opacity-50</div>
+            <div class="col rounded text-light text-opacity-50 p-2 bg-dark">text-light text-opacity-50</div>
+            <div class="col rounded text-dark text-opacity-50 p-2">text-dark text-opacity-50</div>
+            <div class="col rounded text-white text-opacity-50 p-2 bg-dark">text-white text-opacity-50</div>
+        </div>
+    </div>
+    <hr>
+    
+    <div class="container">
+        <h3 class="text-center">Formatação de Plano de Fundo <b>(bg)</b> e Texto <b>(text)</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">a classe <b>text-bg</b> é para formatação do texto <b>(text)</b> e também do plano de fundo <b>(background)</b>, e será aplicada com um <span>traço</span> e o <span>sufixo</span> da cor temática escolhida, sendo o Bootstrap o responsável pela escolha da cor de fonte para cada cor de fundo para que haja contraste.</li>
+        </ul>
+        <div class="container text-center">
+            <div class="col rounded text-bg-primary p-2">text-bg-primary</div>
+            <div class="col rounded text-bg-secondary p-2">text-bg-secondary</div>
+            <div class="col rounded text-bg-success p-2">text-bg-success</div>
+            <div class="col rounded text-bg-danger p-2">text-bg-danger</div>
+            <div class="col rounded text-bg-warning p-2">text-bg-warning</div>
+            <div class="col rounded text-bg-info p-2">text-bg-info</div>
+            <div class="col rounded text-bg-light p-2">text-bg-light</div>
+            <div class="col rounded text-bg-dark p-2">text-bg-dark</div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">Formatação de links com a TAG <b>&lt;a&gt;</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">a classe <b>link</b> é para formatação dos links com a TAG <b>&lt;a&gt;</b> e será aplicada com um <span>traço</span> e o <span>sufixo</span> da cor temática escolhida.</li>
+        </ul>
+        <div class="container text-center">
+            
+            <div class="col rounded p-2 brd"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="link-primary">Bootstrap - Cores (link-primary / padrão)</a></div>
+            
+            <div class="col rounded p-2 brd"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="link-secondary">Bootstrap - Cores (link-secondary)</a></div>
+
+            <div class="col rounded p-2 brd"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="link-success">Bootstrap - Cores (link-success)</a></div>
+
+            <div class="col rounded p-2 brd"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="link-danger">Bootstrap - Cores (link-danger)</a></div>
+            
+            <div class="col rounded p-2 brd"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="link-warning">Bootstrap - Cores (link-warning)</a></div>
+            
+            <div class="col rounded p-2 brd"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="link-info">Bootstrap - Cores (link-info)</a></div>
+            
+            <div class="col rounded p-2 brd"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="text-light bg-dark">Bootstrap - Cores (link-light)</a></div>
+            
+            <div class="col rounded p-2 brd"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="link-dark">Bootstrap - Cores (link-dark)</a></div>
+            <div class="col rounded p-2 brd"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="text-muted">Bootstrap - Cores (text-muted)</a></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">a classe <b>btn</b> formata a TAG <b>&lt;a&gt;</b> como um <b>botão</b> sendo possível alterar a formatação de <b>cores</b> através da classe <b>btn-(cores)</b>, que será aplicada com um <span>traço</span> e o <span>sufixo</span> da cor temática escolhida.</li>
+        </ul>
+        <div class="container text-center">
+            
+            <div class="col rounded p-2"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="btn btn-primary">Bootstrap - Cores (btn btn-primary)</a></div>
+
+            <div class="col rounded p-2"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="btn btn-secondary">Bootstrap - Cores (btn btn-secondary)</a></div>
+
+            <div class="col rounded p-2"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="btn btn-success">Bootstrap - Cores (btn btn-success)</a></div>
+
+            <div class="col rounded p-2"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="btn btn-danger">Bootstrap - Cores (btn btn-danger)</a></div>
+            
+            <div class="col rounded p-2"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="btn btn-warning">Bootstrap - Cores (btn btn-warning)</a></div>
+            
+            <div class="col rounded p-2"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="btn btn-info">Bootstrap - Cores (btn btn-info)</a></div>
+            
+            <div class="col rounded p-2"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="btn btn-light">Bootstrap - Cores (btn btn-light)</a></div>
+            
+            <div class="col rounded p-2"><a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/" target="_blank" class="btn btn-dark">Bootstrap - Cores (btn btn-dark)</a></div>
+        </div>
+    </div>
+    <hr>
+
+</body>
+
+</html>

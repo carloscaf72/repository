@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link shortcut icon - noctua7 - Interno -->
+    <link rel="shortcut icon" href="/img/isotipo-64.png" type="image/png">
+
+    <!-- Link CSS - Bootstrap - Interno -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <!-- Link CSS - noctua7 - Interno -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- link Icons - Bootstrap - via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- link JS - Bootstrap - Interno -->
+    <script src="/js/bootstrap.min.js" defer></script>
+
+    <title>GRID Layouts</title>
+
+    <style>
+        .h100 {
+            height: 100px;
+        }
+
+        .h300 {
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <img height="48" src="../img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+            
+            <h1 class="col d-flex align-items-center justify-content-center">
+                Sistema de Layouts em GRID
+            </h1>
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <a href="/">
+                        <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                    </a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">O sistema de GRID do Bootstrap 5 usa o <b>flexbox - CSS</b> e elementos de bloco
+                com as classes <span>.container</span> (centraliza o container na página de forma responsiva),
+                <span>.row</span> e <span>.col</span> que possibilitam criar layouts de colunas e alinhar o conteúdo de
+                forma totalmente responsiva.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <section class="container">
+        <h3 class="text-center">classe <b>.col</b> sem especificação de colunas:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Como o Bootstrap trabalha com a divisão virtual do container <b>.row</b> em
+                <span>12 colunas</span>, sempre que os elementos da classe <b>.col</b> não tiverem especificado a
+                quantidade de colunas, o Bootstrap agrupará cada elemento <span>com a mesma largura</span>, preenchendo
+                todo o elemento da classe <b>.row</b>, independente da quantidade de elementos da classe <b>.col</b>.
+            </li>
+        </ul>
+
+        <section class="row text-center align-items-center">
+            <div class="col bg-n7-3 h100">1</div>
+            <div class="col bg-n7-1 h100">2</div>
+            <div class="col bg-n7-3 h100">3</div>
+        </section>
+        <ul class="list-group my-3">
+            <li class="list-group-item">3 elementos da classe <b>.col</b> (sem especificação de colunas) dentro do
+                elemento da classe <b>.row</b>.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <section class="container">
+        <h3 class="text-center">classe <b>.col</b> com especificação de colunas:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Sempre que todos os elementos da classe <b>.col</b> tiverem a especificação da
+                quantidade de colunas, o Bootstrap agrupará cada elemento com a largura específica da quantidade de
+                colunas conforme o indicado na classe <b>.col</b>. Não podendo ultrapassar as 12 colunas virtuais.</li>
+        </ul>
+
+        <section class="row text-center ">
+            <div class="col-3 bg-n7-3 h100">1</div>
+            <div class="col-6 bg-n7-1 h100">2</div>
+            <div class="col-3 bg-n7-3 h100">3</div>
+        </section>
+        <ul class="list-group my-3">
+            <li class="list-group-item">elementos <span>1</span> e <span>3</span> com <b>.col-3</b> e elemento
+                <span>2</span> com <b>.col-9</b>. Totalizando as 12 colunas.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <section class="container">
+        <h3 class="text-center">classe <b>.col</b> com especificação de colunas maior que 12 colunas:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Caso os elementos da classe <b>.col</b> tiverem a especificação da quantidade de
+                colunas que somadas superem as 12 colunas, o Bootstrap criará uma linha virtual empurrando os últimos
+                elementos para baixo.</li>
+        </ul>
+
+        <section class="row text-center ">
+            <div class="col-4 bg-n7-3 h100">1</div>
+            <div class="col-5 bg-n7-1 h100">2</div>
+            <div class="col-4 bg-n7-3 h100">3</div>
+        </section>
+        <ul class="list-group my-3">
+            <li class="list-group-item">elementos <span>1</span> e <span>3</span> com <b>.col-4</b> e elemento
+                <span>2</span> com <b>.col-5</b>. Totalizando 13 colunas.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <section class="container">
+        <h3 class="text-center">classe <b>.col</b> com e sem especificação de colunas:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Quando <b>um ou mais</b> elementos da classe <b>.col</b> tiver especificado uma
+                quantidade de colunas e houver mais elementos da classe <b>.col</b> no container <b>.row</b> basta
+                deixar os demais elementos <b>.col</b> sem especificação e o Bootstrap preencherá o restante do
+                container <b>.row</b> com a divisão exata na largura dos elementos restantes da classe <b>.col.</b></li>
+        </ul>
+
+        <section class="row text-center ">
+            <div class="col bg-n7-3 h100">1</div>
+            <div class="col-7 bg-n7-1 h100">2</div>
+            <div class="col bg-n7-3 h100">3</div>
+        </section>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Acima o elemento 2 está com <span>7 colunas</span> e, neste caso, sobram 5
+                colunas para preencher as 12 colunas e como não existe uma classe <b>.col-2.5</b> basta deixar os demais
+                elementos <b>.col</b> (1 e 3) sem especificação e o Bootstrap fará a divisão desses elementos com as
+                larguras iguais, completando o container <b>.row</b>.</li>
+        </ul>
+        <section class="row text-center ">
+            <div class="col bg-n7-3 h100">1</div>
+            <div class="col-3 bg-n7-1 h100">2</div>
+            <div class="col-6 bg-n7-5 text-n7-cinza h100">3</div>
+            <div class="col bg-n7-3 h100">4</div>
+        </section>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Acima o elemento 2 está com <span>3 colunas</span> e o elemento 3 está com
+                <span>6 colunas</span>, neste caso, sobram 3 colunas para preencher as 12 colunas e como não existe uma
+                classe <b>.col-1.5</b> basta deixar os demais elementos <b>.col</b> (1 e 4) sem especificação e o
+                Bootstrap fará a divisão desses elementos com as larguras iguais, completando o container <b>.row</b>.
+            </li>
+        </ul>
+    </section>
+    <hr>
+
+    <section class="container">
+        <h3 class="text-center">criando <span>layouts de páginas web</span> com o sistema <b>GRID</b> do Bootstrap:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para criarmos layouts de páginas usando o sistema de <b>GRID</b> podemos
+                especificar as qualtidades de colunas de cada elemento para que sejam ajustados conforme o layout
+                desejado.</li>
+        </ul>
+
+        <section class="row text-center">
+            <div class="col-12 bg-n7-3 h100">1</div>
+            <div class="col-3 bg-n7-1 h100">2</div>
+            <div class="col-9 bg-n7-5 text-n7-cinza h100">3</div>
+            <div class="col-12 bg-n7-3 h100">4</div>
+        </section>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Acima o elemento 1 e 4 estão com <span>12 colunas</span> cada, preenchendo a
+                totalidade do container <b>.row</b>. O elemento 2 está com <span>3 colunas</span>, totalizando as 12
+                colunas e, portanto, na mesma linha. Com isso criamos um layout com o elemento 1 como
+                <b>&lt;header&gt;</b>, o elemento 4 como <b>&lt;footer&gt;</b>, o elemento 2 como um <b>&lt;nav&gt;</b>
+                e o elemento 3 como o <b>&lt;main&gt;</b>.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <section class="container">
+        <h3 class="text-center">criando <span>layouts <b>Mobile First</b> de páginas web</span> com o sistema
+            <b>GRID</b> do Bootstrap:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O Bootstrap trabalha com o design <b>Mobile First</b> para criação dos layouts
+                de páginas e sistemas web, por isso os layouts devem ser pensados como feitos para <b>celulares</b> e
+                prover as modificações necessárias para as demais resoluções de tela com os <span>Breackpoints</span>.
+            </li>
+        </ul>
+
+        <section class="row text-center">
+            <div class="col-12 bg-n7-3 h100">1</div>
+            <div class="col-12 col-md-3 bg-n7-1 h100">2</div>
+            <div class="col-12 col-md-9 bg-n7-5 text-n7-cinza h100">3</div>
+            <div class="col-12 bg-n7-3 h100">4</div>
+        </section>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Acima temos todos os elementos (1 a 4) com <b>.col-12</b> e os elementos
+                <b>2</b> e <b>3</b> estão também com as classes <b>.col-md-3</b> e <b>.col-md-9</b>, respectivamente.
+                Isso faz com que a partir de <b>768px</b> (limite da largura do breakpoint <b>lg</b>) os elementos 2 e 3
+                modifiquem as quantidades de colunas ficando numa só linha, um ao lado do outro, preenchendo as 12
+                colunas do container <b>.row</b></li>
+        </ul>
+    </section>
+    <hr>
+
+    <section class="container">
+        <h3 class="text-center">criando <span>linhas</span> com o diferentes quantidades de colunas no Bootstrap:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Todos os elementos da classe <b>.col</b> sem especificação serão agrupados pelo
+                Bootstrap de forma a ocuparem todo o container a que pertencem, <span>igualando suas larguras</span>.
+            </li>
+        </ul>
+
+        <section class="row text-center">
+            <div class="col bg-n7-3 h100">1</div>
+            <div class="col bg-n7-1 h100">2</div>
+            <div class="col bg-n7-3 h100">3</div>
+            <div class="col bg-n7-1 h100">4</div>
+            <div class="col bg-n7-3 h100">5</div>
+        </section>
+        <section class="row text-center">
+            <div class="col bg-n7-3 h100">1</div>
+            <div class="col bg-n7-1 h100">2</div>
+            <div class="col bg-n7-3 h100">3</div>
+            <div class="col bg-n7-1 h100">4</div>
+            <div class="col bg-n7-3 h100">5</div>
+            <div class="col bg-n7-1 h100">6</div>
+            <div class="col bg-n7-3 h100">7</div>
+        </section>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Acima o <span>1º container</span> da classe <b>.row</b> tem 5 elementos da
+                classe <b>.col</b> <em>sem especificação</em> e o <span>2º container</span> da classe <b>.row</b> tem 7
+                elementos da classe <b>.col</b> <em>sem especificação</em>.</li>
+        </ul>
+    </section>
+    <hr>
+
+</body>
+
+</html>

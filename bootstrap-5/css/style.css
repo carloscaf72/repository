@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'IndieFlower';
+    src: url('../fonts/IndieFlower-Regular.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('../fonts/Fredoka/Fredoka-VariableFont_wdth\,wght.ttf') format(true);
+}
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fonts/idroid.otf') format(opentype);
+}
+
+:root {
+    --cor-gray: #D0CECE;
+    --cor-red: #FF0000;
+    --cor1: #68AFD9;
+    --cor2: #2798D9;
+    --cor3: #4D819F;
+    --cor4: #19628C;
+    --cor5: #103E59;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-indieFlower: 'IndieFlower', Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Fredoka', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+.text-n7-cinza {
+    color: var(--cor-gray);
+}
+
+.text-n7-red {
+    color: var(--cor-red);
+}
+
+.text-n7-1 {
+    color: var(--cor1);
+}
+
+.text-n7-2 {
+    color: var(--cor2);
+}
+
+.text-n7-3 {
+    color: var(--cor3);
+}
+
+.text-n7-4 {
+    color: var(--cor4);
+}
+
+.text-n7-5 {
+    color: var(--cor5);
+}
+
+.bg-n7-cinza {
+    background-color: var(--cor-gray);
+    color: var(--cor-red);
+}
+
+.bg-n7-red {
+    background-color: var(--cor-red);
+    color: var(--cor-gray);
+}
+
+.bg-n7-1 {
+    background-color: var(--cor1);
+}
+
+.bg-n7-2 {
+    background-color: var(--cor2);
+}
+
+.bg-n7-3 {
+    background-color: var(--cor3);
+}
+
+.bg-n7-4 {
+    background-color: var(--cor4);
+}
+
+.bg-n7-5 {
+    background-color: var(--cor5);
+}
+
+.bg-n7-cinza {
+    background-color: var(--cor-gray);
+    color: var(--cor-red);
+}
+
+.fs-n7-16 {
+    font-size: 16px;
+}
+
+.fs-n7-32 {
+    font-size: 32px;
+}
+
+.fs-n7-64 {
+    font-size: 64px;
+}
+
+.fs-n7-80 {
+    font-size: 80px;
+}
+
+.fs-n7-96 {
+    font-size: 96px;
+}
+
+.btn-n7-5 {
+    background-color: var(--cor5);
+    color: var(--cor-gray);
+}
+
+.btn-n7-5:hover {
+    background-color: var(--cor4);
+    /* opacity: 90%; */
+    color: white;
+}
+
+b,
+span {
+    color: var(--cor2);
+}
+
+.sqr {
+    background-color: var(--cor3);
+    color: white;
+    padding: 20px;
+    border: solid 1px var(--cor1);
+}
+
+.rect {
+    height: 200px;
+    background-color: var(--cor-gray);
+}
+
+.brd {
+    border: 1px solid black;
+    height: 50px;
+    margin: 2px;
+}
+
+.qdr {
+    height: 50px;
+    width: 100%;
+    background-color: var(--cor3);
+}
+

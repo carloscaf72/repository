@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- link shortcut icon - noctua7 - Interno -->
+     <link rel="shortcut icon" href="/img/isotipo-64.png" type="image/png">
+
+     <!-- Link CSS - Bootstrap - Interno -->
+     <link rel="stylesheet" href="/css/bootstrap.min.css">
+     
+     <!-- Link CSS - noctua7 - Interno -->
+     <link rel="stylesheet" href="/css/style.css">
+ 
+     <!-- link Icons - Bootstrap - via CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+ 
+     <!-- link JS - Bootstrap - Interno -->
+     <script src="/js/bootstrap.min.js" defer></script>
+
+    <title>Campos de Checagem</title>
+</head>
+
+<body>
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <img height="48" src="/img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+            
+            <h1 class="col d-flex align-items-center justify-content-center">
+                Campos de Checagem
+            </h1>
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <a href="/">
+                        <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                    </a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">O Bootstrap contém diversas classes para <b>formatar formulários</b>, melhorando seu <b>visual</b> em relação aos formulários HTML padrão.</li>
+        </ul>
+    </section>
+    <hr>
+    
+    <div class="container">
+        <h3 class="text-center"><b>form-check-label</b> & <b>form-check-input</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Na <b>documentação</b> é sugerido que cada grupo de componentes <b>label + checkbox</b> e <b>label + radio</b> sejam colocados agrupados em um <b>único elemento de bloco</b> (<span>div</span>) com margem inferior de 3 (<span>mb-3</span>).</li>
+            <li class="list-group-item">A classe <b>form-check-label</b> estiliza os elementos <b>&lt;lable&gt;</b> e a classe <b>form-check-input</b> estiliza os elementos <b>&lt;checkbox&gt;</b> e <b>&lt;radio&gt;</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>checkbox</b> & <b>radio</b></h3>
+        <h4 class="text-center">(<span>form-check-label</span> & <span>form-check-input</span>)</h4>
+    </div>
+    
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+            
+                    <div class="form-check my-1">
+                        <label for="id-cafeManha" class="form-check-label">Café da Manhã</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-cafeManha">
+                    </div>
+                    
+                    <div class="form-check my-1">
+                        <label for="id-almoco" class="form-check-label">Almoço</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-almoco">
+                    </div>
+                    
+                    <div class="form-check my-1">
+                        <label for="id-jantar" class="form-check-label">Jantar</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-jantar">
+                    </div>
+                    <hr>
+
+                    <div class="form-check my-1">
+                        <label for="id-manha" class="form-check-label">Manhã</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-manha" name="radioOption">
+                    </div>
+
+                    <div class="form-check my-1">
+                        <label for="id-tarde" class="form-check-label">Tarde</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-tarde" name="radioOption">
+                    </div>
+
+                    <div class="form-check my-1">
+                        <label for="id-noite" class="form-check-label">Noite</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-noite"  name="radioOption">
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do form-check-label e form-check-input -->
+
+    <div class="container">
+        <h3 class="text-center"><b>form-switch</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>form-switch</b> renderiza os elementos <b>checkbox</b> e <b>radio</b> com aparência de <b>botões horizontais</b>. Ela deve ser <span>colocada</span> no <b>elemento de bloco</b> que envolve os componentes.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>checkbox</b> & <b>radio</b></h3>
+        <h4 class="text-center">(<span>form-switch</span>)</b></h4>
+    </div>
+    
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+            
+                    <div class="form-check my-1 form-switch">
+                        <label for="id-cafeManha1" class="form-check-label">Café da Manhã</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-cafeManha1">
+                    </div>
+                    
+                    <div class="form-check my-1 form-switch">
+                        <label for="id-almoco1" class="form-check-label">Almoço</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-almoco1">
+                    </div>
+                    
+                    <div class="form-check my-1 form-switch">
+                        <label for="id-jantar1" class="form-check-label">Jantar</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-jantar1">
+                    </div>
+                    <hr>
+
+                    <div class="form-check form-switch my-1">
+                        <label for="id-manha1" class="form-check-label">Manhã</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-manha1" name="radioOption1">
+                    </div>
+
+                    <div class="form-check my-1 form-switch">
+                        <label for="id-tarde1" class="form-check-label">Tarde</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-tarde1" name="radioOption1">
+                    </div>
+
+                    <div class="form-check my-1 form-switch">
+                        <label for="id-noite1" class="form-check-label">Noite</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-noite1"  name="radioOption1">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do form-switch -->
+
+    <div class="container">
+        <h3 class="text-center"><b>form-check-inline</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>form-check-inline</b> renderiza os elementos <b>checkbox</b> e <b>radio</b> na <b>horizontal</b>. Ela deve ser <span>colocada</span> no <b>elemento de bloco</b> que envolve os componentes.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>checkbox</b> & <b>radio</b></h3>
+        <h4 class="text-center">(<span>form-check-inline</span>)</b></h4>
+    </div>
+    
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                                
+                    <div class="form-check my-1 form-check-inline">
+                        <label for="id-cafeManha2" class="form-check-label">Café da Manhã</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-cafeManha2">
+                    </div>
+                    
+                    <div class="form-check my-1 form-check-inline">
+                        <label for="id-almoco2" class="form-check-label">Almoço</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-almoco2">
+                    </div>
+                    
+                    <div class="form-check my-1 form-check-inline">
+                        <label for="id-jantar2" class="form-check-label">Jantar</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-jantar2">
+                    </div>
+                    <hr>
+
+                    <div class="form-check my-1 form-check-inline">
+                        <label for="id-manha2" class="form-check-label">Manhã</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-manha2" name="radioOption2">
+                    </div>
+
+                    <div class="form-check my-1 form-check-inline">
+                        <label for="id-tarde2" class="form-check-label">Tarde</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-tarde2" name="radioOption2">
+                    </div>
+
+                    <div class="form-check my-1 form-check-inline">
+                        <label for="id-noite2" class="form-check-label">Noite</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-noite2"  name="radioOption2">
+                    </div>
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do form-check-inline -->
+
+    <div class="container">
+        <h3 class="text-center"><b>form-check-reverse</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>form-check-reverse</b> renderiza os elementos <b>checkbox</b> e <b>radio</b> do lado <b>direito</b> do componente pai. Ela deve ser <span>colocada</span> no <b>elemento de bloco</b> que envolve os componentes.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>checkbox</b> & <b>radio</b></h3>
+        <h4 class="text-center">(<span>form-check-reverse</span>)</b></h4>
+    </div>
+    
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                                
+                    <div class="form-check my-1 form-check-reverse">
+                        <label for="id-cafeManha3" class="form-check-label">Café da Manhã</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-cafeManha3">
+                    </div>
+                    
+                    <div class="form-check my-1 form-check-reverse">
+                        <label for="id-almoco2" class="form-check-label">Almoço</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-almoco3">
+                    </div>
+                    
+                    <div class="form-check my-1 form-check-reverse">
+                        <label for="id-jantar3" class="form-check-label">Jantar</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-jantar2">
+                    </div>
+                    <hr>
+
+                    <div class="form-check my-1 form-check-reverse">
+                        <label for="id-manha3" class="form-check-label">Manhã</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-manha3" name="radioOption2">
+                    </div>
+
+                    <div class="form-check my-1 form-check-reverse">
+                        <label for="id-tarde3" class="form-check-label">Tarde</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-tarde3" name="radioOption2">
+                    </div>
+
+                    <div class="form-check my-1 form-check-reverse">
+                        <label for="id-noite3" class="form-check-label">Noite</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-noite3"  name="radioOption2">
+                    </div>
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do form-check-reverse -->
+
+    <div class="container">
+        <h3 class="text-center"><b>btn-check</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>btn-check</b> renderiza os elementos <b>checkbox</b> e <b>radio</b> como botão marcável, ou seja, quando clicado torna o controle <b>mais escuro</b>. A classe de cores (<span>btn-[cores]</span>) deve ser colocada no label e ter o <b>id</b> do <b>input</b> com o mesmo valor no <b>for</b> da label.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>checkbox</b> & <b>radio</b></h3>
+        <h4 class="text-center">(<span>btn-check</span>)</b></h4>
+    </div>
+    
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    
+                    <h4 class="text-center my-1">checkbox</h4>
+                    <div class="form-check my-1">
+                        <input type="checkbox" class="btn-check mb-1" id="id-cafeManha4">
+                        <label for="id-cafeManha4" class="btn btn-primary">Café da Manhã</label>
+                    </div>
+                    
+                    <div class="form-check my-1">
+                        <input type="checkbox" class="btn-check mb-1" id="id-almoco4">
+                        <label for="id-almoco4" class="btn btn-success">Almoço</label>
+                    </div>
+                    
+                    <div class="form-check my-1">
+                        <input type="checkbox" class="btn-check mb-1" id="id-jantar4">
+                        <label for="id-jantar4" class="btn btn-danger">Jantar</label>
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">checkbox (outline)</h4>
+                    <div class="form-check my-1">
+                        <input type="checkbox" class="btn-check mb-1" id="id-cafeManha5">
+                        <label for="id-cafeManha5" class="btn btn-outline-primary">Café da Manhã</label>
+                    </div>
+                    
+                    <div class="form-check my-1">
+                        <input type="checkbox" class="btn-check mb-1" id="id-almoco5">
+                        <label for="id-almoco5" class="btn btn-outline-success">Almoço</label>
+                    </div>
+                    
+                    <div class="form-check my-1">
+                        <input type="checkbox" class="btn-check mb-1" id="id-jantar5">
+                        <label for="id-jantar5" class="btn btn-outline-danger">Jantar</label>
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">radio</h4>
+                    <div class="form-check my-1">
+                        <input type="radio" class=" btn-check mb-1" id="id-manha4" name="radioOption3">
+                        <label for="id-manha4" class="btn btn-primary">Manhã</label>
+                    </div>
+
+                    <div class="form-check my-1">
+                        <input type="radio" class=" btn-check mb-1" id="id-tarde4" name="radioOption3">
+                        <label for="id-tarde4" class="btn btn-success">Tarde</label>
+                    </div>
+
+                    <div class="form-check my-1">
+                        <input type="radio" class=" btn-check mb-1" id="id-noite4"  name="radioOption3">
+                        <label for="id-noite4" class="btn btn-danger">Noite</label>
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">radio (outline)</h4>
+                    <div class="form-check my-1">
+                        <input type="radio" class=" btn-check mb-1" id="id-manha5" name="radioOption3">
+                        <label for="id-manha5" class="btn btn-outline-primary">Manhã</label>
+                    </div>
+
+                    <div class="form-check my-1">
+                        <input type="radio" class=" btn-check mb-1" id="id-tarde5" name="radioOption3">
+                        <label for="id-tarde5" class="btn btn-outline-success">Tarde</label>
+                    </div>
+
+                    <div class="form-check my-1">
+                        <input type="radio" class=" btn-check mb-1" id="id-noite5"  name="radioOption3">
+                        <label for="id-noite5" class="btn btn-outline-danger">Noite</label>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do btn-check -->
+
+    <div class="container">
+        <h3 class="text-center"><b>Atributos</b> do elemento <b>checkbox</b> & <b>radio</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Alguns <b>atributos</b> HTML dos elementos têm <b>sua própria renderização</b>
+            no Bootstrap.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><span>disabled</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O atributo <b>disabled</b> torna o controle <b>desabilitado</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+
+                    <div class="form-check my-1">
+                        <label for="id-cafeManha6" class="form-check-label">Café da Manhã</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-cafeManha6">
+                    </div>
+                    
+                    <div class="form-check my-1">
+                        <label for="id-almoco6" class="form-check-label">Almoço</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-almoco6">
+                    </div>
+                    
+                    <div class="form-check my-1">
+                        <label for="id-jantar6" class="form-check-label">Jantar (cancelado)</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-jantar6" disabled>
+                    </div>
+                    <hr>
+
+                    <div class="form-check my-1">
+                        <label for="id-manha6" class="form-check-label">Manhã</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-manha6" name="radioOption">
+                    </div>
+
+                    <div class="form-check my-1">
+                        <label for="id-tarde6" class="form-check-label">Tarde</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-tarde6" name="radioOption">
+                    </div>
+
+                    <div class="form-check my-1">
+                        <label for="id-noite6" class="form-check-label">Noite (cancelado)</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-noite6"  name="radioOption" disabled>
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">checkbox</h4>
+                    <div class="form-check my-1">
+                        <input type="checkbox" class="btn-check mb-1" id="id-desabilitado" disabled>
+                        <label for="id-desabilitado" class="btn btn-primary">Desabilitado</label>
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">checkbox (outline)</h4>
+                    <div class="form-check my-1">
+                        <input type="checkbox" class="btn-check mb-1" id="id-desabilitado1" disabled>
+                        <label for="id-desabilitado1" class="btn btn-outline-primary">Desabilitado</label>
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">radio</h4>
+                    <div class="form-check my-1">
+                        <input type="radio" class=" btn-check mb-1" id="id-cancelado" name="radioOption3" disabled>
+                        <label for="id-cancelado" class="btn btn-primary">Cancelado</label>
+                    </div>
+                    <hr>
+
+                    <h4 class="text-center my-1">radio (outline)</h4>
+                    <div class="form-check my-1">
+                        <input type="radio" class=" btn-check mb-1" id="id-cancelado1" name="radioOption3" disabled>
+                        <label for="id-cancelado1" class="btn btn-outline-primary">Cancelado</label>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do atributo - disabled -->
+
+    <div class="container">
+        <h3 class="text-center"><span>name=""</span> & <span>value=""</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Os atributos <b>name</b> & <b>value</b> trabalham <span>em conjunto</span>. No <b>checkbox</b> cada elemento terá um <b>name</b> diferente representando cada escolha, já que geralmente tem mais de uma opção e pode ser feita mais de uma escolha, e um <b>value</b> que representa o <span>valor</span> do campo escolhido que será enviado ao servidor para <span>tratamento</span> ou <span>guarda</span> no <b>Banco de Dados</b>. No <b>radio</b> o <b>name</b> é único em todas as opções para poder escolher <span>somente uma delas</span>, desmarcando outra que tenha sido marcada dentro das opções fornecidas e cada uma com um <b>value</b> diferente com o <b>valor</b> que será enviado ao Banco de Dados para tratamento ou guarda.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="?" method="get">
+
+                    <div class="form-check my-1">
+                        <label for="id-entrada" class="form-check-label">Entrada</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-entrada" name="entrada" value="sim">
+                    </div>
+                    
+                    <div class="form-check my-1">
+                        <label for="id-p_principal" class="form-check-label">Prato Principal</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-p_principal" name="pratoPrincipal" value="sim">
+                    </div>
+                    
+                    <div class="form-check my-1">
+                        <label for="id-sobremesa" class="form-check-label">Sobremesa</label>
+                        <input type="checkbox" class="form-check-input mb-1" id="id-sobremesa" name="sobremesa" value="sim">
+                    </div>
+                    <hr>
+
+                    <div class="form-check my-1">
+                        <label for="id-manha7" class="form-check-label">Manhã</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-manha7" name="turno" value="manha">
+                    </div>
+
+                    <div class="form-check my-1">
+                        <label for="id-tarde7" class="form-check-label">Tarde</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-tarde7" name="turno" value="tarde">
+                    </div>
+
+                    <div class="form-check my-1">
+                        <label for="id-noite7" class="form-check-label">Noite</label>
+                        <input type="radio" class="form-check-input mb-1" id="id-noite7"  name="turno" value="noite">
+                    </div>
+
+                    <div class="m-3"><input type="submit" value="Enviar" title="Enviar formulário" class="btn btn-n7-5"></div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do atributo - disabled -->
+
+    <!-- Exemplos - apagar depois de refazer -->
+    
+</body>
+</html>

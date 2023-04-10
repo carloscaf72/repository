@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- link shortcut icon - noctua7 - Interno -->
+     <link rel="shortcut icon" href="/img/isotipo-64.png" type="image/png">
+
+     <!-- Link CSS - Bootstrap - Interno -->
+     <link rel="stylesheet" href="/css/bootstrap.min.css">
+     
+     <!-- Link CSS - noctua7 - Interno -->
+     <link rel="stylesheet" href="/css/style.css">
+ 
+     <!-- link Icons - Bootstrap - via CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+ 
+     <!-- link JS - Bootstrap - Interno -->
+     <script src="/js/bootstrap.min.js" defer></script>
+
+    <title>Posicionamento</title>
+</head>
+
+<body>
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <img height="48" src="/img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+            
+            <h1 class="col d-flex align-items-center justify-content-center">
+                Posicionamento
+            </h1>
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <a href="/">
+                        <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                    </a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container">
+
+        <ul class="list-group my-3">
+            <li class="list-group-item">O Bootstrap disponibiliza várias classes que trabalham o <b>Posicionamento dos Componentes</b>.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">Classes <b>fixed-top</b> & <b>fixed-bottom</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>fixed-top</b> posiciona o elemento no <b>topo</b> da <span>viewport</span> e a classe <b>fixed-bottom</b> posiciona o elemento na <b>base</b> da <span>viewport</span>.</li>
+        </ul>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Ambas as classes retiram o elemento do fluxo do documento como se estivessem flutuando na página e isso faz com que os demais elementos no entorno passem por baixo, podendo ficar parcial ou totalmente encobertos. <a href="/aula-17/fixed/" class="link-danger text-decoration-none" target="_blank">exemplo</a></li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">Classes <b>sticky-top</b> & <b>sticky-bottom</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>sticky-top</b> posiciona o elemento no <b>topo</b> da <span>viewport</span> e a classe <b>sticky-bottom</b> posiciona o elemento na <b>base</b> da <span>viewport</span> após a rolagem da página, ou seja, o elemento somente ficará <b>fixo no topo ou na base</b> quando alcançar a <span>posição estabelicida nas classes</span>.</li>
+        </ul>
+        <ul class="list-group my-3">
+            <li class="list-group-item">As classes <b>não</b> retiram o elemento do fluxo do documento e somente os deixam fixos nas posições estabelecidas após rolagem da página. <a href="/aula-17/sticky/" class="link-danger text-decoration-none" target="_blank">exemplo</a></li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">Classe <b>vstack</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>vstack</b> cria uma <b>pilha vertical</b> sendo possível aplicar a classe <b>gap</b> para o espaçamento entre os elementos.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 border border-dark rounded vstack gap-2">
+        <div class="p-4 bg-n7-1"></div>
+        <div class="p-4 bg-n7-2"></div>
+        <div class="p-4 bg-n7-3"></div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">Classe <b>hstack</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>hstack</b> cria uma <b>pilha horizontal</b> transformando o elemento em um tipo de <b>flexbox</b> e seus <b>filhos</b> em elementos <b>inline-block</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 border border-dark rounded hstack gap-2">
+        <div class="p-4 bg-n7-1"></div>
+        <div class="p-4 bg-n7-2"></div>
+        <div class="p-4 bg-n7-3"></div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">É possível no elemento com a classe <b>hstack</b> colocar uma linha vertical com um elemento com a classe <b>vr</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 border border-dark rounded hstack gap-2">
+        <div class="vr"></div>
+        <div class="p-4 bg-n7-1"></div>
+        <div class="vr"></div>
+        <div class="p-4 bg-n7-2"></div>
+        <div class="vr"></div>
+        <div class="p-4 bg-n7-3"></div>
+        <div class="vr"></div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">Classe <b>position</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>positon</b> trabalha com as variações <b>absolute</b>, <b>fixed</b>, <b>relative</b>, <b>static</b> e <b>sticky</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>positon-absolute</b> retira o elemento do fluxo do documento, sendo possível determinar sua posição com as classes de direção: <b>top</b>, <b>end</b>, <b>bottom</b> e <b>start</b> + <b>traço</b> (-) + numeros: <b>0</b> - <b>50</b> - <b>100</b> - que representam a porcentagem em relação à borda da página.</li>
+            <li class="list-group-item">Esta posição será em relação <span>ao elemento de primeira hierarquia</span> mais alta (<b>pai</b>) que estiver com alguma <b>position</b> que não seja a <b>static</b> (padrão).</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 border border-dark rounded">
+        <div class="p-4 my-1 bg-n7-1"></div>
+        <div class="p-4 my-1 bg-n7-2"></div>
+        <div class="p-4 my-1 bg-n7-3"></div>
+    </div>
+    <div class="container py-2 border border-dark rounded position-relative">
+        <div class="p-4 my-1 bg-n7-1"></div>
+        <div class="p-4 my-1 bg-n7-2 position-absolute top-0 end-0">top-0<br>end-0 </div>
+        <div class="p-4 my-1 bg-n7-3"></div>
+    </div>
+    <div class="container py-2 border border-dark rounded position-relative">
+        <div class="p-4 my-1 bg-n7-1"></div>
+        <div class="p-4 my-1 bg-n7-2 position-absolute bottom-0 start-0">bottom-0<br>start-0 </div>
+        <div class="p-4 my-1 bg-n7-3"></div>
+    </div>
+    <hr>
+
+</body>
+</html>

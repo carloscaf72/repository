@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link shortcut icon - noctua7 - Interno -->
+    <link rel="shortcut icon" href="/img/isotipo-64.png" type="image/png">
+
+    <!-- Link CSS - Bootstrap - Interno -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <!-- Link CSS - noctua7 - Interno -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- link Icons - Bootstrap - via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- link JS - Bootstrap - Interno -->
+    <script src="/js/bootstrap.min.js" defer></script>
+    
+    <title>Colunas - Layouts</title>
+</head>
+
+<body>
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <img height="48" src="../img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+            
+            <h1 class="col d-flex align-items-center justify-content-center">
+                Formatação de Colunas
+            </h1>
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <a href="/">
+                        <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                    </a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">Os elementos de bloco da classe <b>.col</b> dentro de um container da classe
+                <b>.row</b> podem ser alinhados na <span>Vertical</span> ou na <span>Horizontal</span> conforme a
+                necessidade e layout da página. Para isso o Bootstrap tem várias classes que possibilitam e facilitam
+                este alinhamento.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <h2 class="text-center bg-n7-3 text-n7-cinza p-2">Alinhamento Vertical</h2>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para alinhamento Vertical no container da classe <b>.row</b> acrescentamos a
+                classe <b>align-items-start</b> (alinhamento superior), <b>align-items-center</b> (alinhamento central)
+                e <b>align-items-end</b> (alinhamento inferior).</li>
+        </ul>
+        <div class="row align-items-start rect">
+            <div class="col-3 sqr">elemento 1</div>
+            <div class="col-3 sqr">elemento 2</div>
+            <div class="col-3 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">class="<b>align-items-start</b>"</li>
+        </ul>
+        <div class="row align-items-center rect">
+            <div class="col-3 sqr">elemento 1</div>
+            <div class="col-3 sqr">elemento 2</div>
+            <div class="col-3 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">class="<b>align-items-start</b>"</li>
+        </ul>
+        <div class="row align-items-end rect">
+            <div class="col-3 sqr">elemento 1</div>
+            <div class="col-3 sqr">elemento 2</div>
+            <div class="col-3 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">class="<b>align-items-start</b>"</li>
+        </ul>
+
+    </div>
+    <hr>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">Caso o conteúdo de qualquer elemento <span>ultrapassar a altura</span> do
+                container <b>.row</b>. Não será possível o alinhamento Vertical.</li>
+        </ul>
+        <div class="row align-items-start rect">
+            <div class="col-3 sqr">elemento 1
+                <p>Este é um parágrafo de exemplo para o elemento 1</p>
+            </div>
+            <div class="col-3 sqr">elemento 2</div>
+            <div class="col-3 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">class="<b>align-items-start</b>"</li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">É possível alinharmos cada elemento em uma posição diferente, para isso devemos
+                retirar do container <b>.row</b> a classe <b>align-items-?</b> e colocar em cada um dos elementos
+                <b>.col</b> a classe <b>align-self-start</b> (alinhamento superior), <b>align-self-center</b>
+                (alinhamento central) e <b>align-self-end</b> (alinhamento inferior).</li>
+        </ul>
+
+        <div class="row rect">
+            <div class="col-3 align-self-start sqr">elemento 1</div>
+            <div class="col-3 align-self-center sqr">elemento 2</div>
+            <div class="col-3 align-self-end sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">elemento 1 => class="<b>align-self-start</b>"</li>
+            <li class="list-group-item">elemento 2 => class="<b>align-self-center</b>"</li>
+            <li class="list-group-item">elemento 3 => class="<b>align-self-end</b>"</li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">É possível aplicarmos alinhamento Vertical para diferentes tamanhos de resolução com os <b>infixos de breakpoints</b>. Assim, poderemos configurar alinhamentos diferentes para diferentes dispositivos. Para isso basta inserirmos
+            o infixo desejado à classe <b>align-items-?</b> no container .<b>row.</b></li>
+        </ul>
+
+        <div class="row align-items-xl-center rect">
+            <div class="col-3 sqr">elemento 1</div>
+            <div class="col-3 sqr">elemento 2</div>
+            <div class="col-3 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">class="<b>align-items-xl-center</b>"</li>
+            <li class="list-group-item">a partir de <b>992px</b> os elementos <b>.col</b> ficarão alinhados no <span>centro</span> do container <b>.row</b>.</li>
+        </ul>
+    </div>
+    <hr>
+
+    <h2 class="text-center bg-n7-3 text-n7-cinza p-2">Alinhamento Horizontal</h2>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para alinhamento Horizontal no container da classe <b>.row</b> acrescentamos a classe
+            <b>justify-content-start</b> (alinhamento à esquerda), <b>justify-content-center</b> (alinhamento central) e <b>justify-content-end</b> (alinhamento à direita).</li>
+        </ul>
+
+        <div class="row justify-content-start rect">
+            <div class="col-3 sqr">elemento 1</div>
+            <div class="col-3 sqr">elemento 2</div>
+            <div class="col-3 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">class="<b>justify-content-start</b>" (padrão)</li>
+        </ul>
+
+        <div class="row justify-content-center rect">
+            <div class="col-3 sqr">elemento 1</div>
+            <div class="col-3 sqr">elemento 2</div>
+            <div class="col-3 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">class="<b>justify-content-center</b>"</li>
+        </ul>
+        <div class="row justify-content-end rect">
+            <div class="col-3 sqr">elemento 1</div>
+            <div class="col-3 sqr">elemento 2</div>
+            <div class="col-3 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">class="<b>justify-content-end</b>"</li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">Outras formas de alinhamento Horizontal se dá alterando o posicionamento dos elementos dentro do container. Para isso utilizamos as classes <b>justify-content-between</b>, <b>justify-content-around</b>, e <b>justify-content-evenly</b>.</li>
+        </ul>
+
+        <div class="row justify-content-between rect">
+            <div class="col-3 sqr">elemento 1</div>
+            <div class="col-3 sqr">elemento 2</div>
+            <div class="col-3 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">class="<b>justify-content-between</b>"</li>
+        </ul>
+        <div class="row justify-content-around rect">
+            <div class="col-3 sqr">elemento 1</div>
+            <div class="col-3 sqr">elemento 2</div>
+            <div class="col-3 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">class="<b>justify-content-around</b>"</li>
+        </ul>
+        <div class="row justify-content-evenly rect">
+            <div class="col-3 sqr">elemento 1</div>
+            <div class="col-3 sqr">elemento 2</div>
+            <div class="col-3 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">class="<b>justify-content-evenly</b>"</li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para adicionarmos uma quebra de linha entre os elementos basta colocarmos um elemento de bloco com a classe <b>.w-100</b>.</li>
+        </ul>
+
+        <div class="row justify-content-evenly rect">
+            <div class="col-3 sqr">elemento 1</div>
+            <div class="w-100"></div>
+            <div class="col-3 sqr">elemento 2</div>
+            <div class="col-3 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">elemento 1 => class="<b>col-3</b>"</li>
+            <li class="list-group-item">class="<b>w-100</b>"</li>
+            <li class="list-group-item">elemento 2 => class="<b>col-3</b>"</li>
+            <li class="list-group-item">elemento 3 => class="<b>col-3</b>"</li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos reordenar os elementos no alinhamento Horizontal, para isso basta acrescentarmos nos elementos da classe <b>.col</b> a classe <b>order-x</b>, onde o <b>X</b> pode ser um número que indique a posição a que se quer colocar o elemento, podendo também colocar as palavras <b>last</b> (última posição) e <b>first</b> (primeira posição).</li>
+        </ul>
+
+        <div class="row rect">
+            <div class="col-3 order-3 sqr">elemento 1</div>
+            <div class="col-3 order-1 sqr">elemento 2</div>
+            <div class="col-3 order-2 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">elemento 1 => class="<b>col-3 order-3</b>"</li>
+            <li class="list-group-item">elemento 2 => class="<b>col-3 order-1</b>"</li>
+            <li class="list-group-item">elemento 3 => class="<b>col-3 order-2</b>"</li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">É possível deslocar algum ou todos os elementos utilizando a classe <b>.offset-x</b>, onde o <b>X</b> é o número de colunas a que se quer deslocar. Se a soma da quantidade de agrupamentos de coluna com os deslocamentos <b>offset</b> ultrapassar as 12 colunas do Bootstrap, automaticamente ele "empurrará" o último elemento para baixo, criando uma linha virtual.</li>
+        </ul>
+
+        <div class="row rect">
+            <div class="col-3 offset-1 sqr">elemento 1</div>
+            <div class="col-3 offset-2 sqr">elemento 2</div>
+            <div class="col-3 sqr">elemento 3</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">elemento 1 => class="<b>col-3 offset-1</b>"</li>
+            <li class="list-group-item">elemento 2 => class="<b>col-3 offset-2</b>"</li>
+            <li class="list-group-item">elemento 3 => class="<b>col-3</b>"</li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">Uma outra possibilidade de deslocar elementos horizontalmente é utilizando a classe <b>.m</b> (margem) e definindo o local que será aplicado a margem com as letras <b>s</b> (start - lado esquerdo), <b>e</b> (end - lado direito) ou <b>x</b> (eixo x - ambos os lados), escolhendo um número que será o tamanho desta margem ou colocando <b>auto</b> deixando-a automática e o próprio Bootstrap se encarrega de ajustá-la no container.</li>
+        </ul>
+
+        <div class="row rect">
+            <div class="col-3 sqr">elemento 1</div>
+            <div class="col-3 ms-auto sqr">elemento 2</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">elemento 1 => class="<b>col-3</b>"</li>
+            <li class="list-group-item">elemento 2 => class="<b>col-3 ms-auto</b>"</li>
+            <li class="list-group-item">A margem automática aplicada do lado esquerdo do elemento 2 "<b>ms-auto</b>" possibilita ao Bootstrap tornar essa margem automática, preenchendo todo o espaço vazio e colocando o elemento no canto direito do container.</li>
+        </ul>
+        
+        <div class="row rect">
+            <div class="col-3 mx-auto sqr">elemento 1</div>
+        </div>
+        <ul class="list-group my-3">
+            <li class="list-group-item">elemento 1 => class="<b>col-3 mx-auto</b>"</li>
+            <li class="list-group-item">A margem automática aplicada do eixo-x do elemento 1 "<b>mx-auto</b>" possibilita ao Bootstrap tornar as margens direita e esquerda automática, preenchendo todo o espaço vazio e colocando o elemento no centro do container <b>.row</b>.</li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">O elemento da classe <b>.row</b> é um container com <em>flexbox</em>, portanto, os elementos da classe <b>.col</b> que estiverem fora deste container não serão distribuídos horizontalmente e se comportarão conforme um elemento de bloco empurrando o próximo elemento para a próxima linha. Com isso podemos dimensionar esses elementos especificando a quantidade de colunas, limitado a 12 colunas.</li>
+        </ul>
+
+        <div class="col sqr">elemento 1</div>
+        <div class="col-3 sqr">elemento 2</div>
+        <div class="col-12 sqr">elemento 3</div>
+
+        <ul class="list-group my-3">
+            <li class="list-group-item">elemento 1 => class="<b>col</b>"</li>
+            <li class="list-group-item">elemento 2 => class="<b>col-3</b>"</li>
+            <li class="list-group-item">elemento 3 => class="<b>col-12</b>"</li>
+            <li class="list-group-item">Os elementos estão fora do container com a classe <b>.row</b>. O elemento 1 <span>não define coluna</span> e ocupa <b>100%</b> do container pai (.container), o elemento 2 define <span>3 colunas</span> e ocupa <b>25%</b> do elemento pai, pois <em>3 é 25% de 12</em>. O elemento 3 define <span>o máximo de 12 colunas</span> e ocupa <b>100%</b> do container pai.</li>
+        </ul>
+    </div>
+    <hr>
+
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link shortcut icon - noctua7 - Interno -->
+    <link rel="shortcut icon" href="/img/isotipo-64.png" type="image/png">
+
+    <!-- Link CSS - Bootstrap - Interno -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <!-- Link CSS - noctua7 - Interno -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- link Icons - Bootstrap - via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- link JS - Bootstrap - Interno -->
+    <script src="/js/bootstrap.min.js" defer></script>
+    
+    <title>Tipologia</title>
+</head>
+
+<body>
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <img height="48" src="../img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+            
+            <h1 class="col d-flex align-items-center justify-content-center">
+                Tipologia
+            </h1>
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <a href="/">
+                        <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                    </a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">O Bootstrap renderiza a página com uma fonte padrão sem serifa <b>sans-serif</b>.</li>
+        </ul>
+    </section>
+    <hr>
+    
+    <div class="container">
+        <h3 class="text-center">Renderizando elementos de Título (<b>&lt;h1&gt;</b>, <b>&lt;h2&gt;</b>, <b>&lt;h3&gt;</b>, <b>&lt;h4&gt;</b>, <b>&lt;h5&gt;</b>, <b>&lt;h6&gt;</b>):</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Os elementos de Título <b>&lt;h1&gt;</b> a <b>&lt;h6&gt;</b> são renderizados acompanhando a <span>fonte padrão</span> dos demais itens de texto da página, porém, as características de tamanho são similares ao do <b>HTML</b> comum.
+            </li>
+        </ul>
+
+        <h1>h1 - Título de Nível 01</h1>
+        <h2>h2 - Título de Nível 02</h2>
+        <h3>h3 - Título de Nível 03</h3>
+        <h4>h4 - Título de Nível 04</h4>
+        <h5>h5 - Título de Nível 05</h5>
+        <h6>h6 - Título de Nível 06</h6>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">Deixando <b>outros elementos</b> como aparência de Títulos:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Outros elementos de Texto podem utilizar as <em>classes</em> <b>.h1</b> a <b>.h6</b> para que a formatação seja <b>similar aos elementos de título</b>, porém, sem a <b>semântica do HTML5</b>.
+            </li>
+        </ul>
+
+        <p class="h1">Parágrafo com a class=h1</p>
+        <p class="h2">Parágrafo com a class=h2</p>
+        <p class="h3">Parágrafo com a class=h3</p>
+        <p class="h4">Parágrafo com a class=h4</p>
+        <p class="h5">Parágrafo com a class=h5</p>
+        <p class="h6">Parágrafo com a class=h6</p>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">Aparência de Títulos mais destacados para qualquer TAG com a classe <b>.display</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A <em>classe</em> <b>.display</b> destaca elementos de título assim como os demais elementos de texto, porém, sem a <b>semântica do HTML5</b>.</li>
+        </ul>
+
+        <h1 class="display-1">h1 - display-1</h1>
+        <h2 class="display-2">h2 - display-2</h2>
+        <h3 class="display-3">h3 - display-3</h3>
+        <h4 class="display-4">h4 - display-4</h4>
+        <h5 class="display-5">h5 - display-5</h5>
+        <h6 class="display-6">h6 - display-6</h6>
+        <br>
+        <p class="display-1">Parágrafo - display-1</p>
+        <p class="display-2">Parágrafo - display-2</p>
+        <p class="display-3">Parágrafo - display-3</p>
+        <p class="display-4">Parágrafo - display-4</p>
+        <p class="display-5">Parágrafo - display-5</p>
+        <p class="display-6">Parágrafo - display-6</p>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">Podemos destacar textos com a classe <b>.lead</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A <em>classe</em> <b>.lead</b> destaca elementos de título assim como demais elementos de texto, porém, sem a <b>semântica do HTML5</b>.</li>
+        </ul>
+
+        <p>Parágrafo comum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deserunt eveniet doloremque rem quos temporibus excepturi qui nam molestiae minima, et praesentium tempore officia inventore non laboriosam, ex a quisquam.</p>
+        <p class="lead">Parágrafo com a classe <b>.lead</b>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deserunt eveniet doloremque rem quos temporibus excepturi qui nam molestiae minima, et praesentium tempore officia inventore non laboriosam, ex a quisquam.</p>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">TAGs <b>HTML para texto</b> e como o Bootstrap renderiza:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">As <em>classes</em> para formatação de textos são renderizadas pelo Bootstrap com a fonte padrão.</li>
+        </ul>
+
+        <p class="lead">TAGs com semântica:</p>
+        <p><mark>Texto marcado</mark> - TAG <b>&lt;mark&gt;</b></p>
+        <p><small>Texto pequeno</small> - TAG <b>&lt;small&gt;</b></p>
+        <p><sup>Texto superior</sup> - TAG <b>&lt;sup&gt;</b></p>
+        <p><sub>Texto inferior</sub> - TAG <b>&lt;sub&gt;</b></p>
+        <p><del>Texto excluído</del> - TAG <b>&lt;del&gt;</b></p>
+        <p><ins>Texto recém-inserido</ins> - TAG <b>&lt;ins&gt;</b></p>
+        <p><strong>Texto encorpado</strong> - TAG <b>&lt;strong&gt;</b></p>
+        <p><em>Texto com ênfase</em> - TAG <b>&lt;em&gt;</b></p>
+        
+        <br>
+        <p class="lead">TAGs sem semântica:</p>
+        <p><s>Texto riscado</s> - TAG <b>&lt;s&gt;</b></p>
+        <p><u>Texto sublinhado</u> - TAG <b>&lt;u&gt;</b></p>
+        <p><b style="color: black;">Texto com negrito</b> - TAG <b>&lt;b&gt;</b></p>
+        <p><i>Texto em itálico</i> - TAG <b>&lt;i&gt;</b></p>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">TAG <b>&lt;abbr&gt;</b> para acrônimos e abreviações:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Ao passar o mouse em cima da abreviação será mostrado o significado do texto que deve ficar dentro do atributo <b>title</b>. Esse atributo pode ser colocado em outras TAGs e terá o mesmo efeito, porém, sem a formatação da TAG <b>abbr</b> (sublinhado em forma de pontilhado e com o cursor com ?).</li>
+        </ul>
+        
+        <abbr title="Mongo, Express, React, Node">MERN</abbr><small> - TAG abbr</small>
+        <br>
+        <span title="Confederação Brasileira de Futebol">CBF</span><small> - TAG span</small>
+
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">TAG <b>&lt;blockquote&gt;</b> para citações longas:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A TAG <b>blockquote</b> tem a semântica de uma citação de terceiros, podendo acrescentar uma TAG cite para que possa colocar o autor da citação.</li>
+        </ul>
+
+        <blockquote class="blockquote">
+            <p>Visual padrão do Bootstrap para a TAG <b>&lt;blockquote&gt;</b> (citação). Blá, blá, blá, blá, blá, blá, blá, blá, blá, blá, blá, blá.</p>
+        </blockquote>
+
+        <figure>
+            <blockquote class="blockquote" cite="Fulano de Tal">
+                <p>TAG <b>&lt;blockquote&gt;</b> envolvida pela TAG <b>&lt;figure&gt;</b> com a TAG <b>&lt;figcaption&gt;</b> com a classe <b>blockquote-footer</b> com o conteúdo na TAG <b>&lt;cite&gt;</b> para colocar o autor da citação, junto com o atributo <em class="text-n7-2">cite</em> na TAG <b>&lt;blockquote&gt;</b>. Blá, blá, blá, blá, blá, blá, blá, blá, blá, blá, blá, blá, blá, blá, blá, blá, blá, blá, blá, blá, blá.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer text-end"> <cite>Fulano de Tal</cite>, aspone da galera</figcaption>
+        </figure>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center">Formatação de <b>listas</b> no Bootstrap:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A TAG <b>&lt;ul&gt;</b> e <b>&lt;ol&gt;</b> com a TAG <b>&lt;li&gt;</b>, assim como a TAG <b>&lt;dt&gt;</b> com as TAGs <b>&lt;dt&gt;</b> e <b>&lt;dd&gt;</b> formam listas no HTML5 e podem ser formatadas com o Bootstrap.</li>
+        </ul>
+        <hr>
+
+        <ul class="list-group my-3">
+            <li class="list-group-item">A - Classe <b>list-unstyled</b> na TAG <b>&lt;ul&gt;</b> ou <b>&lt;ol&gt;</b> (sem formatação).</li>
+        </ul>
+        <ul class="list-unstyled bg-light p-1">
+            <li>Item 01</li>
+            <li>Item 02</li>
+            <li>Item 03</li>
+            <li>Item 04</li>
+        </ul>
+        <hr>
+        
+        <ul class="list-group my-3">
+            <li class="list-group-item">B - classe <b>list-inline</b> na TAG <b>&lt;ul&gt;</b> e classe <b>list-inline-item</b> nos Ítens TAG <b>&lt;li&gt;</b> (ítens lado a lado e sem formatação).</li>
+        </ul>
+        <ul class="list-inline bg-light p-1">
+            <li class="list-inline-item">Item 01</li>
+            <li class="list-inline-item">Item 02</li>
+            <li class="list-inline-item">Item 03</li>
+            <li class="list-inline-item">Item 04</li>
+            <li class="list-inline-item">Item 05</li>
+        </ul>
+        <hr>
+        
+        <ul class="list-group my-3">
+            <li class="list-group-item">C - Lista de Definição ou Lista de Descrição <b>&lt;dl&gt;</b> com o Termo <b>&lt;dl&gt;</b> e a Descrição do Termo <b>&lt;dd&gt;</b>.</li>
+        </ul>
+        <dl class="bg-light p-1">
+            <dt>Termo 01</dt>
+            <dd>Descrição do Termo 01</dd>
+            <dt>Termo 02</dt>
+            <dd>Descrição do Termo 02</dd>
+            <dt>Termo 03</dt>
+            <dd>Descrição do Termo 03</dd>
+            <dt>Termo 04</dt>
+            <dd>Descrição do Termo 04</dd>
+        </dl>
+        <hr>
+        
+        <ul class="list-group my-3">
+            <li class="list-group-item">D - classe <b>list-group</b> na TAG <b>&lt;ul&gt;</b> e classe <b>list-group-item</b> nos Ítens da TAG <b>&lt;li&gt;</b> (agrupamento dos Ítens).</li>
+        </ul>
+        <ul class="list-group bg-light p-1">
+            <li class="list-group-item">Item 01</li>
+            <li class="list-group-item">Item 02</li>
+            <li class="list-group-item">Item 03</li>
+            <li class="list-group-item">Item 04</li>
+        </ul>
+        <hr>
+
+        <ul class="list-group my-3">
+            <li class="list-group-item">E - classe <b>list-group</b> na TAG <b>&lt;ul&gt;</b> com a classe <b>list-group-item</b> nas TAGs <b>&lt;li&gt;</b> com a classe <b>active</b> no 1ª ítem (Item ativo).</li>
+        </ul>
+        <ul class="list-group bg-light p-1">
+            <li class="list-group-item active">Item 01</li>
+            <li class="list-group-item">Item 02</li>
+            <li class="list-group-item">Item 03</li>
+            <li class="list-group-item">Item 04</li>
+        </ul>
+        <hr>
+
+        <ul class="list-group my-3">
+            <li class="list-group-item">F - classe <b>list-group</b> na TAG <b>&lt;ul&gt;</b> com o a classe <b>list-group-item</b> nas TAGs <b>&lt;li&gt;</b> com disabled no 1º Ítem (Item desabilitado).</li>
+        </ul>
+        <ul class="list-group bg-light p-1">
+            <li class="list-group-item disabled">Item 01</li>
+            <li class="list-group-item">Item 02</li>
+            <li class="list-group-item">Item 03</li>
+            <li class="list-group-item">Item 04</li>
+        </ul>
+        <hr>
+
+        <ul class="list-group my-3">
+            <li class="list-group-item">G - classe <b>list-group</b> na TAG <b>&lt;div&gt;</b> e as classes <b>list-group-item</b> e <b>list-group-item-action</b> nas TAGs <b>&lt;a&gt;</b>.</li>
+        </ul>
+        <div class="list-group bg-light p-1">
+            <a href="#" class="list-group-item list-group-item-action">Item 01</a>
+            <a href="#" class="list-group-item list-group-item-action">Item 02</a>
+            <a href="#" class="list-group-item list-group-item-action">Item 03</a>
+            <a href="#" class="list-group-item list-group-item-action">Item 04</a>
+        </div>
+        <hr>
+
+        <ul class="list-group my-3">
+            <li class="list-group-item">H - classe <b>list-group</b> na TAG <b>&lt;div&gt;</b> e as classes <b>list-group-item</b> e <b>list-group-item-action</b> nas TAGs <b>&lt;button&gt;</b>.</li>
+        </ul>
+        <div class="list-group bg-light p-1">
+            <button type="button" class="list-group-item list-group-item-action">Item 01</button>
+            <button type="button" class="list-group-item list-group-item-action">Item 02</button>
+            <button type="button" class="list-group-item list-group-item-action">Item 03</button>
+            <button type="button" class="list-group-item list-group-item-action">Item 04</button>
+        </div>
+        <hr>
+
+        <ul class="list-group my-3">
+            <li class="list-group-item">I - classe <b>list-group</b> e e <b>list-group-flush</b> na TAG <b>&lt;ul&gt;</b> e a classe <b>list-group-item</b> nas TAGs <b>&lt;li&gt;</b>(Formatação limpa).</li>
+        </ul>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Item 01</li>
+            <li class="list-group-item">Item 02</li>
+            <li class="list-group-item">Item 03</li>
+            <li class="list-group-item">Item 04</li>
+        </ul>
+        <hr>
+
+        <ul class="list-group my-3">
+            <li class="list-group-item">J - classe <b>list-group</b> na TAG <b>&lt;ul&gt;</b> com  as classes <b>list-group-item</b> e <b>list-group-item-action</b> e <b>list-group-item-color?</b> na TAG <b>&lt;li&gt;</b>.</li>
+        </ul>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action">01 (vazio)</li>
+            <li class="list-group-item list-group-item-action list-group-item-primary">02 (primary)</li>
+            <li class="list-group-item list-group-item-action list-group-item-secondary">03 (secondary)</li>
+            <li class="list-group-item list-group-item-action list-group-item-success">04 (success)</li>
+            <li class="list-group-item list-group-item-action list-group-item-danger">05 (danger)</li>
+            <li class="list-group-item list-group-item-action list-group-item-warning">06 (warning)</li>
+            <li class="list-group-item list-group-item-action list-group-item-info">07 (info)</li>
+            <li class="list-group-item list-group-item-action list-group-item-light">08 (light)</li>
+            <li class="list-group-item list-group-item-action list-group-item-dark">09 (dark)</li>
+        </ul>
+    </div>
+    <hr>
+   
+</body>
+
+</html>

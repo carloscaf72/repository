@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link shortcut icon - noctua7 - Interno -->
+    <link rel="shortcut icon" href="../img/isotipo-64.png" type="image/png">
+
+    <!-- Link CSS - Bootstrap - Interno -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
+    <!-- Link CSS - noctua7 - Interno -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- link Icons - Bootstrap - via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- link JS - Bootstrap - Interno -->
+    <script src="../js/bootstrap.min.js" defer></script>
+
+    <title>via Arquivo Interno</title>
+</head>
+
+<body>
+
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <img height="48" src="../img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+            
+            <h1 class="col d-flex align-items-center justify-content-center">
+                    Referência via Arquivo Interno
+            </h1>
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <a href="../">
+                        <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                    </a>
+            </section>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <ul class="list-group my-3">
+            <li class="list-group-item">O Bootstrap é <b>gratuito</b> e permite que seus arquivos sejam baixados e utilizados mesmo que comercialmente, sendo possível referenciá-lo no documento HTML com uma TAG <b>&lt;link&gt;</b> para o CSS e uma TAG <b>&lt;script&gt;</b> para o JS aos arquivos que estarão em diretórios específicos dentro do computador/servidor do ducumento HTML.</li>
+
+            <li class="list-group-item">Referenciando <b>CSS</b> na TAG <span>&lt;link&gt;</span> via <b>Arquivo Interno</b>:<br>
+                <b>&lt;link</b> rel="stylesheet" href="./css/bootstrap/bootstrap-5.2.3/bootstrap.min.css"<b>&gt;</b>
+            </li>
+
+            <li class="list-group-item">Referenciando <b>JS</b> na TAG <span>&lt;script&gt;</span>via <b>Arquivo Interno</b>:<br>
+                <b>&lt;script</b> src="./js/bootstrap/bootstrap-5.2.3/bootstrap.bundle.min.js"<b>&gt;</b>
+            </li>
+
+            <li class="list-group-item text-secondary">Obs.: Na referência atravérs de Arquivos Internos não ocorrerá atualização dos arquivos se novas versões não forem baixadas para os diretórios, portanto, não ocorrerá problemas de alteração de versão.</li>
+        </ul>
+        <hr>
+
+        <p>Tabela HTML e arquivo Bootstrap referenciado no documento com Arquivo Interno.</p>
+
+        <table class="table">
+            <tr>
+                <th>coluna 1</th>
+                <th>coluna 2</th>
+                <th>coluna 3</th>
+                <th>coluna 4</th>
+                <th>coluna 5</th>
+            </tr>
+            <tr>
+                <td>coluna 1</td>
+                <td>coluna 2</td>
+                <td>coluna 3</td>
+                <td>coluna 4</td>
+                <td>coluna 5</td>
+            </tr>
+            <tr>
+                <td>coluna 1</td>
+                <td>coluna 2</td>
+                <td>coluna 3</td>
+                <td>coluna 4</td>
+                <td>coluna 5</td>
+            </tr>
+            <tr>
+                <td>coluna 1</td>
+                <td>coluna 2</td>
+                <td>coluna 3</td>
+                <td>coluna 4</td>
+                <td>coluna 5</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

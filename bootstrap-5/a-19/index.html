@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- link shortcut icon - noctua7 - Interno -->
+     <link rel="shortcut icon" href="/img/isotipo-64.png" type="image/png">
+
+     <!-- Link CSS - Bootstrap - Interno -->
+     <link rel="stylesheet" href="/css/bootstrap.min.css">
+     
+     <!-- Link CSS - noctua7 - Interno -->
+     <link rel="stylesheet" href="/css/style.css">
+ 
+     <!-- link Icons - Bootstrap - via CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+ 
+     <!-- link JS - Bootstrap - Interno -->
+     <script src="/js/bootstrap.min.js" defer></script>
+
+    <title>Select-Range-Button</title>
+</head>
+
+<body>
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <img height="48" src="/img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+            
+            <h1 class="col d-flex align-items-center justify-content-center">
+                Select-Range-Button
+            </h1>
+            
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                    <a href="/">
+                        <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                    </a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container">
+
+        <ul class="list-group my-3">
+            <li class="list-group-item">O Bootstrap contém diversas classes para <b>formatar formulários</b>, melhorando seu <b>visual</b> em relação aos formulários HTML padrão.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center"><b>form-select</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Na <b>documentação</b> é sugerido que cada grupo de componentes <b>label + select</b> sejam colocados agrupados em um <b>único elemento de bloco</b> (<span>div</span>) com margem inferior de 3 (<span>mb-3</span>).</li>
+            <li class="list-group-item">A classe <b>form-label</b> estiliza os elementos <b>&lt;lable&gt;</b> e a classe
+            <b>form-select</b> estiliza os elementos <b>&lt;select&gt;</b>.</li>
+            <li class="list-group-item">Por <span>padrão</span>, a classe <b>form-select</b> transforma os <span>selects</span> em <b>elementos de bloco</b>, começando na <b>próxima linha</b> e ocupando <b>100%</b> da largura do elemento <span>pai</span>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;select&gt;</b> formatado por <b>form-select</b></h3>
+    </div>
+    
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-1">
+                        <label for="id-select" class="form-label">Estados</label>
+                        <select class="form-select" id="id-select">
+                            <option selected>Escolha o Estado...</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espírito Santo</option>
+                        </select>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- fim do form-select -->
+
+    <div class="container">
+        <h3 class="text-center"><b>form-select-sm</b> & <b>form-select-lg</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Os <b>tamanhos</b> dos elementos <b>&lt;select&gt;</b> podem ser <b>alterados</b> com a classe <span>form-select</span>, acrescentada dos sufixos <b>sm</b> e <b>lg</b> (<span>form-select-sm</span>, <span>form-select-lg</span>).</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;select&gt;</b> (<span>form-select-sm</span> & <span>form-select-lg</span>)</h3>
+    </div>
+
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <h4 class="text-center my-1">form-select-sm</h4>
+                    <div class="my-1">
+                        <label for="id-select1" class="form-label">Estados</label>
+                        <select class="form-select form-select-sm" id="id-select1">
+                            <option selected>Escolha o Estado...</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espírito Santo</option>
+                        </select>
+                    </div>
+
+                    <h4 class="text-center my-1">form-select (normal)</h4>
+                    <div class="my-1">
+                        <label for="id-select2" class="form-label">Estados</label>
+                        <select class="form-select" id="id-select2">
+                            <option selected>Escolha o Estado...</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espírito Santo</option>
+                        </select>
+                    </div>
+
+                    <h4 class="text-center my-1">form-select-lg</h4>
+                    <div class="my-1">
+                        <label for="id-select3" class="form-label">Estados</label>
+                        <select class="form-select form-select-lg" id="id-select3">
+                            <option selected>Escolha o Estado...</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espírito Santo</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- fim do tamanho dos selects -->
+
+    <div class="container">
+        <h3 class="text-center"><b>Atributos</b> do elemento <b>&lt;select&gt;</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Alguns <b>atributos</b> HTML dos elementos têm <b>sua própria renderização</b>
+            no Bootstrap.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><span>name=""</span> & <span>value=""</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Os atributos <b>name</b> & <b>value</b> trabalham <span>em conjunto</span>. O <b>&lt;select&gt;</b> terá um <b>name</b> que representa o <span>nome do campo</span> e cada elemento <b>&lt;option&gt;</b> terá um <b>value</b> diferente representando a escolha do usuário, Caso o controle esteja com o atributo <b>multiple</b>, cada valor escolhido será enviado com o nome do campo colocado no <b>&lt;select&gt;</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#" method="get">
+                    <div class="my-1">
+                        <label for="id-select4" class="form-label">Estados</label>
+                        <select class="form-select" id="id-select4" name="estado">
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espírito Santo</option>
+                        </select>
+
+                        <div class="my-3 text-end">
+                            <input type="submit" value="Enviar" class="btn btn-n7-5">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do atributo - name & value -->
+
+    <div class="container">
+        <h3 class="text-center"><span>disabled</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O atributo <b>disabled</b> torna o controle <b>desabilitado</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-1">
+                        <label for="id-select5" class="form-label">Estados</label>
+                        <select class="form-select" id="id-select5" disabled>
+                            <option selected>Escolha o Estado...</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espírito Santo</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do atributo - disabled -->
+
+    <div class="container">
+        <h3 class="text-center"><span>multiple</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O atributo <b>multiple</b> retira a aparência de <b>combobox</b> do controle, transformando-o em uma <b>lista de opções</b> de 4 unidades aparentes e com <span>scroll</span> lateral.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-1">
+                        <label for="id-select6" class="form-label">Estados</label>
+                        <select class="form-select" id="id-select6" multiple>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="PR">Paraná</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do atributo - multiple -->
+
+    <div class="container">
+        <h3 class="text-center"><span>size=""</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O atributo <b>size</b> retira a aparência de <b>combobox</b> do controle e define a quantidade de elementos <b>&lt;option&gt;</b> que ficarão aparentes.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-1">
+                        <label for="id-select7" class="form-label">Estados</label>
+                        <select class="form-select" id="id-select7" size="3">
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="PR">Paraná</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do atributo - size -->
+    <!-- fim dos atributos de select -->
+
+    <div class="container">
+        <h3 class="text-center"><b>form-range</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Na <b>documentação</b> é sugerido que cada grupo de componentes <b>label + range</b> sejam colocados agrupados em um <b>único elemento de bloco</b> (<span>div</span>) com margem inferior de 3 (<span>mb-3</span>).</li>
+            <li class="list-group-item">A classe <b>form-label</b> estiliza os elementos <b>&lt;lable&gt;</b> e a classe
+            <b>form-range</b> estiliza os elementos <b>&lt;range&gt;</b>.</li>
+            <li class="list-group-item">Por <span>padrão</span>, a classe <b>form-range</b> transforma os <span>ranges</span> em <b>elementos de bloco</b>, começando na <b>próxima linha</b> e ocupando <b>100%</b> da largura do elemento <span>pai</span>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;range&gt;</b> formatado por <b>form-range</b></h3>
+    </div>
+    
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-1">
+                        <label for="id-range" class="form-label">Intensidade</label>
+                        <input type="range" class="form-range mb-1" id="id-range">
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do form-range -->
+
+    <div class="container">
+        <h3 class="text-center"><b>Atributos</b> do elemento <b>&lt;range&gt;</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Alguns <b>atributos</b> HTML dos elementos têm <b>sua própria renderização</b>
+            no Bootstrap.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><span>min="" & max=""</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O atributo <b>min</b> e <b>max</b> são opcionais no elemento <b>&lt;range&gt;</b> e definem, respectivamente, um valor <b>mínimo</b> e um valor <b>máximo</b> para o componete.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-1">
+                        <label for="id-range1" class="form-label">Intensidade</label>
+                        <input type="range" class="form-range mb-1" id="id-range1" min="1" max="5">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do atributo - min & max -->
+
+    <div class="container">
+        <h3 class="text-center"><span>name=""</span> & <span>value=""</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Os atributos <b>name</b> & <b>value</b> trabalham <span>em conjunto</span>. O <b>&lt;range&gt;</b> terá um <b>name</b> que representa o <span>nome do campo</span> e seu <span>valor</span> será preenchido pela <span>escolha do usuário</span>. Se for colocado um <b>value</b>, o campo <span>iniciará</span> com este <span>valor</span>, indicando em que altura o seletor ficará na renderização. Caso o usuário não faça nenhuma escolha, seá o que está no <b>value</b> o <span>valor</span> enviado ao Banco de Dados para tratamento ou guarda.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#" method="get">
+                    <div class="my-1">
+                        <label for="id-range2" class="form-label">Intensidade</label>
+                        <input type="range" class="form-range mb-1" id="id-range2" min="1" max="5" value="3" name="intensidade">
+                    </div>
+                    <div class="m-3 text-end">
+                        <input type="submit" value="Enviar" class="btn btn-n7-5">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do atributo - name & value -->
+
+    <div class="container">
+        <h3 class="text-center"><span>step=""</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O atributo <b>step</b> é opcional no elemento <b>&lt;range&gt;</b> e define o <b>intervalo de passos</b> entre os valores do componente. Por <span>padrão</span> este intervalo é de <b>1 unidade</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-1">
+                        <label for="id-range3" class="form-label">Intensidade</label>
+                        <input type="range" class="form-range mb-1" id="id-range3" min="1" max="5" value="3">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do atributo - step -->
+
+    <div class="container">
+        <h3 class="text-center"><span>disabled</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O atributo <b>disabled</b> torna o controle <b>desabilitado</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-1">
+                        <div class="my-1">
+                            <label for="id-range4" class="form-label">Intensidade</label>
+                            <input type="range" class="form-range mb-1" id="id-range4" min="1" max="5" value="3" disabled>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do atributo - disabled -->
+<!-- fim dos atributos de range-->
+   
+    <div class="container">
+        <h3 class="text-center"><b>btn</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>btn</b> configura os elementos com aspecto de um <b>botão</b> clicável, sendo necessário <span>acrecentar outras classes</span> para formatações de <b>cores</b> e <b>layouts</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>btn-[cores]</b></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para configurar as <b>cores do botão</b>, acrescentamos a classe <b>btn</b> + <b>traço</b> (-) + <b>cores temáticas</b> do bootstrap.</li>
+        </ul>
+    </div>
+    
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-2 text-center">
+                        <a href="#" class="btn btn-success">link</a>
+                        <input type="reset" value="input" class="btn btn-danger">
+                        <button class="btn btn-info">button</button>
+                        <label class="btn btn-warning" for="">label</label>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do btn-[cores] -->
+
+    <div class="container">
+        <h3 class="text-center"><b>btn-outline-[cores]</b></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para configurar os <span>botões</span> somente com <b>cores nas bordas</b>, acrescentamos a classe <b>btn</b> + <b>traço</b> (-) + <b>outline</b> + <b>traço</b> (-) + <b>cores temáticas</b> do bootstrap.</li>
+        </ul>
+    </div>
+    
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-2 text-center">
+                        <a href="#" class="btn btn-outline-success">link</a>
+                        <input type="reset" value="input" class="btn btn-outline-danger">
+                        <button class="btn btn-outline-info">button</button>
+                        <label class="btn btn-outline-warning" for="">label</label>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do btn-outline-[cores] -->
+
+    <div class="container">
+        <h3 class="text-center"><b>btn-sm</b> & <b>btn-lg</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Os <b>tamanhos</b> dos elementos com a classe <b>btn</b> podem ser <b>alterados</b> com a classe <b>btn</b> acrescentada dos sufixos <b>sm</b> e <b>lg</b> (<span>btn-sm</span>, <span>btn-lg</span>).</li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <h3 class="text-center"><b>btn</b> (<span>btn-sm</span> & <span>btn-lg</span>)</h3>
+    </div>
+
+    <div class="container py-2 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <h4 class="text-center my-1">btn-sm</h4>
+                    <div class="my-2 text-center">
+                        <a href="#" class="btn btn-success btn-sm">link</a>
+                        <input type="reset" value="input" class="btn btn-danger btn-sm">
+                        <button class="btn btn-info btn-sm">button</button>
+                        <label class="btn btn-warning btn-sm" for="">label</label>
+                    </div>
+                    
+                    <h4 class="text-center my-1">btn (normal)</h4>
+                    <div class="my-2 text-center">
+                        <a href="#" class="btn btn-success">link</a>
+                        <input type="reset" value="input" class="btn btn-danger">
+                        <button class="btn btn-info">button</button>
+                        <label class="btn btn-warning" for="">label</label>
+                    </div>
+
+                    <h4 class="text-center my-1">btn-lg</h4>
+                    <div class="my-2 text-center">
+                        <a href="#" class="btn btn-success btn-lg">link</a>
+                        <input type="reset" value="input" class="btn btn-danger btn-lg">
+                        <button class="btn btn-info btn-lg">button</button>
+                        <label class="btn btn-warning btn-lg" for="">label</label>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do tamanho dos btn -->
+
+    <div class="container">
+        <h3 class="text-center"><b>Atributos</b> da classe <b>btn</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Alguns <b>atributos</b> HTML dos elementos têm <b>sua própria renderização</b>
+            no Bootstrap.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><span>disabled</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O atributo <b>disabled</b> torna o controle <b>desabilitado</b>. Não funcionando nos elementos <b>a</b> (<span>link</span>) e <b>label</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-2 text-center">
+                        <input type="reset" value="input" class="btn btn-danger" disabled>
+                        <button class="btn btn-info" disabled>button</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do atributo - disabled -->
+
+    <div class="container">
+        <h3 class="text-center"><span>data-bs-toggle</span></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O atributo <b>data-bs-toggle</b> é um atributo especial do bootstrap que torna o botão marcável, ou seja, quando clicado torna o controle <b>mais escuro</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 mb-3 rounded bg-n7-3">
+        <div class="row">
+            <div class="col-8 col-md-6 offset-2 offset-md-3 bg-light  text-n7-3 rounded">
+                <form action="#">
+                    <div class="my-2 text-center">
+                        <a href="#" class="btn btn-success" data-bs-toggle="button">link</a>
+                        <input type="reset" value="input" class="btn btn-danger" data-bs-toggle="button">
+                        <button class="btn btn-primary" data-bs-toggle="button">button</button>
+                        <label class="btn btn-secondary" for="" data-bs-toggle="button">label</label>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fim do atributo - data-bs-toggle -->
+    <hr>
+    
+<!-- fim dos atributos - btn -->
+    
+</body>
+</html>
