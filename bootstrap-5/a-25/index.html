@@ -46,77 +46,81 @@
 
     <section class="container">
         <ul class="list-group my-3">
-            <li class="list-group-item">O Bootstrap contém diversas classes para <b>formatar formulários</b>, melhorando seu <b>visual</b> em relação aos formulários HTML padrão.</li>
+            <li class="list-group-item">O Bootstrap contém diversas classes para <b>formatar botões</b>, melhorando seu <b>visual</b> em relação aos botões HTML padrão.</li>
         </ul>
     </section>
     <hr>
 
     <div class="container">
-        <h3 class="text-center"><b>Validação Local</b>:</h3>
+        <h3 class="text-center"><b>btn-group</b>:</h3>
         <ul class="list-group my-3">
-            <li class="list-group-item">O atributo <b>required</b> torna o controle de <b>preenchimento obrigatório</b> e o navegador faz a validação informando ao usuário sobre a obrigatoriedade do preenchimento ao enviar o formulário.</li>
+            <li class="list-group-item">Na <b>documentação</b> é sugerido que cada grupo de <b>controles</b> sejam colocados agrupados em um <b>único elemento de bloco</b> (<span>div</span>) com margem inferior de 3 (<span>mb-3</span>).</li>
+            <li class="list-group-item">A classe <b>btn-group</b> é usada para <b>agrupar botões</b> (<b>&lt;input&gt;</b> (submit ou reset), <b>&lt;radio&gt;</b>, <b>&lt;checkbox&gt;</b>, etc) quando colocados dentro do <b>elemento de bloco</b> (<span>div</span>) que contém os <b>controles</b>.</li>
         </ul>
     </div>
 
     <div class="container">
-        <h3 class="text-center"><b>Formulário - Validação Local</b></h3>
-        <h4 class="text-center">(<span>required</span>)</h4>
+        <h3 class="text-center"><b>Buttons</b></h3>
+        <h4 class="text-center">(<span>btn-group</span>)</h4>
     </div>
     <div class="container py-2 rounded bg-n7-3 mb-3">
         <div class="row p-1">
             <div class="col-12 col-md-10 col-xl-8 offset-md-1 offset-xl-2 bg-light text-n7-3 rounded">
-                <h1 class="display-4">Endereço</h1>
-                <hr>
-                <form action="?" method="get">
-
-                    <div class="row mb-3 g-1">
-                        <div class="col-9">
-                            <label for="Logradouro" class="form-label">Logradouro:</label>
-                            <input type="text" class="form-control" id="Logradouro" name="logradouro" required>
-                        </div>
-
-                        <div class="col-3">
-                            <label for="Numero" class="form-label">Número:</label>
-                            <input type="text" class="form-control" id="Numero" name="numero">
-                        </div>
-
-                        <div class="col-6">
-                            <label for="Complemento" class="form-label">Complemento:</label>
-                            <input type="text" class="form-control" id="Complemento" name="complemento">
-                        </div>
-
-                        <div class="col-6">
-                            <label for="Bairro" class="form-label">Bairro:</label>
-                            <input type="text" class="form-control" id="Bairro" name="bairro">
-                        </div>
-
-                        <div class="col-6">
-                            <label for="Cidade" class="form-label">Cidade:</label>
-                            <input type="text" class="form-control" id="Cidade" name="cidade">
-                        </div>
-
-                        <div class="col-6">
-                            <label for="Estado" class="form-label">Estado:</label>
-                            <select name="estado" id="id-estado" class="form-select">
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="ES" selected>Espírito Santo</option>
-                            </select>
-                        </div>
-                        <div class="col-6">
-                            <label for="CEP" class="form-label">CEP:</label>
-                            <input type="text" class="form-control" id="CEP" name="cep" required pattern="[0-9]{8}">
-                        </div>
+                <div class="container py-2">
+                    <div class="btn-group">
+                        <button class="btn btn-primary">Botão 01</button>
+                        <button class="btn btn-success">Botão 02</button>
+                        <button class="btn btn-warning">Botão 03</button>
                     </div>
-                    <div class="row mb-3 g-1">
-                        <button class="btn btn-n7-5">Enviar</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
-    <!-- fim da Validação Local (required) -->
+    <!-- fim do btn-group (buttons) -->
+
+    <div class="container">
+        <h3 class="text-center"><b>Radio</b></h3>
+        <h4 class="text-center">(<span>btn-group</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-3 mb-3">
+        <div class="row p-1">
+            <div class="col-12 col-md-10 col-xl-8 offset-md-1 offset-xl-2 bg-light text-n7-3 rounded">
+                <div class="container py-2">
+                    <div class="btn-group">
+                        <input type="radio" class="btn-check" name="btn-grupo" id="btn1">
+                        <label for="btn1" class="btn btn-outline-primary">Radio 01</label>
+                        <input type="radio" class="btn-check" name="btn-grupo" id="btn2">
+                        <label for="btn2" class="btn btn-outline-primary">Radio 02</label>
+                        <input type="radio" class="btn-check" name="btn-grupo" id="btn3">
+                        <label for="btn3" class="btn btn-outline-primary">Radio 03</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim do btn-group (radio) -->
+
+    <div class="container">
+        <h3 class="text-center"><b>Checkbox</b></h3>
+        <h4 class="text-center">(<span>btn-group</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-3 mb-3">
+        <div class="row p-1">
+            <div class="col-12 col-md-10 col-xl-8 offset-md-1 offset-xl-2 bg-light text-n7-3 rounded">
+                <div class="container py-2">
+                    <div class="btn-group">
+                        <input type="checkbox" class="btn-check" id="btncheck1">
+                        <label for="btncheck1" class="btn btn-outline-primary">Checkbox 01</label>
+                        <input type="checkbox" class="btn-check" id="btncheck2">
+                        <label for="btncheck2" class="btn btn-outline-primary">Checkbox 02</label>
+                        <input type="checkbox" class="btn-check" id="btncheck3">
+                        <label for="btncheck3" class="btn btn-outline-primary">Checkbox 03</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim do btn-group (checkbox) -->
 
     <div class="container">
         <h3 class="text-center"><b>Validação Bootstrap</b>:</h3>
