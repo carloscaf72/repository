@@ -65,7 +65,7 @@
         <h4 class="text-center">(<span>card</span>)</h4>
     </div>
     <div class="container py-2 rounded bg-n7-1 mb-3">
-        <nav class="card py-3"></nav>
+        <div class="card py-3"></div>
     </div>
     <hr>
     <!-- fim do card -->
@@ -74,7 +74,7 @@
         <h3 class="text-center"><b>card-body</b>:</h3>
         <h4 class="text-center"><b>card-title</b> / <b>card-subtitle</b> / <b>card-text</b></h4>
         <ul class="list-group my-3">
-            <li class="list-group-item">A classe <b>card-body</b> será o elemento de bloco <span>(div)</span> do <b>corpo</b> do card onde são colocados os componentes de <span>título</span> com a classe <b>card-title</b>, o <span>subtítulo</span> com a classe <b>card-subtitle</b> e os <span>textos descritivos</span> com a classe <b>card-text</b>.</li>
+            <li class="list-group-item">A classe <b>card-body</b> será o elemento de bloco <span>(div)</span> do <b>corpo</b> do card onde são colocados os componentes de texto do <span>título</span> com a classe <b>card-title</b>, o <span>subtítulo</span> com a classe <b>card-subtitle</b> e os <span>textos descritivos</span> com a classe <b>card-text</b>.</li>
             <li class="list-group-item">As classes <b>card-title</b> e <b>card-subtitle</b> não alteram a aparência do componente, devendo assim ser complementadas com <span>elementos</span> ou <span>classes</span> para formatação do <b>tamanho</b> e/ou <b>aparência</b>.</li>
         </ul>
     </div>
@@ -84,13 +84,13 @@
         <h4 class="text-center">(<span>card-title</span>/<span>card-subtitle</span>/<span>card-text</span>)</h4>
     </div>
     <div class="container py-2 rounded bg-n7-1 mb-3">
-        <nav class="card">
+        <div class="card">
             <div class="card-body">
                 <div class="card-title h2">Título do Card (h2)</div>
                 <div class="card-subtitle h4">Subtítulo do Card (h4)</div>
                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
             </div>
-        </nav>
+        </div>
     </div>
     <hr>
     <!-- fim do card-body -->
@@ -107,22 +107,524 @@
         <h4 class="text-center">(<span>card-link</span>)</h4>
     </div>
     <div class="container py-2 rounded bg-n7-1 mb-3">
-        <nav class="card">
+        <div class="card">
             <div class="card-body">
-                <div class="card-title h2">Título do Card (h2)</div>
-                <div class="card-subtitle h4">Subtítulo do Card (h4)</div>
+                <h2 class="card-title">Título do Card (h2)</h2>
+                <h4 class="card-subtitle">Subtítulo do Card (h4)</h4>
                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
-                <a href="" class="card-link"></a>
-                <a href="" class="card-link"></a>
-                <a href="" class="card-link"></a>
+                <a href="#" class="card-link">link 1</a>
+                <a href="#" class="card-link">link 2</a>
+                <a href="#" class="card-link">link 3</a>
             </div>
-        </nav>
+        </div>
     </div>
     <hr>
-    <!-- fim do card-body -->
+    <!-- fim do card-link -->
 
+    <div class="container">
+        <h3 class="text-center"><b>col</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para que o <b>card</b> não ocupe <b>100%</b> do componente, acrescentamos a classe <b>col</b> junto da classe <b>card</b> do elemento <span>pai</span>, definindo a <span>quatidade</span> de colunas.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div</b> <span>class="</span>card col-4<span>"</span><b>&gt;</b></h3>
+        <h4 class="text-center">(<span>col-4</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="card col-4">
+            <div class="card-body">
+                <h2 class="card-title">Título</h2>
+                <h4 class="card-subtitle">Subtítulo</h4>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                <a href="#" class="card-link">link 1</a>
+                <a href="#" class="card-link">link 2</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do col (div.card) -->
+
+    <div class="container">
+        <h3 class="text-center"><b>images</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para incluir uma <b>image</b> ao <b>card</b>, utilizamos a TAG <b>&lt;img&gt;</b> com a classe <b>card-img-top</b> quando colocada <span>antes do card-body</span> e a classe <b>card-img-bottom</b> quando <span>após ao card-body</span>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;img</b> <span>class="</span>card-img-top<span>"</span><b>&gt;</b></h3>
+        <h4 class="text-center">(<span>card-img-top</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="card col-4 m-auto">
+            <img src="https://picsum.photos/400/400?rouded=1" alt="img-example" class="card-img-top">
+            <div class="card-body">
+                <h2 class="card-title">Título</h2>
+                <h4 class="card-subtitle">Subtítulo</h4>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                <a href="#" class="card-link">link 1</a>
+                <a href="#" class="card-link">link 2</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="text-center"><b>&lt;img</b> <span>class="</span>card-img-bottom<span>"</span><b>&gt;</b></h3>
+        <h4 class="text-center">(<span>card-img-bottom</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="card col-4 m-auto">
+            <div class="card-body">
+                <h2 class="card-title">Título</h2>
+                <h4 class="card-subtitle">Subtítulo</h4>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                <a href="#" class="card-link">link 1</a>
+                <a href="#" class="card-link">link 2</a>
+            </div>
+            <img src="https://picsum.photos/400/400?rouded=1" alt="img-example" class="card-img-bottom">
+        </div>
+    </div>
+    <hr>
+    <!-- fim do img (div.card) -->
+
+    <div class="container">
+        <h3 class="text-center"><b>header</b> & <b>footer</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para incluirmos um <b>header</b> (cabeçalho) e um <b>footer</b> (rodapé) ao <b>card</b>, utilizamos uma TAG com a classe <b>card-header</b> para <span>cabeçalho</span> e <b>card-footer</b> para <span>rodapé</span>.</li>
+            <li class="list-group-item">As classes <b>card-header</b> e <b>card-footer</b> não alteram a aparência dos componentes, devendo assim ser complementadas com <span>elementos</span> ou <span>classes</span> para formatação do <b>tamanho</b> e/ou <b>aparência</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div</b> <span>class="</span>card-header<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;div</b> <span>class="</span>card-footer<span>"</span><b>&gt;</b></h3>
+        
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="card col-4 m-auto">
+            <img src="https://picsum.photos/400/400?rouded=1" alt="img-example" class="card-img-top">
+            <div class="card-header h4">Header(h4)</div>
+            <div class="card-body">
+                <h2 class="card-title">Título</h2>
+                <h4 class="card-subtitle">Subtítulo</h4>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                <a href="#" class="card-link">link 1</a>
+                <a href="#" class="card-link">link 2</a>
+            </div>
+            <div class="card-footer h4">Footer(h4)</div>
+        </div>
+    </div>
     
+    <hr>
+    <!-- fim do card-header & card-footer -->
+
+    <div class="container">
+        <h3 class="text-center"><b>bg-color</b> & <b>text-bg-color</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para alterarmos a cor do <b>card</b>, utilizamos as classes de <b>cores temáticaas</b> do bootstrap na TAG onde a cor deve ser aplicada.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div</b> <span>class="</span>card text-bg-dark<span>"</span><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="card col-4 m-auto text-bg-dark">
+            <img src="https://picsum.photos/400/400?rouded=1" alt="img-example" class="card-img-top">
+            <div class="card-header h4">Header(h4)</div>
+            <div class="card-body">
+                <h2 class="card-title">Título</h2>
+                <h4 class="card-subtitle">Subtítulo</h4>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                <a href="#" class="card-link">link 1</a>
+                <a href="#" class="card-link">link 2</a>
+            </div>
+            <div class="card-footer h4">Footer(h4)</div>
+        </div>
+    </div>
+    
+    <hr>
+    <!-- fim do bg-color & text-bg-color -->
+
+    <div class="container">
+        <h3 class="text-center"><b>card - horizontal</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para colocarmos o <b>card</b> na posição <span>horizontal</span>, defini-se o número de colunas da classe <b>card</b> com a classe <b>col</b> (col-8) e dentro coloca 1 elemento de bloco (div) com a classe <b>row</b> e <b>g-0</b> e dentro deste elemento, mais 2 elementos de bloco (div) com a classe <b>col</b>.</li>
+            <li class="list-group-item">O 1º elemento da classe <b>col</b> será para colocação da imagem do card com a TAG <b>&lt;img&gt;</b> com as classes <b>img-fluid</b> e <b>rounded-start</b> com o tamanho definido pela classe <b>col</b> (col-5).</li>
+            <li class="list-group-item">O 2º elemento da classe <b>col</b> será para colocação dos demais elementos do card (<b>card-body</b>, <b>card-title</b>, <b>card-subtitle</b>, <b>card-text</b>, <b>links</b>, <b>card-header</b>, <b>card-footer</b>, etc.) e com o tamanho definido pela classe <b>col</b>.</li>
+            
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div</b> <span>class="</span>card col-8<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;div</b> <span>class="</span>row g-0<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center">1ª - <b>&lt;div</b> <span>class="</span>col-5<span>"</span><b>&gt;</b></h3>
+        <h4 class="text-center"><b>&lt;img</b> <span>class="</span>img-fluid rounded-start h-100<span>"</span><b>&gt;</b></h4>
+        <h3 class="text-center">2ª - <b>&lt;div</b> <span>class="</span>col<span>"</span><b>&gt;</b></h3>
+        <h4 class="text-center"><b>&lt;div</b> <span>class="</span>card-body<span>"</span><b>&gt;</b></h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="card col-8 m-auto">
+            <div class="row g-0">
+                <div class="col-5">
+                    <img src="https://picsum.photos/400/400?rouded=1" alt="img-example" class="img-fluid rounded-start h-100">
+                </div>
+                <div class="col">
+                    <div class="card-header h4 d-none d-lg-block">Header(h4)</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                        <a href="#" class="card-link">link 1</a>
+                        <a href="#" class="card-link">link 2</a>
+                    </div>
+                    <div class="card-footer h4 d-none d-lg-block">Footer(h4)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div</b> <span>class="</span>card col-8<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;div</b> <span>class="</span>row g-0<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center">1ª - <b>&lt;div</b> <span>class="</span>col<span>"</span><b>&gt;</b></h3>
+        <h4 class="text-center"><b>&lt;div</b> <span>class="</span>card-body<span>"</span><b>&gt;</b></h4>
+        <h3 class="text-center">2ª - <b>&lt;div</b> <span>class="</span>col-5<span>"</span><b>&gt;</b></h3>
+        <h4 class="text-center"><b>&lt;img</b> <span>class="</span>img-fluid rounded-end h-100<span>"</span><b>&gt;</b></h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="card col-8 m-auto">
+            <div class="row g-0">
+                <div class="col">
+                    <div class="card-header h4 d-none d-lg-block">Header(h4)</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                        <a href="#" class="card-link">link 1</a>
+                        <a href="#" class="card-link">link 2</a>
+                    </div>
+                    <div class="card-footer h4 d-none d-lg-block">Footer(h4)</div>
+                </div>
+                <div class="col-5">
+                    <img src="https://picsum.photos/400/400?rouded=1" alt="img-example" class="img-fluid rounded-end h-100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do card horizontal -->
+
+    <div class="container">
+        <h3 class="text-center"><b>card-group</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para agruparmos os <b>cards</b>, os colocamos dentro de um elemento de bloco (div) com a classe <b>card-group</b>, onde a <span>largura</span> de cada <b>card</b> será <b>dividida igualmente</b> deixando-os grudados pela borda lateral.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="ps-0"><b>&lt;div</b> <span>class="</span>card-group<span>"</span><b>&gt;</b></h3>
+        <h4 class="ps-5"><b>&lt;div</b> <span>class="</span>card<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-5"><b>&lt;div</b> <span>class="</span>card<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-5"><b>&lt;div</b> <span>class="</span>card<span>"</span><b>&gt;</b></h4>
+        <h3 class="ps-0"><b>&lt;/div</b><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="card-group">
+            <div class="card">
+                <img src="https://picsum.photos/400/400?rouded=1" alt="img-example" class="card-img-top">
+                <div class="card-header h4">Card 01</div>
+                <div class="card-body">
+                    <h2 class="card-title">Título</h2>
+                    <h4 class="card-subtitle">Subtítulo</h4>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                    <a href="#" class="card-link">saiba mais...</a>
+                </div>
+                <div class="card-footer text-center">noctua7&copy;</div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/400/400?rouded=2" alt="img-example" class="card-img-top">
+                <div class="card-header h4">Card 02</div>
+                <div class="card-body">
+                    <h2 class="card-title">Título</h2>
+                    <h4 class="card-subtitle">Subtítulo</h4>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                    <a href="#" class="card-link">saiba mais...</a>
+                </div>
+                <div class="card-footer text-center">noctua7&copy;</div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/400/400?rouded=3" alt="img-example" class="card-img-top">
+                <div class="card-header h4">Card 03</div>
+                <div class="card-body">
+                    <h2 class="card-title">Título</h2>
+                    <h4 class="card-subtitle">Subtítulo</h4>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                    <a href="#" class="card-link">saiba mais...</a>
+                </div>
+                <div class="card-footer text-center">noctua7&copy;</div>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    <!-- fim do card-group -->
+    
+    <div class="container">
+        <h3 class="text-center"><b>row</b> & <b>col</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos utilizar as classes <b>row</b> e <b>col</b> para criarmos <b>agrupamentos dos cards</b> e aproveitarmos as <b>configurações</b> possíveis destas classes.</li>
+            <li class="list-group-item">Ao envolvermos os cards em um elemento de bloco da classe <b>row</b> e dentro, envolvermos cada <b>card</b> com 1 elemento da classe <b>col</b> cria-se um GRID de colunas onde cada <b>card</b> ocupará uma coluna do GRID com espaços coesos entre sí.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="ps-0"><b>&lt;div</b> <span>class="</span>row<span>"</span><b>&gt;</b></h3>
+        <h4 class="ps-3"><b>&lt;div</b> <span>class="</span>col<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-5"><b>&lt;div</b> <span>class="</span>card<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-3"><b>&lt;/div</b><b>&gt;</b></h4>
+        <h4 class="ps-3"><b>&lt;div</b> <span>class="</span>col<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-5"><b>&lt;div</b> <span>class="</span>card<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-3"><b>&lt;/div</b><b>&gt;</b></h4>
+        <h3 class="ps-0"><b>&lt;/div</b><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/400?rouded=1" alt="img-example" class="card-img-top">
+                    <div class="card-header h4">Card 01</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                        <a href="#" class="card-link">saiba mais...</a>
+                    </div>
+                    <div class="card-footer text-center">noctua7&copy;</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/400?rouded=2" alt="img-example" class="card-img-top">
+                    <div class="card-header h4">Card 02</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                        <a href="#" class="card-link">saiba mais...</a>
+                    </div>
+                    <div class="card-footer text-center">noctua7&copy;</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/400?rouded=3" alt="img-example" class="card-img-top">
+                    <div class="card-header h4">Card 03</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                        <a href="#" class="card-link">saiba mais...</a>
+                    </div>
+                    <div class="card-footer text-center">noctua7&copy;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do row & col -->
+
+    <div class="container">
+        <h3 class="text-center"><b>row-cols</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos definir a quantidade de <b>colunas</b> por linha com a classe <b>row-cols</b> adicionada de uma <b>numeração</b> que indicará a quantidade de colunas e, portanto, a quantidade de <b>cards</b> por linha.</li>
+            <li class="list-group-item">Podemos definir também o espaçamento vertical entre <b>cards</b> com a classe <b>g</b> adicionada de uma <b>numeração</b> que indicará o tamanho do espaço entre os elementos.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="ps-0"><b>&lt;div</b> <span>class="</span>row row-cols-2 g-3<span>"</span><b>&gt;</b></h3>
+        <h4 class="ps-3"><b>&lt;div</b> <span>class="</span>col<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-5"><b>&lt;div</b> <span>class="</span>card<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-3"><b>&lt;/div</b><b>&gt;</b></h4>
+        <h4 class="ps-3"><b>&lt;div</b> <span>class="</span>col<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-5"><b>&lt;div</b> <span>class="</span>card<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-3"><b>&lt;/div</b><b>&gt;</b></h4>
+        <h3 class="ps-0"><b>&lt;/div</b><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="row row-cols-2 g-3">
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/400?rouded=1" alt="img-example" class="card-img-top">
+                    <div class="card-header h4">Card 01</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                        <a href="#" class="card-link">saiba mais...</a>
+                    </div>
+                    <div class="card-footer text-center">noctua7&copy;</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/400?rouded=2" alt="img-example" class="card-img-top">
+                    <div class="card-header h4">Card 02</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                        <a href="#" class="card-link">saiba mais...</a>
+                    </div>
+                    <div class="card-footer text-center">noctua7&copy;</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/400?rouded=3" alt="img-example" class="card-img-top">
+                    <div class="card-header h4">Card 03</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                        <a href="#" class="card-link">saiba mais...</a>
+                    </div>
+                    <div class="card-footer text-center">noctua7&copy;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do row-cols & g -->
+
+    <div class="container">
+        <h3 class="text-center"><b>row-cols (responsivo)</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos utilizar o <b>GRID</b> nos cards de diferentes maneiras em cada resolução com os <b>breakpoints</b> (sm, md, xl, xxl).</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="ps-0"><b>&lt;div</b> <span>class="</span>row row-cols-3 row-cols-xl-1 g-3<span>"</span><b>&gt;</b></h3>
+        <h4 class="ps-3"><b>&lt;div</b> <span>class="</span>col<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-5"><b>&lt;div</b> <span>class="</span>card<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-3"><b>&lt;/div</b><b>&gt;</b></h4>
+        <h4 class="ps-3"><b>&lt;div</b> <span>class="</span>col<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-5"><b>&lt;div</b> <span>class="</span>card<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-3"><b>&lt;/div</b><b>&gt;</b></h4>
+        <h3 class="ps-0"><b>&lt;/div</b><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/400?rouded=1" alt="img-example" class="card-img-top">
+                    <div class="card-header h4">Card 01</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                        <a href="#" class="card-link">saiba mais...</a>
+                    </div>
+                    <div class="card-footer text-center">noctua7&copy;</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/400?rouded=2" alt="img-example" class="card-img-top">
+                    <div class="card-header h4">Card 02</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                        <a href="#" class="card-link">saiba mais...</a>
+                    </div>
+                    <div class="card-footer text-center">noctua7&copy;</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://picsum.photos/400/400?rouded=3" alt="img-example" class="card-img-top">
+                    <div class="card-header h4">Card 03</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                        <a href="#" class="card-link">saiba mais...</a>
+                    </div>
+                    <div class="card-footer text-center">noctua7&copy;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do row-cols(responsivo) -->
+
+    <div class="container">
+        <h3 class="text-center"><b>altura dos cards</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos manter os <b>cards</b> na mesma altura entre si com a classe .</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="ps-0"><b>&lt;div</b> <span>class="</span>row row-cols-3 row-cols-xl-1 g-3<span>"</span><b>&gt;</b></h3>
+        <h4 class="ps-3"><b>&lt;div</b> <span>class="</span>col<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-5"><b>&lt;div</b> <span>class="</span>card<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-3"><b>&lt;/div</b><b>&gt;</b></h4>
+        <h4 class="ps-3"><b>&lt;div</b> <span>class="</span>col<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-5"><b>&lt;div</b> <span>class="</span>card<span>"</span><b>&gt;</b></h4>
+        <h4 class="ps-3"><b>&lt;/div</b><b>&gt;</b></h4>
+        <h3 class="ps-0"><b>&lt;/div</b><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/400/400?rouded=1" alt="img-example" class="card-img-top">
+                    <div class="card-header h4">Card 01</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam. (normal).</p>
+                        <a href="#" class="card-link">saiba mais...</a>
+                    </div>
+                    <div class="card-footer text-center">noctua7&copy;</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/400/400?rouded=2" alt="img-example" class="card-img-top">
+                    <div class="card-header h4">Card 02</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel eaque voluptate id, ipsam labore, nisi itaque laboriosam, eligendi est nobis culpa! Impedit cum eos illo. Fugiat blanditiis ea necessitatibus (normal).</p>
+                        <a href="#" class="card-link">saiba mais...</a>
+                    </div>
+                    <div class="card-footer text-center">noctua7&copy;</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/400/400?rouded=3" alt="img-example" class="card-img-top">
+                    <div class="card-header h4">Card 03</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Título</h2>
+                        <h4 class="card-subtitle">Subtítulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.(normal).</p>
+                        <a href="#" class="card-link">saiba mais...</a>
+                    </div>
+                    <div class="card-footer text-center">noctua7&copy;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do row-cols(responsivo) -->
 
 </body>
-
 </html>
