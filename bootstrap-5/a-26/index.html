@@ -45,51 +45,6 @@
         </div>
     </section>
 
-    <nav class="navbar bg-n7-3 navbar-dark navbar-expand-sm sticky-top"> <!-- Barra de Navegação -->
-        <div class="container py-2">
-            <a href="#" class="navbar-brand d-flex align-items-center"><i class="bi-bootstrap-fill fs-1 me-2"></i> bootstrap 5</a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavBar">
-                <i class="navbar-toggler-icon"></i>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="menuNavBar">
-                <div class="navbar-nav ms-auto">
-                    <a href="#" class="nav-link active">Home</a>
-                    <div class="dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                        >Produtos</a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a href="#" class="dropdown-item">Produto 1</a></li>
-                            <li><a href="#" class="dropdown-item">Produto 2</a></li>
-                            <li><a href="#" class="dropdown-item">Produto 3</a></li>
-                            <li><a href="#" class="dropdown-item">Produto 4</a></li>
-                            <li><a href="#" class="dropdown-item">Produto 5</a></li>
-                        </ul>
-                        
-                    </div>
-                    <!-- <a href="#" class="nav-link">Contato</a>
-                    <a href="#" class="nav-link">Sobre</a> -->
-                </div>
-            </div>
-
-            <!-- <form action="" class="d-none d-md-flex ms-auto">
-                <div class="input-group">
-                    <input type="search" class="form-control" placeholder="Buscar...">
-                    <button class="btn btn-outline-warning" type="submit">Buscar</button>
-                </div>
-            </form> -->
-            
-        </div>
-    </nav>
-
-    <div class="container">
-        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus commodi iure cupiditate nemo numquam neque placeat dolore similique, voluptas perspiciatis, quos assumenda. Maxime, nihil quisquam! Veritatis delectus commodi corrupti, repellat aut nulla similique vitae error quam in amet. Praesentium iusto inventore, molestiae, obcaecati sapiente esse nihil recusandae a eius doloribus exercitationem culpa voluptate quidem pariatur? Doloribus, fuga? Accusantium temporibus ratione repudiandae delectus debitis nobis obcaecati, omnis deserunt aperiam dolores quam amet, eius, minus accusamus blanditiis quae perferendis quos vitae aut consectetur. Laboriosam harum nihil neque minus doloremque soluta earum ex totam quisquam excepturi? Amet beatae temporibus in odit recusandae vero.</p>
-        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus commodi iure cupiditate nemo numquam neque placeat dolore similique, voluptas perspiciatis, quos assumenda. Maxime, nihil quisquam! Veritatis delectus commodi corrupti, repellat aut nulla similique vitae error quam in amet. Praesentium iusto inventore, molestiae, obcaecati sapiente esse nihil recusandae a eius doloribus exercitationem culpa voluptate quidem pariatur? Doloribus, fuga? Accusantium temporibus ratione repudiandae delectus debitis nobis obcaecati, omnis deserunt aperiam dolores quam amet, eius, minus accusamus blanditiis quae perferendis quos vitae aut consectetur. Laboriosam harum nihil neque minus doloremque soluta earum ex totam quisquam excepturi? Amet beatae temporibus in odit recusandae vero.</p>
-        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus commodi iure cupiditate nemo numquam neque placeat dolore similique, voluptas perspiciatis, quos assumenda. Maxime, nihil quisquam! Veritatis delectus commodi corrupti, repellat aut nulla similique vitae error quam in amet. Praesentium iusto inventore, molestiae, obcaecati sapiente esse nihil recusandae a eius doloribus exercitationem culpa voluptate quidem pariatur? Doloribus, fuga? Accusantium temporibus ratione repudiandae delectus debitis nobis obcaecati, omnis deserunt aperiam dolores quam amet, eius, minus accusamus blanditiis quae perferendis quos vitae aut consectetur. Laboriosam harum nihil neque minus doloremque soluta earum ex totam quisquam excepturi? Amet beatae temporibus in odit recusandae vero.</p>
-        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus commodi iure cupiditate nemo numquam neque placeat dolore similique, voluptas perspiciatis, quos assumenda. Maxime, nihil quisquam! Veritatis delectus commodi corrupti, repellat aut nulla similique vitae error quam in amet. Praesentium iusto inventore, molestiae, obcaecati sapiente esse nihil recusandae a eius doloribus exercitationem culpa voluptate quidem pariatur? Doloribus, fuga? Accusantium temporibus ratione repudiandae delectus debitis nobis obcaecati, omnis deserunt aperiam dolores quam amet, eius, minus accusamus blanditiis quae perferendis quos vitae aut consectetur. Laboriosam harum nihil neque minus doloremque soluta earum ex totam quisquam excepturi? Amet beatae temporibus in odit recusandae vero.</p>
-    </div>
-
     <section class="container">
         <ul class="list-group my-3">
             <li class="list-group-item">O Bootstrap contém diversas classes para criar <b>barras de navegação</b>, melhorando seu <b>visual</b> em relação ao HTML padrão.</li>
@@ -98,34 +53,351 @@
     <hr>
 
     <div class="container">
-        <h3 class="text-center"><b>btn-group</b>:</h3>
+        <h3 class="text-center"><b>navbar</b>:</h3>
         <ul class="list-group my-3">
-            <li class="list-group-item">Na <b>documentação</b> é sugerido que cada grupo de <b>controles</b> sejam colocados agrupados em um <b>único elemento de bloco</b> (<span>div</span>) com margem inferior de 3 (<span>mb-3</span>).</li>
-            <li class="list-group-item">A classe <b>btn-group</b> é usada para <b>agrupar botões</b> (<b>&lt;input&gt;</b> (submit ou reset), <b>&lt;radio&gt;</b>, <b>&lt;checkbox&gt;</b>, etc) quando colocados dentro do <b>elemento de bloco</b> (<span>div</span>) que contém os <b>controles</b>.</li>
+            <li class="list-group-item">Para a criação de uma <b>Barra de Navegação</b> utilizamos a <span>TAG semântica</span> do HTML 5 <b>&lt;nav&gt;</b>com a classe <b>navbar</b>.</li>
+            <li class="list-group-item">Por padrão, a <span>navbar</span> assim como seu conteúdo são <b>fluídos</b> e para uma melhor <b>responsividade</b>, é indicado a colocação de um elemento <b>container</b> em seu interior para agrupar seu conteúdo.</li>
         </ul>
     </div>
 
     <div class="container">
-        <h3 class="text-center"><b>Buttons</b></h3>
-        <h4 class="text-center">(<span>btn-group</span>)</h4>
+        <h3 class="text-center"><b>&lt;nav&gt;</b></h3>
+        <h4 class="text-center">(<span>navbar</span>)</h4>
     </div>
-    <div class="container py-2 rounded bg-n7-3 mb-3">
-        <div class="row p-1">
-            <div class="col-12 col-md-10 col-xl-8 offset-md-1 offset-xl-2 bg-light text-n7-3 rounded">
-                <div class="container py-2">
-                    <div class="btn-group">
-                        <button class="btn btn-primary">Botão 01</button>
-                        <button class="btn btn-success">Botão 02</button>
-                        <button class="btn btn-warning">Botão 03</button>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <nav class="navbar bg-light"></nav>
+    </div>
+    <hr>
+    <!-- fim do navbar (nav) -->
+
+    <div class="container">
+        <h3 class="text-center"><b>navbar-brand</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para acrescentar o seu <b>brand</b> (<span>marca</span>) na barra de navegação, utilizamos um <b>elemento de linha</b> (<span>&lt;a&gt;, &lt;img&gt;, &lt;span&gt;, etc</span>) com a classe <b>navbar-brand</b>.</li>
+            <li class="list-group-item">Para <b>alinhamento</b> do conteúdo da <b>navbar-brand</b>, transformamos o elemento de linha em elemento <span>flex-box</span> com a classe <b>d-flex</b> e aplicamos o alinhamento com as classes <b>align-items-center</b> (vertical) e/ou <b>justify-content-center</b> (horizontal).</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;a&gt;</b> + <b>icon-bootstrap</b></h3>
+        <h4 class="text-center">(<span>navbar-brand</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <nav class="navbar bg-light">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center"><i class="bi-bootstrap-fill fs-1 me-2"></i>bootstrap 5</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h3 class="text-center"><b>&lt;span&gt;</b> + <b>&lt;img&gt;</b></h3>
+        <h4 class="text-center">(<span>navbar-brand</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <nav class="navbar bg-light">
+            <div class="container">
+                <span href="#" class="navbar-brand d-flex align-items-center"><img src="../img/isotipo-64.png" class="">noctua7</span>
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <!-- fim do navbar-brand -->
+
+    <div class="container">
+        <h3 class="text-center"><b>navbar-text</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para acrescentar um <b>texto simples</b> na barra de navegação, utilizamos um <b>elemento de linha</b> (<span>&lt;a&gt;, &lt;img&gt;, &lt;span&gt;, etc</span>) com a classe <b>navbar-text</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;span&gt;</b></h3>
+        <h4 class="text-center">(<span>navbar-text</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <nav class="navbar bg-light">
+            <div class="container">
+                <span href="#" class="navbar-brand d-flex align-items-center"><img src="../img/isotipo-64.png" class="">noctua7</span>
+                <span class="navbar-text">Empresa de TI</span>
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <!-- fim do navbar-text -->
+
+    <div class="container">
+        <h3 class="text-center"><b>navbar-expand</b> & <b>navbar-collapse</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para acrescentar um <b>conjunto de elementos</b> (<span>links, botões, etc</span>) para navegação do site, utilizamos um elemento de bloco (<span>&lt;div&gt;</span>) com as classes <b>collapse</b> + <b>navbar-collapse</b> e em seu interior outro elemento de bloco (<span>&lt;div&gt;</span>) com a classe <b>navbar-nav</b> que terá como conteúdo os <span>links de navegação</span> <b>&lt;a&gt;</b> com a classe <b>nav-link</b>.</li>
+            <li class="list-group-item">Para que o <b>conjunto de elementos</b> (links) fiquem visíveis na barra de navegação é necessário <span>incluírmos</span> no elemento com a TAG <b>&lt;nav&gt;</b> e a classe <b>navbar</b>, a classe <b>navbar-expand</b> com um <b>sufixo de breakpoint</b> (<span>sm, md, xl, xxl</span>), fazendo com que <span>na resolução escolhida</span> seja mostrado.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;nav&gt;</b></h3>
+        <h4 class="text-center">(<span>navbar-expand-md</span> & <span>navbar-collapse</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <nav class="navbar bg-light navbar-expand-md">
+            <div class="container">
+                <span href="#" class="navbar-brand d-flex align-items-center"><img src="../img/isotipo-64.png" class="">noctua7</span>
+                <div class="collapse navbar-collapse">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Produtos</a>
+                        <a href="#" class="nav-link">Contato</a>
+                        <a href="#" class="nav-link">Sobre</a>
                     </div>
                 </div>
             </div>
+        </nav>
+    </div>
+    <hr>
+    <!-- fim da navbar-expand / navbar-collape -->
+
+    <div class="container">
+        <h3 class="text-center"><b>navbar-toggle</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos colocar um elemento <b>&lt;button&gt;</b> com <span>type="button"</span> e a classe <b>navbar-toggler</b>, logo acima do <b>conjunto de elementos</b> (links) para que quando a resolução <b>esconda</b> esses elementos, possa ser <span>clicado</span> para que os mesmos sejam <span>revelados</span>.</li>
+            <li class="list-group-item">O <b>&lt;button&gt;</b> além da classe <b>navbar-toggler</b> deve conter os <span>atributos</span> <b>data-bs-toggle</b> com o valor <b>collapse</b> (data-bs-toggle="collapse") e <b>data-bs-target</b> com um valor, iniciado por <b>#</b>, que será o <b>id</b> do elemento (<span>div</span>) da classe <b>collapse</b> <b>navbar-collapse</b> e podendo inserir um ícone que represente o menu acrecentando um elemento de linha (<span>span</span>) com a classe <b>navbar-togller-icon</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;nav&gt;</b></h3>
+        <h4 class="text-center">(<span>navbar-toggler</span> & <span>navbar-toggler-icon</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <nav class="navbar bg-light navbar-expand-md">
+            <div class="container">
+                <span href="#" class="navbar-brand d-flex align-items-center"><img src="../img/isotipo-64.png" class="">noctua7</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#id-navbar"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="id-navbar">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Produtos</a>
+                        <a href="#" class="nav-link">Contato</a>
+                        <a href="#" class="nav-link">Sobre</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <!-- fim da navbar-toggler (button) / navbar-toggler-icon -->
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;form&gt;</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos colocar um elemento <b>&lt;form&gt;</b> com a classe <b>d-flex</b> e dentro um elemento de bloco (<span>&lt;div&gt;</span>) com a classe <b>input-group</b> com um <b>conjunto de elementos</b> sendo um <b>input</b> <span>type="search"</span>, classe <b>form-control</b> & um <b>button</b> <span>type="submit"</span>, classe <b>btn</b> <b>btn-cores</b> para criar um elemento de <b>buscas</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;form&gt;</b></h3>
+        <h4 class="text-center">(<span>&lt;input&gt;</span> & <span>&lt;button&gt;</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <nav class="navbar bg-light navbar-expand-md">
+            <div class="container">
+                <span href="#" class="navbar-brand d-flex align-items-center"><img src="../img/isotipo-64.png" class="">noctua7</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#id-navbar1"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="id-navbar1">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Produtos</a>
+                        <a href="#" class="nav-link">Contato</a>
+                        <a href="#" class="nav-link">Sobre</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-2">
+                <form action="" class="d-flex ms-auto"><input type="search" class="form-control" placeholder="buscar..."><button class="btn btn-outline-success" type="submit">Buscar</button></form>
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <!-- fim do form (buscar) -->
+    
+    <div class="container">
+        <h3 class="text-center"><b>dropdown</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos transformar cada elemento (<span>link</span>) da classe <b>nav-link</b> em um <b>sub-menu</b> suspenso <b>envolvendo-o</b> com um elemento de bloco (<span>&lt;div&gt;</span>) com a classe <b>dropdown</b> e acrescentando à classe <b>nav-link</b> a classe <b>dropdown-toggle</b> e o atributo <b>data-bs-toggle</b> com o valor <b>dropdown</b> (data-bs-toggle="dropdown") e logo abaixo do link acrescentar um elemento <b>&lt;ul&gt;</b> da classe <b>dropdown-menu</b> com elementos <b>&lt;li&gt;</b> com os links &lt;a&gt; com a classe <b>dropdown-item</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div&gt;</b></h3>
+        <h4 class="text-center">(<span>dropdown</span> & <span>dropdown-toggle</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <nav class="navbar bg-light navbar-expand-md">
+            <div class="container">
+                <span href="#" class="navbar-brand d-flex align-items-center"><img src="../img/isotipo-64.png" class="">noctua7</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#id-navbar2"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="id-navbar2">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-link">Home</a>
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produtos</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">produto 1</a></li>
+                                <li><a href="#" class="dropdown-item">produto 2</a></li>
+                                <li><a href="#" class="dropdown-item">produto 3</a></li>
+                                <li><a href="#" class="dropdown-item">produto 4</a></li>
+                                <li><a href="#" class="dropdown-item">produto 5</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="nav-link">Contato</a>
+                        <a href="#" class="nav-link">Sobre</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-2">
+                <form action="" class="d-flex ms-auto"><input type="search" class="form-control" placeholder="buscar..."><button class="btn btn-outline-success" type="submit">Buscar</button></form>
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <!-- fim do dropdown / drpdown-item (menu suspenso) -->
+
+    <div class="container">
+        <h3 class="text-center"><b>bg-color</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos alterar as <b>cores</b> da barra de navegação com as classes de cores para <span>backgroud-color</span> do bootstrap (<span>bg-primary, bg-secondary, etc</span>) mas devemos incluir a classe <b>navbar-dark</b> para que haja <b>constraste</b> entre os <span>textos do componentes e o backgroud da navbar</span>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div&gt;</b></h3>
+        <h4 class="text-center">(<span>dropdown</span> & <span>dropdown-toggle</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <nav class="navbar bg-dark navbar-dark navbar-expand-md">
+            <div class="container">
+                <span href="#" class="navbar-brand d-flex align-items-center"><img src="../img/isotipo-64.png" class="">noctua7</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#id-navbar3"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="id-navbar3">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-link">Home</a>
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produtos</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">produto 1</a></li>
+                                <li><a href="#" class="dropdown-item">produto 2</a></li>
+                                <li><a href="#" class="dropdown-item">produto 3</a></li>
+                                <li><a href="#" class="dropdown-item">produto 4</a></li>
+                                <li><a href="#" class="dropdown-item">produto 5</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="nav-link">Contato</a>
+                        <a href="#" class="nav-link">Sobre</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-2">
+                <form action="" class="d-flex ms-auto"><input type="search" class="form-control" placeholder="buscar..."><button class="btn btn-outline-info" type="submit">Buscar</button></form>
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <!-- fim do bg-cores (navbar) -->
+
+    <div class="container">
+        <h3 class="text-center"><b>posição do menu de navegação</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para colocarmos o menu de navegação <b>à direita da viewport</b>, incluímos um <b>margin</b> automático à esquerda  (<b>ms-auto</b>) no elemento de bloco (<span>div</span>) com a classe <b>navbar-nav</b>. Caso o menu suspenso do elemento de navegação <span>mais à direita</span> ultrapasse o limite da <b>viewport</b>, acrescenta-se a classe <b>dropdown-menu-end</b> à TAG <b>&lt;ul&gt;</b> com a classe <b>dropdown-menu</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;menu de navegação&gt;</b></h3>
+        <h4 class="text-center">(<span>ms-auto</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <nav class="navbar bg-dark navbar-dark navbar-expand-md">
+            <div class="container">
+                <span href="#" class="navbar-brand d-flex align-items-center"><img src="../img/isotipo-64.png" class="">noctua7</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#id-navbar4"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="id-navbar4">
+                    <div class="navbar-nav ms-auto">
+                        <a href="#" class="nav-link">Home</a>
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produtos</a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a href="#" class="dropdown-item">produto 1</a></li>
+                                <li><a href="#" class="dropdown-item">produto 2</a></li>
+                                <li><a href="#" class="dropdown-item">produto 3</a></li>
+                                <li><a href="#" class="dropdown-item">produto 4</a></li>
+                                <li><a href="#" class="dropdown-item">produto 5</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="nav-link">Contato</a>
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sobre</a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a href="#" class="dropdown-item">sobre 1</a></li>
+                                <li><a href="#" class="dropdown-item">sobre 2</a></li>
+                                <li><a href="#" class="dropdown-item">sobre 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <!-- fim do ms-auto (navbar-nav) -->
+
+    <div class="container">
+        <h3 class="text-center"><b>stick-top</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para fixarmos a <b>navbar</b>, assim como qualquer elemento de bloco no topo da página utilizamos a classe <b>stick-top</b> e para fixarmos na base da viewpot utilizamos a classe <b>stick-bottom</b>.</li>
+            <li class="list-group-item">Caso o conteúdo da página não complete toda a altura da viewpot, o elemento fixado na base com a classe <b>stick-bottom</b> ficará no fim do conteúdo, não fixando no fim da viewpot. Para resolver este problema acrescentamos <span>outro elemento de bloco do mesmo tamanho</span> com visibility=none e a classe <b>fixed-botton</b></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;navbar&gt;</b></h3>
+        <h4 class="text-center">(<span>stick-top</span> &  <span>stick-bottom</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="rect overflow-auto">
+            <nav class="navbar bg-dark navbar-dark navbar-expand-md">
+                <div class="container">
+                    <span href="#" class="navbar-brand d-flex align-items-center"><img src="../img/isotipo-64.png" class="">noctua7</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#id-navbar4"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="id-navbar4">
+                        <div class="navbar-nav ms-auto">
+                            <a href="#" class="nav-link">Home</a>
+                            <div class="dropdown">
+                                <a href="#" class="nav-link     dropdown-toggle" data-bs-toggle="dropdown">Produtos</a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a href="#" class="dropdown-item">produto 1</a></li>
+                                    <li><a href="#" class="dropdown-item">produto 2</a></li>
+                                    <li><a href="#" class="dropdown-item">produto 3</a></li>
+                                    <li><a href="#" class="dropdown-item">produto 4</a></li>
+                                    <li><a href="#" class="dropdown-item">produto 5</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="nav-link">Contato</a>
+                            <div class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sobre</a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a href="#" class="dropdown-item">sobre 1</a></li>
+                                    <li><a href="#" class="dropdown-item">sobre 2</a></li>
+                                    <li><a href="#" class="dropdown-item">sobre 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestias, doloremque dolor blanditiis illo vel! Rerum aliquid at nemo, necessitatibus labore quibusdam possimus? Quod tempora libero neque consectetur obcaecati nihil amet molestiae fugit blanditiis, expedita similique ad optio ullam numquam! Quidem cupiditate labore neque similique iusto suscipit ullam, illo libero sint maiores impedit mollitia perspiciatis pariatur quis! Deserunt magni ut dolor quibusdam eius aut ullam cum nostrum ad? Distinctio, hic sed? Illum, ab eius nihil labore quia corrupti omnis? Est voluptates tempore iure placeat, dolores laudantium quibusdam cumque labore reiciendis officia. Quas repellendus sed esse quis, ratione fugit deleniti unde?</p>
         </div>
     </div>
-    <!-- fim do btn-group (buttons) -->
-
-    
     <hr>
+    <!-- fim do stick-top (navbar) -->
 
 </body>
 
