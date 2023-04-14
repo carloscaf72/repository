@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link shortcut icon - noctua7 - Interno -->
+    <link rel="shortcut icon" href="../img/isotipo-64.png" type="image/png">
+
+    <!-- Link CSS - Bootstrap - Interno -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Link CSS - noctua7 - Interno -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- link Icons - Bootstrap - via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- link JS - Bootstrap - Interno -->
+    <script src="../js/bootstrap.bundle.min.js" defer></script>
+
+    <title>Alerts-Badges-List</title>
+</head>
+
+<body>
+
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                <img height="48" src="../img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+
+            <h1 class="col d-flex align-items-center justify-content-center">
+                Alerts-Badges-List
+            </h1>
+
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                <a href="../">
+                    <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                </a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">O Bootstrap contém diversas classes para criação e configurações de <b>alerts</b>, <b>badges</b> e <b>lists</b>, melhorando seu <b>visual</b> em relação ao HTML padrão.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center"><b>alert</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para a criação de um <b>alert</b> utilizamos um elemento de bloco <span>(div)</span> com a classe <b>alert</b> e a classe <b>alert</b> + <b>traço</b> (-) + uma das <b>cores temáticas</b> (<em>primary, secondary, success, danger, info, warning, dark, light</em>).</li>
+            <li class="list-group-item">Por <span>padrão</span>, o <span>componente</span> ocupará <b>100%</b> da largura do elemento <span>pai</span>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div&gt;</b></h3>
+        <h4 class="text-center">(<span>alert alert-info</span>)</h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="alert alert-info">Este é um alerta simples</div>
+    </div>
+    <hr>
+    <!-- fim do alert -->
+
+    <div class="container">
+        <h3 class="text-center"><b>alert-link</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para incluirmos um <b>link</b> ao <b>alert</b> o criamos com a classe <b>alert-link</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div</b> <span>class="</span>alert<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;a</b> <span>class="</span>alert-link<span>"</span><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="alert alert-info">
+            <p>Este é um alerta simples</p>
+            <a href="#" class="alert-link">saiba mais...</a>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do alert-link -->
+
+    <div class="container">
+        <h3 class="text-center"><b>alert-heading</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para incluirmos um <b>Título</b> ao <b>alert</b> o criamos com a classe <b>alert-heading</b>, podendo inclusive acrescentar <b>ícones</b>.</li>
+            <li class="list-group-item">A classe <b>alert-heading</b> não altera a aparência dos componentes, devendo assim ser complementada com <span>elementos</span> ou <span>classes</span> para formatação do <b>tamanho</b> e/ou <b>aparência</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div</b> <span>class="</span>alert<span>"</span><b>&gt;</b></h3>
+        <h4 class="text-center"><b>&lt;h3</b> <span>class="</span>alert-heading<span>"</span><b>&gt;</b></h4>
+        <h4 class="text-center"><b>&lt;i</b> <span>class="</span>bi-info-circle<span>"</span><b>&gt;</b></h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="alert alert-info">
+            <h3 class="alert-heading"><i class="bi-info-circle"></i> Informação</h3>
+            <p>Este é um alerta simples</p>
+            <a href="#" class="alert-link">saiba mais...</a>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do alert-heading -->
+
+    <div class="container">
+        <h3 class="text-center"><b>alert-dismissible</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos incluir um <b>botão de fechamento</b> ao <b>alert</b> acrescentando a classe <b>alert-dismissible</b> ao componente e incluindo um <b>&lt;button&gt;</b> logo após o conteúdo do <b>alert</b> com a classe <b>btn-close</b> e o atributo <b>data-bs-dismiss</b> com o valor <b>alert</b> (data-bs-dismiss="alert").</li>
+            <li class="list-group-item">Acrescentando as classes <b>fade</b> e <b>show</b>, tornamos o fechamento do <b>alert</b> mais suave.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div</b> <span>class="</span>alert alert-dismissible fade<span>"</span><b>&gt;</b></h3>
+        <h4 class="text-center"><b>&lt;button</b> <span>class="</span>btn-close<span>" data-bs-dismiss="</span>alert<span>"</span><b>&gt;</b></h4>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="alert alert-info alert-dismissible fade show">
+            <h3 class="alert-heading"><i class="bi-info-circle"></i> Informação</h3>
+            <p>Este é um alerta simples</p>
+            <button class="btn-close" data-bs-dismiss="alert"></button>
+            <a href="#" class="alert-link">saiba mais...</a>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do alert-dismissible -->
+
+    <div class="container">
+        <h3 class="text-center"><b>badges</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>badges</b> é utilizada para demonstrar <span>pequenos conteúdos</span> de forma <b>destacada</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;h3&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;span</b> <span>class="</span>badge<span>"</span><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <h3>Texto em um H3:
+            <span class="badge bg-secondary">novo</span>
+            <span class="badge bg-secondary rounded-pill">novo</span>
+        </h3>
+    </div>
+    <hr>
+    <!-- fim do badge (h3) -->
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;button&gt;</b> <b>badges</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>badges</b> utilizada em um componente <b>&lt;button&gt;</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;button </b><span>class="</span>btn btn-primary<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;span</b> <span>class="</span>badge text-bg-danger<span>"</span><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <button class="btn btn-info me-2">notificações
+            <span class="badge bg-warning">5</span>
+        </button>
+        <button class="btn btn-info position-relative me-2">notificações
+            <span class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">5</span>
+        </button>
+        <button class="btn btn-dark position-relative me-2">notificações
+            <span class="badge bg-info position-absolute top-0 start-100 translate-middle rounded-circle p-2"> </span>
+        </button>
+        <button class="btn btn-light position-relative me-2">notificações
+            <span class="badge bg-success position-absolute top-0 start-100 translate-middle rounded-circle p-2 border-light"> </span>
+        </button>
+    </div>
+    <hr>
+    <!-- fim do badge (button) -->
+
+    <div class="container">
+        <h3 class="text-center"><b>list-group</b> & <b>list-group-item</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>list-group</b> é utilizada para criar um <b>container</b> de <span>agrupamento de listas</span>.</li>
+            <li class="list-group-item">A classe <b>list-group-item</b> é utilizada em cada um dos elementos que serão agrupados como numa <b>lista</b>.</li>
+            <li class="list-group-item">A classe <b>list-group-item-action</b> é utilizada em cada um dos elementos para <b>mudar a aparência</b> ao <b>passar o mouse</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div </b><span>class="</span>list-group<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;li</b> <span>class="</span>list-group-item<span>"</span><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="list-group">
+            <li class="list-group-item">item de lista 1</li>
+            <li class="list-group-item">item de lista 2</li>
+            <li class="list-group-item">item de lista 3</li>
+            <li class="list-group-item">item de lista 4</li>
+            <li class="list-group-item">item de lista 5</li>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div </b><span>class="</span>list-group<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;a</b> <span>class="</span>list-group-item list-group-item-action<span>"</span><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">link 1</a>
+            <a href="#" class="list-group-item list-group-item-action">link 2</a>
+            <a href="#" class="list-group-item list-group-item-action">link 3</a>
+            <a href="#" class="list-group-item list-group-item-action">link 4</a>
+            <a href="#" class="list-group-item list-group-item-action">link 5</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div </b><span>class="</span>list-group<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;button</b> <span>class="</span>list-group-item list-group-item-action<span>"</span><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="list-group">
+            <button class="list-group-item list-group-item-action">botão 1</button>
+            <button class="list-group-item list-group-item-action">botão 2</button>
+            <button class="list-group-item list-group-item-action">botão 3</button>
+            <button class="list-group-item list-group-item-action">botão 4</button>
+            <button class="list-group-item list-group-item-action">botão 5</button>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do list-group & list-group-item & list-group-item-action -->
+
+    <div class="container">
+        <h3 class="text-center"><b>list-group-flush</b></h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>list-group-flush</b> deixa a aparência da lista mais <b>suave</b>, retirando as <span>linhas de contorno</span>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div </b><span>class="</span>list-group-flush<span>"</span><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="list-group list-group-flush">
+            <li class="list-group-item">item 1</li>
+            <li class="list-group-item">item 2</li>
+            <li class="list-group-item">item 3</li>
+            <li class="list-group-item">item 4</li>
+            <li class="list-group-item">item 5</li>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do list-group-flush -->
+
+    <div class="container">
+        <h3 class="text-center"><b>active</b> & <b>disabled</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>active</b> deixa a aparência do elemento como <b>ativo</b> ou <b>selecionado</b>. A classe <b>disabled</b> deixa a aparência do elemento como <b>inativo</b> ou <b>cancelado</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div </b><span>class="</span>list-group<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;li</b> <span>class="</span>list-group-item active<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;li</b> <span>class="</span>list-group-item disabled<span>"</span><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="list-group">
+            <button class="list-group-item list-group-item-action active">botão 1</button>
+            <button class="list-group-item list-group-item-action">botão 2</button>
+            <button class="list-group-item list-group-item-action">botão 3</button>
+            <button class="list-group-item list-group-item-action disabled">botão 4</button>
+            <button class="list-group-item list-group-item-action">botão 5</button>
+        </div>
+        
+        
+    </div>
+    <hr>
+    <!-- fim do active & disabled -->
+
+    <div class="container">
+        <h3 class="text-center"><b>list-group-numbered</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>list-group-numbered</b> acrescenta uma numeração à lista mesmo em componentes que não sejam criadas com a TAG <b>&lt;ol&gt;</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;ol </b><span>class="</span>list-group-numbered<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;li</b> <span>class="</span>list-group-item<span>"</span><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item list-group-item-action">Laranja</li>
+            <li class="list-group-item list-group-item-action">Mamão</li>
+            <li class="list-group-item list-group-item-action">Maçã</li>
+            <li class="list-group-item list-group-item-action">Pêra</li>
+            <li class="list-group-item list-group-item-action">Uva</li>
+        </ol>
+    </div>
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div </b><span>class="</span>list-group-numbered<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;li</b> <span>class="</span>list-group-item<span>"</span><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="list-group list-group-numbered">
+            <li class="list-group-item list-group-item-action">Laranja</li>
+            <li class="list-group-item list-group-item-action">Mamão</li>
+            <li class="list-group-item list-group-item-action">Maçã</li>
+            <li class="list-group-item list-group-item-action">Pêra</li>
+            <li class="list-group-item list-group-item-action">Uva</li>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do list-group-numbered -->
+
+    <div class="container">
+        <h3 class="text-center"><b>list-group</b> & <b>links completos</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos utilizar a classe <b>list-group</b> para formar listas de elementos como os <b>cards</b>, <b>clicáveis</b>, com a TAG <b>&lt;a&gt;</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>&lt;div </b><span>class="</span>list-group<span>"</span><b>&gt;</b></h3>
+        <h3 class="text-center"><b>&lt;a</b> <span>class="</span>list-group-item list-group-item-action<span>"</span><b>&gt;</b></h3>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Título da Notícia</h5>
+                    <small>5 dias atrás</small>
+                </div>
+                <p class="mb-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur necessitatibus saepe possimus eum dolor autem tempore, atque nisi quis neque!</p>
+                <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, harum.</small>
+            </a>
+        </div>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action text-bg-dark">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Título da Notícia</h5>
+                    <small>5 dias atrás</small>
+                </div>
+                <p class="mb-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur necessitatibus saepe possimus eum dolor autem tempore, atque nisi quis neque!</p>
+                <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, harum.</small>
+            </a>
+        </div>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Título da Notícia</h5>
+                    <small>5 dias atrás</small>
+                </div>
+                <p class="mb-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur necessitatibus saepe possimus eum dolor autem tempore, atque nisi quis neque!</p>
+                <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, harum.</small>
+            </a>
+        </div>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Título da Notícia</h5>
+                    <small>5 dias atrás</small>
+                </div>
+                <p class="mb-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur necessitatibus saepe possimus eum dolor autem tempore, atque nisi quis neque!</p>
+                <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, harum.</small>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do list-group-numbered -->
+
+</body>
+</html>
