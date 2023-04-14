@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link shortcut icon - noctua7 - Interno -->
+    <link rel="shortcut icon" href="../img/isotipo-64.png" type="image/png">
+
+    <!-- Link CSS - Bootstrap - Interno -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Link CSS - noctua7 - Interno -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- link Icons - Bootstrap - via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- link JS - Bootstrap - Interno -->
+    <script src="../js/bootstrap.bundle.min.js" defer></script>
+
+    <title>Carousel</title>
+</head>
+
+<body>
+
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                <img height="48" src="../img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+
+            <h1 class="col d-flex align-items-center justify-content-center">
+                Carousel
+            </h1>
+
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                <a href="../">
+                    <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                </a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">O Bootstrap contém diversas classes para criação e configurações de <b>carousel</b>, melhorando seu <b>visual</b> em relação ao HTML padrão.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <div class="container">
+        <h3 class="text-center"><b>carousel</b> & <b>slide</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para a criação de um <b>carousel</b> utilizamos como <b>componente principal</b> um elemento de bloco <span>(div)</span> com a classe <b>carousel</b> e a classe <b>slide</b>, acrescentando o atributo <b>data-bs-ride</b> com o valor <b>carousel</b> (<em>data-bs-ride="carousel"</em>).</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>carousel-inner</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Dentro do componente principal utilizamos mais um elemento de bloco <span>(div)</span> com a classe <b>carousel-inner</b> que será responsável pelos compnentes com as imagens (slides).</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>carousel-item</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Cada elemento de bloco <span>(div)</span> da classe <b>carousel-item</b> representa um <b>slide</b> da apresentação. Esses componentes serão inseridos dentro do elemento da classe <b>carousel-inner</b>, sendo necessário colocar a classe <b>active</b> no 1º elemento com imagem (slide).</li>
+        </ul>
+    </div>
+    
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/MariaEmilia-1.png" alt="mariaEmilia-1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/MariaEmilia-2.png" alt="mariaEmilia-2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/MariaEmilia-3.png" alt="mariaEmilia-3" class="d-block w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do carousel / carousel-inner / carousel-item -->
+
+    <div class="container">
+        <h3 class="text-center"><b>carousel-control-prev</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>carousel-control-prev</b> é colocada em um componente <b>&lt;button&gt;</b>, abaixo do componente (<em>carousel-inner</em>), com o atributo <b>data-bs-slide</b> com o valor <b>prev</b> (<em>data-bs-slide="prev"</em>) e o atributo <b>data-bs-target</b> com o valor apontando para o <b>id</b> do componente principal (<em>carousel slide</em>) (<em>data-bs-target="#id-slide"</em>), sendo colocado como conteúdo do <b>&lt;button&gt;</b> um elemento <b>&lt;span&gt;</b> com a classe <b>carousel-control-prev-icon</b> e serve para acessar o slide anterior ao apresentado.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3 class="text-center"><b>carousel-control-next</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>carousel-control-next</b> é colocada em um componente <b>&lt;button&gt;</b>, abaixo do componente (<em>carousel-inner</em>), com o atributo <b>data-bs-slide</b> com o valor <b>next</b> (<em>data-bs-slide="next"</em>) e o atributo <b>data-bs-target</b> com o valor apontando para o <b>id</b> do componente principal (<em>carousel slide</em>) (<em>data-bs-target="#id-slide"</em>), sendo colocado como conteúdo do <b>&lt;button&gt;</b> um elemento <b>&lt;span&gt;</b> com a classe <b>carousel-control-next-icon</b> e serve para acessar o slide posterior ao apresentado.</li>
+        </ul>
+    </div>
+    
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="carousel slide" data-bs-ride="carousel" id="id-slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/MariaEmilia-1.png" alt="mariaEmilia-1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/MariaEmilia-2.png" alt="mariaEmilia-2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/MariaEmilia-3.png" alt="mariaEmilia-3" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#id-slide">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#id-slide">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do carousel-control-prev / carousel-control-next -->
+
+    <div class="container">
+        <h3 class="text-center"><b>carousel-indicators</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para acrescentarmos indicadores aos <b>slides</b> criamos um elemento de bloco <span>(div)</span>, logo acima do componente (<em>carousel-inner</em>), onde serão colocados componentes da TAG <b>&lt;button&gt;</b> com o atributo <b>data-bs-target</b> com o valor apontando para o <b>id</b> do componente principal (<em>carousel slide</em>) (<em>data-bs-target="#id-slide"</em>) e o atributo <b>data-bs-slide-to</b> com o valor que será um <b>número</b> indicando o <b>indice do slide</b> (<em>data-bs-slide-to="0"</em>).</li>
+            <li class="list-group-item">É necessário que a quantidade de componentes da TAG <b>&lt;button&gt;</b> seja igual a quantidade de slides da apresentação, sendo necessário colocar a classe <b>active</b> no 1º elemento assim como foi feito nos <b>slides</b> (<em>carousel-item</em>).</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="carousel slide" data-bs-ride="carousel" id="id-slide-indicators">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#id-slide-indicators" data-bs-slide-to="0"></button>
+                <button data-bs-target="#id-slide-indicators" data-bs-slide-to="1"></button>
+                <button data-bs-target="#id-slide-indicators" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/MariaEmilia-1.png" alt="mariaEmilia-1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/MariaEmilia-2.png" alt="mariaEmilia-2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/MariaEmilia-3.png" alt="mariaEmilia-3" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#id-slide-indicators">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#id-slide-indicators">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do carousel-indicators -->
+
+    <div class="container">
+        <h3 class="text-center"><b>carousel-caption</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para acrescentarmos textos aos <b>slides</b> criamos um elemento de bloco <span>(div)</span> dentro do componente <b>carousel-item</b> com a classe <b>carousel-caption</b>, colocado logo abaixo da TAG &lt;img&gt;.</li>
+            <li class="list-group-item">A classe <b>carousel-caption</b> não altera a aparência dos componentes, devendo assim ser complementada com <span>elementos</span> ou <span>classes</span> para formatação do <b>tamanho</b> e/ou <b>aparência</b>.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="carousel slide" data-bs-ride="carousel" id="id-slide-caption">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#id-slide-caption" data-bs-slide-to="0"></button>
+                <button data-bs-target="#id-slide-caption" data-bs-slide-to="1"></button>
+                <button data-bs-target="#id-slide-caption" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/MariaEmilia-1.png" alt="mariaEmilia-1" class="d-block w-100">
+                    <div class="carousel-caption bg-n7-5-50 rounded-pill">
+                        <h3 class="text-n7-cinza">Maria Emília Dorminhoca</h3>
+                        <p class="text-n7-cinza">Não era sempre que acontecia, mas em alguns momentos ela dormia à tarde e parava de chorar.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/MariaEmilia-2.png" alt="mariaEmilia-2" class="d-block w-100">
+                    <div class="carousel-caption bg-n7-5-50 rounded-pill">
+                        <h3 class="text-n7-cinza">Papai Bobalhão</h3>
+                        <p class="text-n7-cinza">É só um pai feliz com sua princesa.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/MariaEmilia-3.png" alt="mariaEmilia-3" class="d-block w-100">
+                    <div class="carousel-caption bg-n7-5-50 rounded-pill">
+                        <h3 class="text-n7-cinza">Mamãe Babona</h3>
+                        <p class="text-n7-cinza">É só uma mãe babando pela cria.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#id-slide-caption">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#id-slide-caption">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do carousel-caption -->
+
+    <div class="container">
+        <h3 class="text-center"><b>carousel-fade</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para alterarmos a apresentação dos <b>slides</b> de <b>deslizante</b> para <b>esmaecendo</b>, inserimos a classe <b>carousel-fade</b> ao componente principal (<em>carousel slide</em>).</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="id-slide-fade">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#id-slide-fade" data-bs-slide-to="0"></button>
+                <button data-bs-target="#id-slide-fade" data-bs-slide-to="1"></button>
+                <button data-bs-target="#id-slide-fade" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/MariaEmilia-1.png" alt="mariaEmilia-1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/MariaEmilia-2.png" alt="mariaEmilia-2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/MariaEmilia-3.png" alt="mariaEmilia-3" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#id-slide-fade">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#id-slide-fade">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do carousel-fade -->
+
+    <div class="container">
+        <h3 class="text-center"><b>data-bs-interval</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos escolher o tempo de apresentação dos <b>slides</b> acrescentando a cada slide (<em>carousel-item</em>) o atributo <b>data-bs-interval</b> com o valor sendo colocado em <b>milissegundos</b> (<em>data-bs-interval="3000"</em>).</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="id-slide-interval">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#id-slide-interval" data-bs-slide-to="0"></button>
+                <button data-bs-target="#id-slide-interval" data-bs-slide-to="1"></button>
+                <button data-bs-target="#id-slide-interval" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="../img/MariaEmilia-1.png" alt="mariaEmilia-1" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../img/MariaEmilia-2.png" alt="mariaEmilia-2" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="../img/MariaEmilia-3.png" alt="mariaEmilia-3" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#id-slide-interval">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#id-slide-interval">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do data-bs-interval -->
+
+    <div class="container">
+        <h3 class="text-center"><b>data-bs-touch</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos desabilitar a função <b>touch</b> da apresentação dos <b>slides</b>, quando acesso for por <b>celulares</b> ou <b>tablets</b> acrescentando ao componente principal (<em>carousel slide</em>) o atributo <b>data-bs-touch</b> com o valor <b>false</b> (<em>data-bs-touch="false"</em>).</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="carousel slide" data-bs-ride="carousel" data-bs-touch="false" id="id-slide-touch">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#id-slide-touch" data-bs-slide-to="0"></button>
+                <button data-bs-target="#id-slide-touch" data-bs-slide-to="1"></button>
+                <button data-bs-target="#id-slide-touch" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="../img/MariaEmilia-1.png" alt="mariaEmilia-1" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../img/MariaEmilia-2.png" alt="mariaEmilia-2" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../img/MariaEmilia-3.png" alt="mariaEmilia-3" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#id-slide-touch">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#id-slide-touch">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do data-bs-touch -->
+
+    <div class="container">
+        <h3 class="text-center"><b>carousel-dark</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos alterar as cores dos botões de seleção, assim os textos acrescentando ao componente principal (<em>carousel slide</em>) a classe <b>carousel-dark</b>.</li>
+            <li class="list-group-item">A classe <b>carousel-dark</b> altera todos os componentes dentro de cada <b>slide</b>, porém, os elementos de textos da classe <b>carousel-caption</b> poderão receber configurações com as classes de cores temática do bootstrap.</li>
+        </ul>
+    </div>
+
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <div class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-touch="false" id="id-slide-dark">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#id-slide-dark" data-bs-slide-to="0"></button>
+                <button data-bs-target="#id-slide-dark" data-bs-slide-to="1"></button>
+                <button data-bs-target="#id-slide-dark" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="../img/MariaEmilia-1.png" alt="mariaEmilia-1" class="d-block w-100">
+                    <div class="carousel-caption bg-n7-5-50 rounded-pill">
+                        <h3>Maria Emília Dorminhoca</h3>
+                        <p class="text-n7-cinza">Não era sempre que acontecia, mas em alguns momentos ela dormia à tarde e parava de chorar.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../img/MariaEmilia-2.png" alt="mariaEmilia-2" class="d-block w-100">
+                    <div class="carousel-caption bg-n7-5-50 rounded-pill">
+                        <h3>Papai Bobalhão</h3>
+                        <p class="text-n7-cinza">É só um pai feliz com sua princesa.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../img/MariaEmilia-3.png" alt="mariaEmilia-3" class="d-block w-100">
+                    <div class="carousel-caption bg-n7-5-50 rounded-pill">
+                        <h3>Mamãe Babona</h3>
+                        <p class="text-n7-cinza">É só uma mãe babando pela cria.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#id-slide-dark">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#id-slide-dark">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do data-bs-touch -->
+
+</body>
+</html>

@@ -23,7 +23,11 @@
     --cor3: #4D819F;
     --cor4: #19628C;
     --cor5: #103E59;
-
+    --cor5-10: #103E5910;
+    --cor5-25: #103E5925;
+    --cor5-50: #103E5950;
+    --cor5-75: #103E5975;
+    
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-indieFlower: 'IndieFlower', Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Fredoka', cursive;
@@ -88,10 +92,23 @@
     background-color: var(--cor5);
 }
 
-.bg-n7-cinza {
-    background-color: var(--cor-gray);
-    color: var(--cor-red);
+.bg-n7-5-10 {
+    background-color: var(--cor5-10);
 }
+
+.bg-n7-5-25 {
+    background-color: var(--cor5-25);
+}
+
+.bg-n7-5-50 {
+    background-color: var(--cor5-50);
+}
+
+.bg-n7-5-75 {
+    background-color: var(--cor5-75);
+}
+
+
 
 .fs-n7-16 {
     font-size: 16px;
@@ -111,6 +128,16 @@
 
 .fs-n7-96 {
     font-size: 96px;
+}
+
+.btn-n7-cinza {
+    background-color: var(--cor-gray);
+    color: var(--cor-red);
+}
+
+.btn-n7-red {
+    background-color: var(--cor-red);
+    color: var(--cor-gray);
 }
 
 .btn-n7-5 {
