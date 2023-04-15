@@ -55,110 +55,54 @@
     </section>
     <hr>
 
+    <!-- início do toast / toast-header / toast-body -->
     <div class="container">
         <h3 class="text-center"><b>toast</b>:</h3>
-        <ul class="list-group my-3">
-            <li class="list-group-item">O componente <b>toast</b> permite exibir <b>mensagens</b> no estilo de <span>notificações flutuantes</span> e necessita de um código <b>JS</b> para ser inicializado.</li>
-            <li class="list-group-item">Para a criação de um <b>toast</b> utilizamos como <b>componente principal</b> um elemento de bloco <span>(div)</span> com a classe <b>toast</b>.</li>
-        </ul>
-    </div>
-
-    <div class="container">
         <h3 class="text-center"><b>toast-header</b> & <b>toast-body</b>:</h3>
         <ul class="list-group my-3">
-            <li class="list-group-item">Dentro do componente principal utilizamos mais um elemento de bloco <span>(div)</span> com as classes <b>toast-header</b> (<em>cabeçalho do toast</em>) e <b>toast-body</b> (<em>corpo do toast</em>).</li>
+            <li class="list-group-item">O componente <b>toast</b> permite exibir <b>mensagens temporárias</b> no estilo de <span>notificações flutuantes</span> e necessita de um código <b>JS</b> para ser <b>inicializado</b>.</li>
+            <li class="list-group-item">Para a criação de um <b>toast</b> utilizamos como <b>componente principal</b> um elemento de bloco <span>(div)</span> com a classe <b>toast</b> e dentro do componente principal utilizamos mais um (1) elemento de bloco <span>(div)</span> com a classe <b>toast-header</b> (<em>cabeçalho</em>) e outro da classe <b>toast-body</b> (<em>corpo</em>)..</li>
         </ul>
     </div>
 
     <div class="container py-2 rounded bg-n7-1 mb-3">
-        <div class="toast">
-            <div class="toast-header">
-            </div>
-            <div class="toast-body">
-            </div>
-        </div>
+        <a href="./toast/" class="btn btn-n7-5">Exemplo</a>
     </div>
     <hr>
     <!-- fim do toast / toast-header / toast-body -->
 
-    <div class="container">
-        <h3 class="text-center"><b>montando um toast</b>:</h3>
-        <h3 class="text-center"><b>toast-header</b>:</h3>
-        <ul class="list-group my-3">
-            <li class="list-group-item">ícone: TAG <b>&lt;i&gt;</b> com a classe <b>bi-info-circle</b> e <b>me-1</b>.</li>
-            <li class="list-group-item">título: TAG <b>&lt;strong&gt;</b> com a classe <b>me-auto</b>.</li>
-            <li class="list-group-item">botão de fechar: TAG <b>&lt;button&gt;</b> com a classe <b>btn-close</b> e <b>ms-auto</b>.</li>
-        </ul>
-        <h3 class="text-center"><b>toast-body</b>:</h3>
-        <ul class="list-group my-3">
-            <li class="list-group-item">texto (mensagem): TAG <b>&lt;p&gt;</b>.</li>
-        </ul>
-    </div>
-
-    <div class="container py-2 rounded bg-n7-1 mb-3">
-        <div class="toast">
-            <div class="toast-header">
-                <i class="bi-info-circle me-1"></i>
-                <strong class="me-auto">informações</strong>
-                <button class="btn-close ms-auto" data-bs-dismiss="toast"></button>
-            </div>
-            <div class="toast-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita id quibusdam, assumenda obcaecati iure quam ullam. Nesciunt, est. A rem excepturi iure dolore animi incidunt laborum quaerat porro, illo soluta.</p>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <!-- fim do toast (montado) -->
-
+    <!-- início do toast com botões -->
     <div class="container">
         <h3 class="text-center"><b>toast com botões</b>:</h3>
-        <h3 class="text-center"><b>toast-body</b>:</h3>
+        <h3 class="text-center"><b>data-bs-dimiss</b>:</h3>
         <ul class="list-group my-3">
-            <li class="list-group-item">texto (mensagem).</li>
-            <li class="list-group-item">Bloco: TAG <b>&lt;div&gt;</b> com as classes <b>mt-2 pt-2 border-top</b>.</li>
-            <li class="list-group-item">Botão (Visualizar): TAG <b>&lt;button&gt;</b> com as classes <b>btn btn-primary btn-sm</b>.</li>
-            <li class="list-group-item">Botão (Ignorar): TAG <b>&lt;button&gt;</b> com as classes <b>btn btn-secondary btn-sm</b> e o atributo <b>data-bs-dismiss</b> com o valor <b>toast</b> (<em>data-bs-dismiss="toast"</em>).</li>
+            <li class="list-group-item">Podemos criar o componente <b>toast</b> com botões para inserir <b>ações</b> que permitam, <span>abrir uma nova página</span>, <span>ir para outro site</span>, etc, assim como <b>fechá-lo</b> com o atributo <b>data-bs-dismiss</b> com o valor <b>toast</b> (<em>data-bs-dismiss="toast"</em>).</li>
         </ul>
     </div>
 
     <div class="container py-2 rounded bg-n7-1 mb-3">
-        <div class="toast">
-            <div class="toast-body">
-                Chegaram novas mensagens.
-                <div class="mt-2 pt-2 border-top">
-                    <button class="btn btn-primary btn-sm">Visualizar</button>
-                    <button class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Ignorar</button>
-                </div>
-
-            </div>
-        </div>
+        <a href="./toast-buttons/" class="btn btn-n7-5">Exemplo</a>
     </div>
     <hr>
     <!-- fim do toast com botões -->
 
     <div class="container">
+        <h3 class="text-center"><b>toast</b>:</h3>
         <h3 class="text-center"><b>data-bs-delay</b>:</h3>
         <ul class="list-group my-3">
-            <li class="list-group-item">Podemos escolher o <b>tempo de aparição</b> do componente <b>toast</b> acrescentando no elemento principal (toast) o atributo <b>data-bs-delay</b> com o valor sendo colocado em <b>milissegundos</b> (<em>data-bs-interval="3000"</em>).</li>
+            <li class="list-group-item">Podemos escolher o <b>tempo de aparição</b> do componente <b>toast</b> acrescentando no elemento principal (<em>toast</em>) o atributo <b>data-bs-delay</b> com o valor sendo colocado em <b>milissegundos</b> (<em>data-bs-interval="3000"</em>).</li>
         </ul>
     </div>
 
     <div class="container py-2 rounded bg-n7-1 mb-3">
-        <div class="toast" data-bs-delay="900000">
-            <div class="toast-body">
-                Chegaram novas mensagens (15 minutos).
-                <div class="mt-2 pt-2 border-top">
-                    <button class="btn btn-primary btn-sm">Visualizar</button>
-                    <button class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Ignorar</button>
-                </div>
-
-            </div>
-        </div>
+        <a href="./toast-delay/" class="btn btn-n7-5">Exemplo</a>
     </div>
     <hr>
     <!-- fim do data-bs-delay -->
 
+    <!-- início do toast-colors -->
     <div class="container">
+        <h3 class="text-center"><b>toast</b>:</h3>
         <h3 class="text-center"><b>colors</b>:</h3>
         <ul class="list-group my-3">
             <li class="list-group-item">As classes de <b>cores temáticas</b> do bootstrap podem ser usadas para configuração de cores do componente <b>toast</b>.</li>
@@ -166,73 +110,45 @@
     </div>
 
     <div class="container py-2 rounded bg-n7-1 mb-3">
-        <div class="toast text-bg-danger" data-bs-delay="900000">
-            <div class="toast-body">
-                Chegaram novas mensagens (15 minutos).
-                <div class="mt-2 pt-2 border-top">
-                    <button class="btn btn-primary btn-sm">Visualizar</button>
-                    <button class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Ignorar</button>
-                </div>
-            </div>
-        </div>
+        <a href="./toast-colors/" class="btn btn-n7-5">Exemplo</a>
     </div>
     <hr>
-    <!-- fim do data-bs-delay -->
+    <!-- fim do toast-colors -->
 
+    <!-- fim do toast dynamic -->
     <div class="container">
-        <h3 class="text-center"><b>criação de toast dinâmico</b>:</h3>
+        <h3 class="text-center"><b>toast</b>:</h3>
+        <h3 class="text-center"><b>dynamic</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos ter um botão para <b>criar</b> elementos toasts <b>dinamicamente</b>, sendo necessário uma programação em <b>JS</b>.</li>
+        </ul>
     </div>
 
     <div class="container py-2 rounded bg-n7-1 mb-3">
-
-        <button class="btn btn-n7-5 my-2" id="btnToast">Criar Toast</button>
-
-        <div class="toast-container top-0 end-0 p-3" id="toastContainer"></div>
-        
-        <div class="toast" id="toast">
-            <div class="toast-header">
-                <i class="bi-info-circle me-1"></i>
-                <strong class="me-auto">informações</strong>
-                <button class="btn-close ms-auto" data-bs-dismiss="toast"></button>
-            </div>
-            <div class="toast-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita id quibusdam, assumenda obcaecati iure quam ullam.
-            </div>
-        </div>
+        <a href="./toast-dynamic/" class="btn btn-n7-5">Exemplo</a>
     </div>
     <hr>
-    <!-- fim do toast dinâmico -->
+    <!-- fim do toast dynamic -->
 
+    <!-- início do tooltip (data-bs-toggle & data-bs-title) -->
     <div class="container">
         <h3 class="text-center"><b>tooltip</b>:</h3>
         <h3 class="text-center"><b>data-bs-toggle</b> & <b>data-bs-title</b>:</h3>
         <ul class="list-group my-3">
             <li class="list-group-item">O componente <b>tooltip</b> permite exibir uma <b>dica flutuante</b> em qualquer elemento visual ao <b>passar o mouse por cima</b> e necessita de um código <b>JS</b> para ter funcionamento.</li>
-            <li class="list-group-item">Para a criação de um <b>tooltip</b> basta acrescentarmos o atributo <b>data-bs-toggle</b> com o valor <b>tooltip</b> e o atributo <b>data-bs-title</b> com o valor que será o <b>texto da dica do componente</b> em que está inserido.</li>
+            <li class="list-group-item">Para a criação de um <b>tooltip</b> basta acrescentarmos o atributo <b>data-bs-toggle</b> com o valor <b>tooltip</b> (<em>data-bs-toggle="tooltip"</em>) e o atributo <b>data-bs-title</b> com o valor que será o <b>texto da dica do componente</b> em que está inserido.</li>
         </ul>
     </div>
 
     <div class="container py-2 rounded bg-n7-1 mb-3">
-
-        <button class="btn btn-n7-5 my-2" id="btnToast" data-bs-toggle="tooltip" data-bs-title="Este botão cria toasts dinamicamente">Criar Toast</button>
-
-        <div class="toast-container top-0 end-0 p-3" id="toastContainer"></div>
-        
-        <div class="toast" id="toast">
-            <div class="toast-header">
-                <i class="bi-info-circle me-1"></i>
-                <strong class="me-auto">informações</strong>
-                <button class="btn-close ms-auto" data-bs-dismiss="toast"></button>
-            </div>
-            <div class="toast-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita id quibusdam, assumenda obcaecati iure quam ullam.
-            </div>
-        </div>
+        <a href="./tooltip/" class="btn btn-n7-5">Exemplo</a>
     </div>
     <hr>
-    <!-- fim do data-bs-toggle & data-bs-title -->
+    <!-- fim do tooltip (data-bs-toggle & data-bs-title) -->
 
+    <!-- início do tooltip (data-bs-html) -->
     <div class="container">
+        <h3 class="text-center"><b>tooltip</b>:</h3>
         <h3 class="text-center"><b>data-bs-html</b>:</h3>
         <ul class="list-group my-3">
             <li class="list-group-item">O atributo <b>data-bs-html</b> com o valor <b>true</b> permite <span>formatações HTML</span> na dica do componente <b>tooltip</b>.</li>
@@ -240,80 +156,41 @@
     </div>
 
     <div class="container py-2 rounded bg-n7-1 mb-3">
-
-        <button class="btn btn-n7-5 my-2" id="btnToast" data-bs-toggle="tooltip" data-bs-title="Este botão cria toasts <b>dinamicamente</b>" data-bs-html="true">Criar Toast</button>
-
-        <div class="toast-container top-0 end-0 p-3" id="toastContainer"></div>
-        
-        <div class="toast" id="toast">
-            <div class="toast-header">
-                <i class="bi-info-circle me-1"></i>
-                <strong class="me-auto">informações</strong>
-                <button class="btn-close ms-auto" data-bs-dismiss="toast"></button>
-            </div>
-            <div class="toast-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita id quibusdam, assumenda obcaecati iure quam ullam.
-            </div>
-        </div>
+        <a href="./tooltip-html/" class="btn btn-n7-5">Exemplo</a>
     </div>
     <hr>
-    <!-- fim do data-bs-html -->
+    <!-- fim do tooltip (data-bs-html) -->
     
+    <!-- início do tooltip (data-bs-placement) -->
     <div class="container">
+        <h3 class="text-center"><b>tooltip</b>:</h3>
         <h3 class="text-center"><b>data-bs-placement</b>:</h3>
         <ul class="list-group my-3">
-            <li class="list-group-item">O atributo <b>data-bs-placement</b> pode ter os valores <b>top</b>, <b>right</b>, <b>bottom</b> e <b>left</b> e serve para ajustar a <b>posição</b> do <b>tooltip</b> em relação ao seu componente, porém, ainda não está funcionando 14/04/2023.</li>
+            <li class="list-group-item">O atributo <b>data-bs-placement</b> pode ter os valores <b>top</b>, <b>right</b>, <b>bottom</b> e <b>left</b> e serve para ajustar a <b>posição</b> do <b>tooltip</b> em relação ao seu componente, porém, ainda não está funcionando 15/04/2023.</li>
         </ul>
     </div>
 
     <div class="container py-2 rounded bg-n7-1 mb-3">
-
-        <button class="btn btn-n7-5 my-2" id="btnToast" data-bs-toggle="tooltip" data-bs-title="Este botão cria toasts dinamicamente" data-bs-placement="bottom">Criar Toast</button>
-
-        <div class="toast-container top-0 end-0 p-3" id="toastContainer"></div>
-        
-        <div class="toast" id="toast">
-            <div class="toast-header">
-                <i class="bi-info-circle me-1"></i>
-                <strong class="me-auto">informações</strong>
-                <button class="btn-close ms-auto" data-bs-dismiss="toast"></button>
-            </div>
-            <div class="toast-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita id quibusdam, assumenda obcaecati iure quam ullam.
-            </div>
-        </div>
+        <a href="./tootlyip-placement/" class="btn btn-n7-5">Exemplo</a>
     </div>
     <hr>
-    <!-- fim do data-bs-placement -->
+    <!-- fim do tooltip (data-bs-placement) -->
 
+    <!-- início do popover (data-bs-toggle/title/content) -->
     <div class="container">
         <h3 class="text-center"><b>popover</b>:</h3>
-        <h3 class="text-center"><b>data-bs-toggle</b> & <b>data-bs-title</b>:</h3>
+        <h3 class="text-center"><b>data-bs-toggle</b> / <b>data-bs-title</b> / <b>data-bs-content</b>:</h3>
         <ul class="list-group my-3">
             <li class="list-group-item">O componente <b>popover</b> permite exibir uma <b>dica flutuante</b> em qualquer elemento visual ao ser <b>clicado</b> e necessita de um código <b>JS</b> para ter funcionamento.</li>
-            <li class="list-group-item">Para a criação de um <b>popover</b> basta acrescentarmos o atributo <b>data-bs-toggle</b> com o valor <b>popover</b> e o atributo <b>data-bs-title</b> com o valor que será um <b>título do componente</b> e o atributo <b>data-bs-content</b> com o valor que será a <b>mensagem do componente</b> em que está inserido.</li>
+            <li class="list-group-item">Para a criação de um <b>popover</b> basta acrescentarmos o atributo <b>data-bs-toggle</b> com o valor <b>popover</b> e o atributo <b>data-bs-title</b> com o valor que será o <b>título do componente</b> e o atributo <b>data-bs-content</b> com o valor que será a <b>mensagem do componente</b> em que está inserido.</li>
         </ul>
     </div>
 
     <div class="container py-2 rounded bg-n7-1 mb-3">
-
-        <button class="btn btn-n7-5 my-2" id="btnToast" data-bs-toggle="popover" data-bs-title="informação" data-bs-content="Esta é a mensagem do popover">Criar Toast</button>
-
-        <div class="toast-container top-0 end-0 p-3" id="toastContainer"></div>
-        
-        <div class="toast" id="toast">
-            <div class="toast-header">
-                <i class="bi-info-circle me-1"></i>
-                <strong class="me-auto">informações</strong>
-                <button class="btn-close ms-auto" data-bs-dismiss="toast"></button>
-            </div>
-            <div class="toast-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita id quibusdam, assumenda obcaecati iure quam ullam.
-            </div>
-        </div>
+        <a href="./popover/" class="btn btn-n7-5">Exemplo</a>
     </div>
     <hr>
-    <!-- fim do data-bs-popover / data-bs-content -->
+    <!-- fim do popover (data-bs-toggle/title/content) -->
     
 </body>
 </html>
