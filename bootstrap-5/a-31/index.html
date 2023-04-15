@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link shortcut icon - noctua7 - Interno -->
+    <link rel="shortcut icon" href="../img/isotipo-64.png" type="image/png">
+
+    <!-- Link CSS - Bootstrap - Interno -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Link CSS - noctua7 - Interno -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- link Icons - Bootstrap - via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- link JS - Bootstrap - Interno -->
+    <script src="../js/bootstrap.bundle.min.js" defer></script>
+
+    <title>Painéis Deslizantes</title>
+</head>
+
+<body>
+
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                <img height="48" src="../img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+
+            <h1 class="col d-flex align-items-center justify-content-center">
+                Painéis Deslizantes
+            </h1>
+
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                <a href="../">
+                    <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                </a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">O Bootstrap contém diversas classes para criação e configurações de <b>canvas</b>, melhorando seu <b>visual</b> em relação ao HTML padrão.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <!-- início do offcanvas / offcanvas-position / show -->
+    <div class="container">
+        <h3 class="text-center">a - <b>offcanvas</b>:</h3>
+        <h3 class="text-center"><b>offcanvas-position</b> / <b>show</b> / <b>tabindex="-1"</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O componente <b>offcanvas</b> cria um <b>painel deslizante</b> onde podemos colocar qualquer <span>elemento HTML</span> (<em>menu, image, links, etc</em>).</li>
+            <li class="list-group-item">Para a criação de um <b>offcanvas</b> utilizamos como <b>componente principal</b> um elemento de bloco <span>(div)</span> com a classe <b>offcanvas</b> e a classe <b>offcanvas</b> + <b>traço</b> (-) + a configuração da <b>posição de abertura</b> do painel: <b>start</b> (à esquerda), <b>top</b> (superior), <b>end</b> (à direita) e <b>bottom</b> (inferior).</li>
+            <li class="list-group-item">É obrigatório a colocação do atributo <b>tabindex="-1"</b>.</li>
+            <li class="list-group-item">É necessário a referência ao <b>JS</b> do bootstrap (<em>bootstrap.bundle.min.js</em>).</li>
+            <li class="list-group-item">A classe <b>show</b> possibilita a <span>abertura no carregamento</span> da página.</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <a href="./offcanvas-a/" class="btn btn-n7-5">Exemplo</a>
+    </div>
+    <hr>
+    <!-- fim do offcanvas / offcanvas-position / show -->
+
+    <!-- início do offcanvas-header / offcanvas-body -->
+    <div class="container">
+        <h3 class="text-center">b - <b>offcanvas</b>:</h3>
+        <h3 class="text-center"><b>offcanvas-header</b> & <b>offcanvas-body</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos dividir as regiões do painel em <b>offcanvas-header</b> (<em>cabeçalho do painel</em>) e <b>offcanvas-body</b> (<em>corpo do painel</em>).</li>
+            <li class="list-group-item">No <b>offcanvas-header</b> podemos inserir um <b>título</b> com uma TAG de texto e a classe <b>offcanvas-title</b> e um <b>botão de fechamento</b> com a TAG <b>button</b> com a classe <b>btn-close</b> e o atributo <b>data-bs-desmiss</b> com o valor <b>offcanvas</b> (<em>data-bs-desmiss="offcanvas"</em>).</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <a href="./offcanvas-b/" class="btn btn-n7-5">Exemplo</a>
+    </div>
+    <hr>
+    <!-- fim do offcanvas-header / offcanvas-body -->
+
+    <!-- início do navbar / buttons -->
+    <div class="container">
+        <h3 class="text-center">c - <b>offcanvas</b>:</h3>
+        <h3 class="text-center"><b>nav-bar</b> & <b>button</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos colocar um elemento de botão <b>&lt;button&gt;</b> ou <b>&lt;a&gt;</b> em um componente <b>nav-bar</b> para <span>abertura e fechamento</span> do painel. Para isso criamos o componente <b>nav-bar</b> e no elemento <b>&lt;button&gt;</b> colocamos o atributo <b>data-bs-toggle</b> com o valor <b>offcanvas</b> (<em>data-bs-toggle="offcanvas"</em>) e o atributo <b>data-bs-target</b> com o valor apontando para o <b>id</b> do componente <b>offcanvas</b> e no elemento <b>&lt;a&gt;</b> colocamos o atributo <b>data-bs-toggle</b> com o valor <b>offcanvas</b>  (<em>data-bs-toggle="offcanvas"</em>) e no atributo <b>href</b> apontando para o <b>id</b> do componente <b>offcanvas</b>.</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <a href="./offcanvas-c/" class="btn btn-n7-5">Exemplo</a>
+    </div>
+    <hr>
+    <!-- fim do navbar / buttons -->
+
+    <!-- início data-bs-scroll -->
+    <div class="container">
+        <h3 class="text-center">d - <b>offcanvas</b>:</h3>
+        <h3 class="text-center"><b>data-bs-scroll</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para podermos usar o <b>scroll</b> do mouse mesmo com o painel <b>offcanvas</b> aberto, basta colocarmos no componente principal (<span>offcanvas</span>) o atributo <b>data-bs-scroll</b> com o valor <b>true</b>. (<em>data-bs-scroll="true"</em>)</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <a href="./offcanvas-d/" class="btn btn-n7-5">Exemplo</a>
+    </div>
+    <hr>
+    <!-- fim data-bs-scroll -->
+
+    <!-- início data-bs-backdrop -->
+    <div class="container">
+        <h3 class="text-center">e - <b>offcanvas</b>:</h3>
+        <h3 class="text-center"><b>data-bs-backdrop</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para configurarmos o <b>backdrop</b>, que é a parte restante da página que escurece com a abertura do painel, podemos utilizar o atributo <b>data-bs-backdrop</b>.</li>
+            <li class="list-group-item">O atributo <b>data-bs-backdrop</b> com o valor <b>false</b>. (<em>data-bs-backdrop="false"</em>) <b>retira</b> o escurecido e impede que seja <b>clicado</b> fora do componente e que o mesmo retraia.</li>
+            <li class="list-group-item">O atributo <b>data-bs-backdrop</b> com o valor <b>static</b>. (<em>data-bs-backdrop="false"</em>) <b>não retira</b> o escurecido, mas impede que seja <b>clicado</b> fora do componente e que o mesmo retraia, impedindo também que qualquer outro componente seja clicado.</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <a href="./offcanvas-e/" class="btn btn-n7-5">Exemplo</a>
+    </div>
+    <hr>
+    <!-- fim data-bs-backdrop -->
+
+    <!-- início do offcanvas-colors -->
+    <div class="container">
+        <h3 class="text-center">f - <b>offcanvas</b>:</h3>
+        <h3 class="text-center"><b>colors</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para configurarmos a <b>cor</b> do painel <b>offcanvas</b> podemos utilizar as classes de cores temáticas do bootstrap.</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <a href="./offcanvas-f/" class="btn btn-n7-5">Exemplo</a>
+    </div>
+    <hr>
+    <!-- fim do offcanvas-colors -->
+
+    <!-- início do offcanvas-width -->
+    <div class="container">
+        <h3 class="text-center">g - <b>offcanvas</b>:</h3>
+        <h3 class="text-center"><b>--bs-offcanvas-width</b> & <b>--bs-offcanvas-height</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos configurar a <b>largura</b> dos painéis com o <span>position</span> <b>start</b> e <b>end</b> e a <b>altura</b> dos painéis <b>top</b> e <b>bottom</b> do <b>offcanvas</b> utilizando uma TAG <b>&lt;style&gt;</b> no componente principal (<span>offcanvas</span>), configurando a variável <b>--bs-offcanvas-width</b> para a largura e <b>--bs-offcanvas-heigth</b> para a altura, podendo utilizar medidas em <b>porcentagem</b> ou <b>pixels</b>.</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-n7-1 mb-3">
+        <a href="./offcanvas-g/" class="btn btn-n7-5">Exemplo</a>
+    </div>
+    <hr>
+    <!-- início do offcanvas-width -->
+
+</body>
+</html>
