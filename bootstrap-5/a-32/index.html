@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link shortcut icon - noctua7 - Interno -->
+    <link rel="shortcut icon" href="../img/isotipo-64.png" type="image/png">
+
+    <!-- Link CSS - Bootstrap - Interno -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Link CSS - noctua7 - Interno -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- link Icons - Bootstrap - via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- link JS - Bootstrap - Interno -->
+    <script src="../js/bootstrap.bundle.min.js" defer></script>
+
+    <title>Componentes Simples</title>
+</head>
+
+<body>
+
+    <section class="container-fluid py-3 px-5 px-lg-4 bg-n7-5 text-light sticky-top">
+        <div class="row align-items-center gap-2">
+
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                <img height="48" src="../img/isotipo-64.png" alt="logo-noctua7">
+            </section>
+
+            <h1 class="col d-flex align-items-center justify-content-center">
+                Componentes Simples
+            </h1>
+
+            <section class="col-1 d-flex align-items-center justify-content-center">
+                <a href="../">
+                    <i class="bi bi-arrow-left-circle fs-n7-32 link-danger"></i>
+                </a>
+            </section>
+        </div>
+    </section>
+
+    <section class="container">
+        <ul class="list-group my-3">
+            <li class="list-group-item">O Bootstrap contém diversas classes para criação e configuração de <b>elementos</b>, melhorando seu <b>visual</b> em relação ao HTML padrão.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <!-- início do breadcrumb / breadcrumb-item -->
+    <div class="container">
+        <h3 class="text-center"><b>breadcrumb</b>:</h3>
+        <h3 class="text-center"><b>breadcrumb-item</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">O componente <b>breadcrumb</b> cria um <b>elemento</b> para indicação de <b>caminhos</b>.</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-light border mb-3">
+        <nav class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">perfil do usuário</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">senha</a>
+            </li>
+        </nav>
+    </div>
+    <hr>
+    <!-- fim do breadcrumb / breadcrumb-item -->
+
+    <!-- início do breadcrumb / --bs-breadcrumb-divider -->
+    <div class="container">
+        <h3 class="text-center"><b>breadcrumb</b>:</h3>
+        <h3 class="text-center"><b>--bs-breadcrumb-divider</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos configurar os separadores do componente <b>breadcrumb</b> com a TAG <b>&lt;style&gt;</b>, configurando a variável <b>--bs-breadcrumb-divider</b> colocando um <b>caracter</b> ou <b>letra</b> que será o <span>novo separador</span>.</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-light border mb-3">
+        <nav class="breadcrumb" style="--bs-breadcrumb-divider:' :: '">
+            <li class="breadcrumb-item">
+                <a href="#">home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">perfil do usuário</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">senha</a>
+            </li>
+        </nav>
+        <nav class="breadcrumb" style="--bs-breadcrumb-divider:' > '">
+            <li class="breadcrumb-item">
+                <a href="#">home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">perfil do usuário</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">senha</a>
+            </li>
+        </nav>
+    </div>
+    <hr>
+    <!-- fim do breadcrumb / --bs-breadcrumb-divider -->
+
+    <!-- início do spinner / spinner-border -->
+    <div class="container">
+        <h3 class="text-center"><b>spinner</b>:</h3>
+        <h3 class="text-center"><b>spinner-border</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos criar um <b>círculo giratório</b> com o elemento <b>spinner-border</b>, podendo alterar as configurações de cores com as <b>cores temáticas</b> do bootstrap e o <b>tamanho</b> com sufixos de <b>breakpoints</b> ou com as propriedades <b>width</b> e <b>heigth</b> do <span>CSS</span>.</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-light border mb-3">
+        <div class="spinner-border"></div>
+        <div class="spinner-border text-danger"></div>
+        <div class="spinner-border text-warning"></div>
+        <div class="spinner-border text-success spinner-border-sm"></div>
+        <div class="spinner-border text-info" style="width:50px; height: 50px;"></div>
+    </div>
+    <hr>
+    <!-- fim do spinner / spinner-border -->
+
+    <!-- início do spinner / spinner-grow -->
+    <div class="container">
+        <h3 class="text-center"><b>spinner</b>:</h3>
+        <h3 class="text-center"><b>spinner-grow</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos criar um <b>círculo pulsante</b> com o elemento <b>spinner-grow</b>, podendo alterar as configurações de cores com as <b>cores temáticas</b> do bootstrap e o <b>tamanho</b> com sufixos de <b>breakpoints</b> ou com as propriedades <b>width</b> e <b>heigth</b> do <span>CSS</span>.</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-light border mb-3">
+        <div class="spinner-grow"></div>
+        <div class="spinner-grow text-danger"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text-success spinner-grow-sm"></div>
+        <div class="spinner-grow text-info" style="width:50px; height: 50px;"></div>
+    </div>
+    <hr>
+    <!-- fim do spinner / spinner-grow -->
+
+    <!-- início do progress / progress-bar -->
+    <div class="container">
+        <h3 class="text-center"><b>progress</b>:</h3>
+        <h3 class="text-center"><b>progress-bar</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos criar uma <b>barra de progresso</b> com o elemento <b>progress-bar</b>, podendo alterar as configurações de cores com as <b>cores temáticas</b> do bootstrap e o <b>tamanho</b> com sufixos de <b>breakpoints</b> ou com as propriedades <b>width</b> e <b>heigth</b> do <span>CSS</span> e outras alterações de layout.</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-light border mb-3">
+        <div class="progress m-2">
+            <div class="progress-bar w-75">75%</div>
+        </div>
+        <div class="progress m-2">
+            <div class="progress-bar w-75 bg-dark">75%</div>
+        </div>
+        <div class="progress m-2">
+            <div class="progress-bar w-75 bg-success">75%</div>
+        </div>
+        <div class="progress m-2">
+            <div class="progress-bar w-25">25%</div>
+            <div class="progress-bar w-25 bg-dark">25%</div>
+            <div class="progress-bar w-25 bg-success">25%</div>
+        </div>
+        <div class="progress m-2">
+            <div class="progress-bar w-75 bg-warning progress-bar-striped">75%</div>
+        </div>
+        <div class="progress m-2">
+            <div class="progress-bar w-75 bg-info progress-bar-striped progress-bar-animated">75%</div>
+        </div>
+        <div class="progress m-2" style="height: 50px;">
+            <div class="progress-bar w-75 bg-secondary progress-bar-striped progress-bar-animated">75%</div>
+        </div>
+    </div>
+    <hr>
+    <!-- fim do progress / progress-bar -->
+
+    <!-- início do pagination / page-item / page-link -->
+    <div class="container">
+        <h3 class="text-center"><b>pagination</b>:</h3>
+        <h3 class="text-center"><b>page-item</b> & <b>page-link</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para criar <b>índices de paginação</b> utilizamos a TAG <b>&lt;ul&gt;</b> com a classe <b>pagination</b> e elementos <b>&lt;li&gt;</b> com a classe <b>page-item</b> e elementos <b>&lt;a&gt;</b> com a classe <b>page-link</b>.</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-light border mb-3">
+        <ul class="pagination">
+            <li class="page-item">
+                <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">4</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">5</a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <!-- fim do pagination / page-item / page-link -->
+
+    <!-- início do pagination / active / disabled -->
+    <div class="container">
+        <h3 class="text-center"><b>pagination</b>:</h3>
+        <h3 class="text-center"><b>active</b> & <b>disabled</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos deixá-los <span>ativos</span> com a classe <b>active</b> ou <span>inativos</span> com a classe <b>disabled</b>.</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-light border mb-3">
+        <ul class="pagination">
+            <li class="page-item">
+                <a href="#" class="page-link active">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link disabled">4</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">5</a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <!-- fim do pagination / active / disabled -->
+
+    <!-- início do pagination-sm / pagination-lg -->
+    <div class="container">
+        <h3 class="text-center"><b>pagination</b>:</h3>
+        <h3 class="text-center"><b>pagination-sm</b> & <b>pagination-lg</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Podemos alterar o <span>tamanho</span> com os sufixos <b>sm</b> (pequeno) ou <b>lg</b> (grande).</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-light border mb-3">
+        <ul class="pagination pagination-sm">
+            <li class="page-item">
+                <a href="#" class="page-link active">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link disabled">4</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">5</a>
+            </li>
+        </ul>
+        <ul class="pagination pagination-lg">
+            <li class="page-item">
+                <a href="#" class="page-link active">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link disabled">4</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">5</a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <!-- fim do pagination-sm / pagination-lg -->
+
+    <!-- início do pagination (justify-content) -->
+    <div class="container">
+        <h3 class="text-center"><b>pagination</b>:</h3>
+        <h3 class="text-center"><b>justify-content-center</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">Para alterar o <span>posicionamento</span> na página aplicamos a classe <b>justify-content</b> com as posições <b>start</b> (<em>à esquerda [padrão]</em>), <b>center</b> (<em>centro</em>) e <b>end</b> (<em>à direita</em>).</li>
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-light border mb-3">
+        <ul class="pagination">
+            <li class="page-item">
+                <a href="#" class="page-link active">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link disabled">4</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">5</a>
+            </li>
+        </ul>
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a href="#" class="page-link active">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link disabled">4</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">5</a>
+            </li>
+        </ul>
+        <ul class="pagination justify-content-end">
+            <li class="page-item">
+                <a href="#" class="page-link active">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link disabled">4</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">5</a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <!-- fim do pagination (justify-content) -->
+
+    <!-- início do collapse -->
+    <div class="container">
+        <h3 class="text-center"><b>collapse</b>:</h3>
+        <h3 class="text-center"><b>justify-content-center</b>:</h3>
+        <ul class="list-group my-3">
+            <li class="list-group-item">A classe <b>collapse</b> possibilita <b>mostrar</b> e <b>esconder</b> elementos a partir de um <b>click de botão</b> ou de um <b>link</b>.</li>
+            <li class="list-group-item">Para isso é criado um elemento com a TAG <b>&lt;button&gt;</b> ou <b>&lt;a&gt;</b> (link), ambos com o atributo <b>data-bs-toggle</b> com o valor <b>collapse</b> (<em>data-bs-toggle="collapse"</em>) e com a classe <b>btn</b>.</li>
+            <li class="list-group-item">Ao elemento da TAG <b>&lt;button&gt;</b> é acrescentado o atributo <b>data-bs-target</b> com um valor apontado para o <b>id</b> do elemento com a classe <b>collapse</b> (<em>data-bs-target="#id-collapse"</em>) e o elemento da TAG <b>&lt;a&gt;</b> (link) será apontado o <b>id</b> do elemento com a classe <b>collapse</b> através do atributo <b>href</b> (href="#id-collapse").</li>
+
+        </ul>
+    </div>
+    <div class="container py-2 rounded bg-light border mb-3">
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#id-collapse">Mostrar</button>
+
+        <div class="collapse" id="id-collapse">
+            <img src="../img/MariaEmilia-1.png" alt="" style="width: 650px;" class="d-block mx-auto my-3">
+        </div>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nostrum aut? Recusandae voluptates officia, nostrum reiciendis odio soluta voluptate mollitia nam magni quo vero adipisci quod! Cupiditate illum expedita ut sint voluptatem minus quisquam vero, quod reprehenderit aspernatur inventore odit quae facilis, accusamus asperiores eum dignissimos, sunt debitis. Asperiores dignissimos consequuntur rerum fuga eligendi repellendus eaque tempore culpa distinctio, ullam dolor harum natus temporibus ut voluptatum sint, voluptas veniam totam perferendis.</p>
+    </div>
+    <hr>
+    <!-- fim do pagination (justify-content-center) -->
+
+</body>
+</html>
